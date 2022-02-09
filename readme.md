@@ -10,6 +10,7 @@
 | auto-insurance | [1.0.0](swagger-apis/auto-insurance/1.0.0.yml) |  |  |  |
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) |  |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) |  |  |  |
+| discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) |  |  |  |
 | life-pension | [1.0.0](swagger-apis/life-pension/1.0.0.yml) |  |  |  |
 | pension-plan | [1.0.0](swagger-apis/pension-plan/1.0.0.yml) |  |  |  |
@@ -23,6 +24,7 @@
 | auto-insurance | [1.0.0](swagger-apis/auto-insurance/1.0.0.yml) |  |  |
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) |  |  |
+| discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) |  |  |
 | life-pension | [1.0.0](swagger-apis/life-pension/1.0.0.yml) |  |  |
 | pension-plan | [1.0.0](swagger-apis/pension-plan/1.0.0.yml) |  |  |
