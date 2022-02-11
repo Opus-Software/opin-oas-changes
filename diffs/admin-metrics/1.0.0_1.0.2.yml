@@ -1,0 +1,26 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /metrics
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: availability
+                  - Properties changed
+                    - Modified property: uptime
+                      - Properties changed
+                        - Modified property: endpoints
+                          - Items changed
+                            - Properties changed
+                              - Modified property: uptimeRate
+                                - Pattern changed from '^\d{1,2}\.\d{1,16}$' to '^\d{1}\.\d{1,16}$'
+                        - Modified property: generalUptimeRate
+                          - Pattern changed from '^\d{1,2}\.\d{1,16}$' to '^\d{1}\.\d{1,16}$'
