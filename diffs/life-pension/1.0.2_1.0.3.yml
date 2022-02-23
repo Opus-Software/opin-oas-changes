@@ -1,0 +1,43 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /life-pension
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Items changed
+            - Properties changed
+              - Modified property: products
+                - Items changed
+                  - Properties changed
+                    - Modified property: productDetails
+                      - Items changed
+                        - Properties changed
+                          - Modified property: defferalPeriod
+                            - Properties changed
+                              - Modified property: updateIndex
+                                - MaxLength changed from 12 to 13
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Items changed
+            - Properties changed
+              - Modified property: products
+                - Items changed
+                  - Properties changed
+                    - Modified property: productDetails
+                      - Items changed
+                        - Properties changed
+                          - Modified property: defferalPeriod
+                            - Properties changed
+                              - Modified property: updateIndex
+                                - MaxLength changed from 12 to 13
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

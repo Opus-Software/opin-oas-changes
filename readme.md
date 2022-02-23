@@ -12,9 +12,9 @@
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) |  |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) |  |  |  |
-| life-pension | [1.0.2](swagger-apis/life-pension/1.0.2.yml) |  |  |  |
+| life-pension | [1.0.3](swagger-apis/life-pension/1.0.3.yml) |  |  |  |
 | pension-plan | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) |  |  |  |
-| person | [1.0.2](swagger-apis/person/1.0.2.yml) |  |  |  |
+| person | [1.0.3](swagger-apis/person/1.0.3.yml) |  |  |  |
 
 ### All revisions
 
@@ -27,8 +27,10 @@
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) |  |  |
 | life-pension | [1.0.0](swagger-apis/life-pension/1.0.0.yml) | [1.0.2](swagger-apis/life-pension/1.0.2.yml) | [YAML](diffs/life-pension/1.0.0_1.0.2.yml) |
+|  | [1.0.2](swagger-apis/life-pension/1.0.2.yml) | [1.0.3](swagger-apis/life-pension/1.0.3.yml) | [YAML](diffs/life-pension/1.0.2_1.0.3.yml) |
 | pension-plan | [1.0.0](swagger-apis/pension-plan/1.0.0.yml) | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [YAML](diffs/pension-plan/1.0.0_1.0.2.yml) |
 | person | [1.0.0](swagger-apis/person/1.0.0.yml) | [1.0.2](swagger-apis/person/1.0.2.yml) | [YAML](diffs/person/1.0.0_1.0.2.yml) |
+|  | [1.0.2](swagger-apis/person/1.0.2.yml) | [1.0.3](swagger-apis/person/1.0.3.yml) | [YAML](diffs/person/1.0.2_1.0.3.yml) |
 
 ## Deprecated APIs
 
