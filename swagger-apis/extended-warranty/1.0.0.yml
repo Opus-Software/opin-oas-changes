@@ -158,18 +158,20 @@ components:
                 - coverageDescription
               properties:
                 coverage:
+                  type: array
                   description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
-                  type: string
-                  example: GARANTIA_ESTENDIDA_ORIGINAL
-                  enum: [GARANTIA_ESTENDIDA_ORIGINAL,
-                        GARANTIA_ESTENDIDA_AMPLIADA,
-                        GARANTIA_ESTENDIDA_REDUZIDA,
-                        COMPLEMENTACAO_DE_GARANTIA,
-                        OUTRAS]               
+                  items:
+                    type: string
+                    example: QUEBRA_ACIDENTAL
+                    enum: [GARANTIA_ESTENDIDA_ORIGINAL,
+                          GARANTIA_ESTENDIDA_AMPLIADA,
+                          GARANTIA_ESTENDIDA_REDUZIDA,
+                          COMPLEMENTACAO_DE_GARANTIA,
+                          OUTRAS]               
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtosss
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante                      
                 coverageAttributes:
                    $ref: '#/components/schemas/ExtendedWarrantyCoverageAttributes'
           allowApartPurchase:
@@ -198,7 +200,7 @@ components:
             $ref: '#/components/schemas/ExtendedWarrantyAssistanceServices'
           customerServices:
             type: array
-            description: Rede de Atendimento.
+            description: Rede de atendimento do seguro contratado.
             example: REDE_REFERENCIADA
             items:
               type: string
@@ -206,10 +208,10 @@ components:
               enum: [REDE_REFERENCIADA, LIVRE_ESCOLHA]
           microinsurance:
             type: boolean
-            description: Indicação se o produto é classificado como microsseguro.
+            description: É classificado como microsseguros?
           traits:
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
+            description: O produto é classificado como Grandes Riscos?
           validity:
             $ref: '#/components/schemas/ExtendedWarrantyValidity'
           premiumPayment:
@@ -229,7 +231,7 @@ components:
       properties: 
         assistanceServices:
           type: boolean
-          description:  Indicação se o produto possui serviços de assistências complementares
+          description: O produto possui assistências?
         assistanceServicesPackage:
           type: array
           description: Pacotes de Assistência 
@@ -248,11 +250,13 @@ components:
           maxLength: 1000
           description: Campo livre para descrição dos serviços ofertados por cada sociedade participante, contendo minimamente cada um dos serviços assistenciais complementares oferecidos e se o pacote se trata de uma cobertura de assistência securitária ou se serviços de assistência
         chargeTypeSignaling:
+          type: array
           description: Serviços de Assistências Complementares - Tipo de cobrança
-          type: string
-          maxLength: 8
-          example: GRATUITO
-          enum: [GRATUITO, PAGO]
+          items:
+            type: string
+            maxLength: 8
+            example: GRATUITO
+            enum: [GRATUITO, PAGO]
 
     
     ExtendedWarrantyValidity:
@@ -265,7 +269,7 @@ components:
           items:
             type: string
             maxLength: 23
-            description: Prazo
+            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
@@ -274,49 +278,41 @@ components:
           maxLength: 100
     
     ExtendedWarrantyPremiumPayment:
-      type: array
-      items:
-        type: object
-        required:
-          - paymentMethod
-          - paymentType
-        properties:
-          paymentMethod:
-            description: Metodo de pagamento
+      type: object
+      required:
+        - paymentMethod
+        - paymentType
+      properties:
+        paymentMethod:
+          type: array
+          description: Metodo de pagamento
+          items:
             type: string
             maxLength: 33
             example: CARTAO_DE_CREDITO
-            enum: [CARTAO_DE_CREDITO,
-            CARTAO_DE_DEBITO,
-            DEBITO_EM_CONTA_CORRENTE,
-            DEBITO_EM_CONTA_POUPANCA,
-            BOLETO_BANCARIO,
-            PIX,
-            CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO,
-            PONTOS_DE_PROGRAMA_DE_BENEFICIO,
-            OUTROS]
-          paymentDetail:
-            type: string  
-            maxLength: 1024
-            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima)
-          paymentType:
-            type: array
-            description: tipo de pagamento  
+            enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO;,PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
+        paymentDetail:
+          type: string  
+          maxLength: 1024
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima)
+        paymentType:
+          type: array
+          description: tipo de pagamento  
+          items:
+            type: string
+            maxLength: 9
+            example: A_VISTA
+            enum: [A_VISTA, PARCELADO]
+        premiumRates:
+            type: array 
+            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas.
             items:
-              type: string
-              maxLength: 9
-              example: A_VISTA
-              enum: [A_VISTA, PARCELADO]
-          premiumRates:
-              description: Distribuição de frequência relativa aos valores referentes às taxas cobradas.
-              type: string
-              maxLength: 1024
+                type: string
+                maxLength: 1024
         
     ExtendedWarrantyTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required:
-        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -357,7 +353,7 @@ components:
           items:
             type: string
             maxLength: 15
-            description: Público-alvo
+            description: Público a quem se destina o produto
             example: PESSOA_NATURAL
             enum: [PESSOA_NATURAL, PESSOA_JURIDICA]
     
@@ -369,11 +365,11 @@ components:
         - insuredParticipation
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura
+          description: Valor de Limite Máximo de Indenização (LMI).
           $ref: '#/components/schemas/ExtendedWarrantyCoverageAttributesDetails'
         insuredParticipation:
           type: array
-          description: Lista com indicativo do tipo de participação do segurado para cada cobertura.
+          description: "Indicação se a participação do segurado (por cobertura selecionada) é por:"
           items:
             type: string
             maxLength: 13
@@ -386,7 +382,7 @@ components:
         insuredParticipationDescription:
           type: string
           maxLength: 1024
-          description: Lista com descrição referente ao campo “Participação do Segurado” para cada cobertura.
+          description: Campo aberto para descever a franquia, POS e/ou outras participações do segurado
     
     ExtendedWarrantyCoverageAttributesDetails:
         type: object

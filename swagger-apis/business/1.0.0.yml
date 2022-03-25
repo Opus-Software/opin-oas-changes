@@ -129,8 +129,10 @@ components:
           - code
           - coverages
           - allowApartPurchase
+          - activity
+          - insuredImportanceDestination
           - assistanceServices
-          - microInsurance
+          - insuranceTraits
           - traits
           - validity
           - premiumPayment
@@ -159,8 +161,8 @@ components:
               properties:
                 coverage:
                   type: string
-                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.7 do Anexo II."
-                  maxLength: 57
+                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
+                  maxLength: 59
                   example: INCENDIO_QUEDA_DE_RAIO_E_EXPLOSAO
                   enum: [
                         INCENDIO_QUEDA_DE_RAIO_E_EXPLOSAO,
@@ -170,7 +172,7 @@ components:
                         ALAGAMENTO_E_INUNDACAO,
                         TUMULTOS_GREVES_LOCKOUT_E_ATOS_DOLOSOS,
                         ROUBO_E_FURTO_QUALIFICADO,
-                        VALORES,
+                        VALORES_,
                         QUEBRA_DE_VIDROS_ESPELHOS_MARMORES_E_GRANITOS,
                         ANUNCIOS_LUMINOSOS,
                         FIDELIDADE_DE_EMPREGADOS,
@@ -178,18 +180,18 @@ components:
                         DETERIORACAO_DE_MERCADORIAS_EM_AMBIENTES_FRIGORIFICADOS,
                         DERRAME,
                         VAZAMENTO_,
-                        EQUIPAMENTOS,
+                        EQUIPAMENTOS_,
                         QUEBRA_DE_MAQUINAS,
-                        RESPONSABILIDADE_CIVIL,
+                        RESPONSABILIDADE_CIVIL_,
                         DESPESAS_EXTRAORDINARIAS,
-                        LUCROS_CESSANTES_DESPESAS_FIXAS_LUCRO_LIQUIDO_LUCRO_BRUTO,
+                        LUCROS_CESSANTES_(DESPESAS_FIXAS_LUCRO_LIQUIDO_LUCRO_BRUTO),
                         PERDA_OU_PAGAMENTO_DE_ALUGUEL,
                         PEQUENAS_OBRAS_DE_ENGENHARIA,
                         OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante
                   example: descrição cobertura
                 coverageAttributes:
                    $ref: '#/components/schemas/BusinessCoverageAttributes'
@@ -197,15 +199,30 @@ components:
             type: boolean
             description: Indicação se a cobertura permite contratação separada (por cobertura selecionada).
             example: true
+          activity:
+            type: string
+            maxLength: 9
+            example: COMERCIO
+            enum: [COMERCIO, SERVICO, INDUSTRIA, DEPOSITO, OUTROS]
+          activityOthers:
+            type: string
+            maxLength: 100
+            description: Campo aberto para descrição de cada participante ao selecionar o domínio ‘Outros’ no campo acima ‘Atividade’
+          insuredImportanceDestination:
+            type: array
+            items:
+              type: string
+              maxLength: 8
+              enum: [PREDIO, CONTEUDO]  
           assistanceServices:
             $ref: '#/components/schemas/BusinessAssistanceServices'
-          microInsurance:
+          insuranceTraits:
             type: boolean
-            description: Indicação se o produto é classificado como microsseguro.
+            description: É classificado como microsseguros?
             example: true
           traits:
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
+            description: "O produto é classificado como Grandes Riscos?"
             example: true
           validity:
             $ref: '#/components/schemas/BusinessValidity'
@@ -223,6 +240,9 @@ components:
         type: object
         required:
         - assistanceServices
+        - assistanceServicesPackage
+        - complementaryAssistanceServicesDetail
+        - chargeTypeSignaling
         properties:
           assistanceServices:
             type: boolean
@@ -242,11 +262,13 @@ components:
             maxLength: 1000
             example: reboque pane seca
           chargeTypeSignaling:
-            type: string
-            description: Indicação se o pacote de Assistência é gratuita ou contratada/paga.
-            maxLength: 10
-            example: GRATUITO
-            enum: [GRATUITO, PAGO]
+            type: array
+            items:
+              type: string
+              description: Sinalização em campo exclusivo se o pacote de Assistência é gratuita ou contratada/paga.
+              maxLength: 10
+              example: GRATUITO
+              enum: [GRATUITO, PAGO]
     
     BusinessValidity:
       type: object
@@ -257,6 +279,7 @@ components:
           type: array
           items:
             type: string
+            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
             maxLength: 23
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
@@ -266,38 +289,38 @@ components:
           maxLength: 100
     
     BusinessPremiumPayment:
-      type: array
-      items:
-        type: object
-        required:
-          - paymentMethod
-          - paymentType
-        properties:
-          paymentMethod:
+      type: object
+      required:
+        - paymentMethod
+        - paymentType
+      properties:
+        paymentMethod:
+          type: array
+          items:
             type: string
             maxLength: 33
             description: Metodo de pagamento
-            enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO, PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
-          paymentDetail:
-            type: string
-            maxLength: 100
-            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
-          paymentType:
-            type: string
-            description: tipo de pagamento  
-            maxLength: 9
-            example: A_VISTA
-            enum: [A_VISTA, PARCELADO]
-          premiumRates:
-              description: Distribuição de frequência relativa aos valores referentes às taxas cobradas, nos termos do Anexo III"
-              type: string
-              maxLength: 1024
+            enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO;,PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
+        paymentDetail:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
+        paymentType:
+          type: string
+          description: tipo de pagamento  
+          maxLength: 9
+          example: A_VISTA
+          enum: [A_VISTA, PARCELADO]
+        premiumRates:
+            type: array 
+            description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
+            items:
+                type: string
+                maxLength: 1024
         
     BusinessTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required:
-        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -321,6 +344,7 @@ components:
       properties:
         contractType:
           type: array
+          description: Tipo de contratação
           items:
             type: string
             example: COLETIVO
@@ -335,9 +359,10 @@ components:
           type: array
           items:
             type: string
+            description: "Público a quem se destina o produto, podendo ser Pessoa Natural ou Pessoa Jurídica ou ambos:"
             maxLength: 30
             example: PESSOA_NATURAL
-            enum: [PESSOA_NATURAL, PESSOA_NATURAL_ESTRANGEIRO]
+            enum: [PESSOA_NATURAL, PESSOA_NATURAL_ESTRANGEIRO, PESSOA_JURIDICA]
     
     BusinessCoverageAttributes:
       type: object
@@ -347,17 +372,21 @@ components:
        - insuredParticipation
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura
+          description: Lista com valor de LMI aceito pela sociedade para cada cobertura. Em reais (R$)
           $ref: '#/components/schemas/BusinessCoverageAttributesDetails'                                
         insuredParticipation:
           type: array
-          description: Lista com indicativo do tipo de participação do segurado para cada cobertura
+          description: Indicação se a participação do segurado (por cobertura selecionada) é por
           items:
             type: string
             maxLength: 13
             example: POS
             enum: [POS, FRANQUIA, NAO_SE_APLICA, OUTROS]
-
+        insuredParticipationOthers:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Participação do segurado
+          
     
     BusinessCoverageAttributesDetails:
         type: object

@@ -125,9 +125,9 @@ components:
       items:
         type: object
         required:
+          - name
           - code
           - coverages
-          - allowApartPurchase
           - traits
           - validity
           - termsAndConditions
@@ -152,26 +152,24 @@ components:
                 - coverageDescription
               properties:
                 coverage:
-                  type: string
-                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas.
-                  maxLength: 99
-                  example: COBERTURAS_DETALHAMENTO_CONDICOES_ESPECIAIS_E_PARTICULARES
-                  enum: [
-                NAO_PAGAMENTO_DA_CARTEIRA_DE_CLIENTES_DO_SEGURADO_INADIMPLENCIA_POR_QUESTAO_COMERCIAL,
-                NAO_PAGAMENTO_DA_CARTEIRA_DE_CLIENTES_DO_SEGURADO_INADIMPLENCIA_POR_QUESTAO_POLITICA_EXTRAORDINARIO,
+                  type: array
+                  items:
+                    type: string
+                    description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas.
+                    example: COBERTURAS_DETALHAMENTO_CONDICOES_ESPECIAIS_E_PARTICULARES
+                    enum: [
+                INADIMPLENCIA_POR_QUESTAO_COMERCIAL,
+                INADIMPLENCIA_POR_QUESTAO_POLITICA/EXTRAORDINARIO,
                 OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante
                 coverageAttributes:
                       $ref: '#/components/schemas/ExportCreditCoverageAttributes'
-          allowApartPurchase:
-            type: boolean
-            description: Permissão para Contratação Separada
           traits:
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
+            description: O produto é classificado como Grandes Riscos?
             example: true
           validity:
             $ref: '#/components/schemas/ExportCreditValidity'
@@ -196,7 +194,7 @@ components:
           items:
             type: string
             maxLength: 23
-            description: Prazo
+            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro.
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
@@ -207,8 +205,6 @@ components:
     ExportCreditTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required:
-        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -246,7 +242,7 @@ components:
       - maxLMI
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura
+          description: Valor de Limite Máximo de Indenização (LMI).
           $ref: '#/components/schemas/ExportCreditCoverageAttributesDetails'
     
     ExportCreditCoverageAttributesDetails:

@@ -157,46 +157,32 @@ components:
                 - coverageDescription
               properties:
                 coverage:
-                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.9 do Anexo II.
-                  type: string
-                  maxLength: 80
-                  enum: [
-                    ALAGAMENTO_E_OU_INUNDACAO,
-                    ANUNCIOS_E_ANTENAS,
-                    ASSISTENCIAS_TECNICAS_E_MECANICAS,
-                    CONDOMINIOS_PROPRIETARIOS_E_LOCATARIOS_DE_IMOVEIS,
-                    CUSTOS_DE_DEFESA_DO_SEGURADO,
-                    DANOS_CAUSADOS_POR_FALHAS_DE_PROFISSIONAL_DA_AREA_MEDICA,
-                    DANOS_CAUSADOS_POR_FOGOS_DE_ARTIFICIO,
-                    DANOS_ESTETICOS,
-                    DANOS_MORAIS,
-                    DESPESAS_EMERGENCIAIS_DESPESAS_DE_CONTENCAO_E_DESPESAS_DE_SALVAMENTO_DE_SINISTRO,
-                    EMPREGADOR_EMPREGADOS,
-                    EMPRESAS_DE_SERVICOS,
-                    EQUIPAMENTOS_DE_TERCEIROS_OPERADOS_PELO_SEGURADO,
-                    ERRO_DE_PROJETO,
-                    EXCURSOES_EVENTOS_EXPOSICOES_E_ATIVIDADES,
-                    FAMILIAR,
-                    FINANCEIRO,
-                    FORO,
-                    INDUSTRIA_E_COMERCIO,
-                    LOCAIS_E_OU_ESTABELECIMENTOS_DE_QUALQUER_NATUREZA,
-                    OBRAS,
-                    OPERACOES_DE_QUALQUER_NATUREZA,
-                    POLUICAO,
-                    PRESTACAO_DE_SERVICOS,
+                  type: array
+                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
+                  items:
+                    type: string
+                    maxLength: 40
+                    enum: [ OPERACOES,
+                    EMPREGADOR,
+                    POLUICAO_SUBITA,
                     PRODUTOS,
                     RECALL,
-                    RECLAMACOES_DECORRENTES_DO_FORNECIMENTO_DE_COMESTIVEIS_OU_BEBIDAS,
-                    SINDICO,
-                    TELEFERICOS_E_SIMILARES,
-                    TRANSPORTE_DE_BENS_OU_PESSOAS,
-                    VEICULOS_EMBARCACOES_BENS_E_MERCADORIAS,
+                    OBRAS,
+                    GUARDA_DE_VEICULOS,
+                    EVENTOS/EXPOSICOES,
+                    CRUZADA,
+                    AUTO,
+                    PRESTACAO_DE_SERVICOS_EM_LOCAIS_DE_TERCEIROS,
+                    OPERACOES_ALL_RISK,
+                    PRODUTOS_E_OPERACOES_ALL_RISK,
+                    RCFV_2RISCO_ALL_RISK,
+                    RECALL_ALL_RISK,
+                    RECALL_COM_MAO_DE_OBRA_ALL_RISK,
                     OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
+                  description: Campo aberto para descrição das coberturas gerais englobadas no produto.
                   example: descrição cobertura
                 coverageAttributes:
                    $ref: '#/components/schemas/GeneralLiabilityCoverageAttributes'
@@ -206,14 +192,17 @@ components:
             example: true
           traits: 
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica.
+            description: O produto é classificado como Grandes Riscos?
             example: true
           maxLMGDescription:
             type: string
             maxLength: 1024
-            description: Descritivo da composição do Limite Máximo de Garantia (LMG) por cobertura
+            description: "Lista com valor de LMG aceito pela sociedade para cada produto. Em reais (R$)
+              Campo aberto para descrição da composição do Limite Máximo de Garantia (LMG) por produto
+              Importante Campo aberto relacionado ao produto que possui o campo. Quando não houver o campo, enviar Não se aplica."
           maxLMG:
-            description: Valor máximo de LMG aceito pela sociedade para o produto.
+            description: "Lista com valor de LMG aceito pela sociedade para cada produto. Em reais (R$)
+              Importante Campo de valor numérico relacionado ao produto que possui o campo. Quando não houver o campo, enviar o valor zerado."
             $ref: '#/components/schemas/GeneralLiabilityCoverageAttributesDetails' 
           assistanceServices:
             $ref: '#/components/schemas/GeneralLiabilityAssistanceServices'
@@ -221,6 +210,7 @@ components:
             type: array
             items:
               type: string
+              description: Rede de atendimento do seguro contratado. A considerar os domínios abaixo
               maxLength: 17
               example: REDE_REFERENCIADA
               enum: [REDE_REFERENCIADA, LIVRE_ESCOLHA]
@@ -243,7 +233,7 @@ components:
         properties:
           assistanceServices:
             type: boolean
-            description: Indicação se o produto possui serviços de assistências complementares.
+            description: O produto possui assistências?
             example: true
           assistanceServicesPackage:
             type: array
@@ -257,10 +247,11 @@ components:
             maxLength: 1000
             example: reboque pane seca
           chargeTypeSignaling:
-            type: string
-            description: Indicação se o pacote de assistência é gratuito ou contratado/pago..
-            example: GRATUITO
-            enum: [GRATUITO, PAGO]
+            type: array
+            items:
+              description: Indicação se o pacote de assistência é gratuito ou contratado/pago..
+              example: GRATUITO
+              enum: [GRATUITO, PAGO]
     
     GeneralLiabilityValidity:
       type: object
@@ -269,48 +260,50 @@ components:
       properties:
         term:
           type: string
+          description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
           maxLength: 23
           example: ANUAL
-          enum: [ANUAL, ANUAL_INTERMITENTE, PLURIANUAL, PLURIANUAL_INTERMITENTE, MENSAL, MENSAL_INTERMITENTE, DIARIO, DIARIO_INTERMITENTE, OUTROS]
+          enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
           type: string
           description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Prazo (acima).
           maxLength: 100
     
     GeneralLiabilityPremiumPayment:
-      type: array  
-      items:
-        type: object
-        required:
-          - paymentMethod
-          - paymentType
-        properties:
-          paymentMethod:
-              type: string
-              description: Metodo de pagamento
-              maxLength: 33
-              enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO, PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
-          paymentDetail:
+      type: object
+      required:
+        - paymentMethod
+        - paymentType
+      properties:
+        paymentMethod:
+          type: array
+          items:
             type: string
-            maxLength: 100
-            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
-          paymentType:
-            type: array
-            description: Forma de pagamento  
-            items:
+            description: Metodo de pagamento
+            maxLength: 33
+            enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO, PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
+        paymentDetail:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
+        paymentType:
+          type: array
+          description: Forma de pagamento  
+          items:
+            type: string
+            maxLength: 9
+            example: A_VISTA
+            enum: [A_VISTA, PARCELADO]
+        premiumRates:
+          type: array
+          description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
+          items:
               type: string
-              maxLength: 9
-              example: A_VISTA
-              enum: [A_VISTA, PARCELADO]
-          premiumRates:
-            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas, nos termos do Anexo III.
-            maxLength: 1024
+              maxLength: 1024
     
     GeneralLiabilityTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required:
-       - definition
       properties:
         susepProcessNumber:
           type: string
@@ -334,6 +327,7 @@ components:
       properties:
         contractType:
           type: array
+          description: A considerar os domínios abaixo
           items:
             type: string
             maxLength: 10
@@ -344,6 +338,7 @@ components:
           description: Campo aberto contendo todos os requisitos mínimos para contratação (possibilidade de incluir URL).           
         targetAudiences:
           type: array
+          description: Público a quem se destina o produto, podendo ser Pessoa Natural ou Pessoa Jurídica ou ambos
           items: 
             type: string
             maxLength: 30
@@ -359,11 +354,11 @@ components:
        - idenizationBasis
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura.
+          description: Lista com valor de LMI aceito pela sociedade para cada cobertura. Em reais (R$)
           $ref: '#/components/schemas/GeneralLiabilityCoverageAttributesDetails' 
         insuredParticipation:
           type: array
-          description: Lista com indicativo do tipo de participação do segurado para cada cobertura.
+          description: Indicação se a participação do segurado (por cobertura selecionada) é por
           items:
             type: string
             maxLength: 13
@@ -372,13 +367,17 @@ components:
                   POS,
                   NAO_SE_APLICA,
                   OUTROS]
-        insuredParticipationDescription:
+        insuredParticipationOthers:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Participação do segurado
+        insuredParticipationDescription :
           type: string
           maxLength: 1024
-          description: Lista com descrição referente ao campo “Participação do Segurado” para cada cobertura.
+          description: Campo aberto para descever a franquia, POS e/ou outras participações do segurado
         idenizationBasis:
           type: string
-          description: Lista com o indicativo da base de indenização para cada cobertura
+          description:  Indica a base de indenização da cobertura
           maxLength: 14
           example: POR_OCORRENCIA
           enum: [POR_OCORRENCIA, POR_RECLAMACAO, OUTRAS]

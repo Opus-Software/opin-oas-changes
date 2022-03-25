@@ -125,9 +125,9 @@ components:
       items:
         type: object
         required:
+          - name
           - code
           - coverages
-          - allowApartPurchase
           - traits
           - microinsurance
           - validity
@@ -154,33 +154,35 @@ components:
                 - coverageDescription
               properties:
                 coverage:
-                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.12 do Anexo II
-                  type: string
-                  maxLength: 40
-                  example: PERDA_DE_RECEITA_INTERRUPCAO_DE_NEGOCIOS
-                  enum: [PERDA_DE_RECEITA_INTERRUPCAO_DE_NEGOCIOS,
-                  OUTRAS]
+                  type: array
+                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
+                  items:
+                    type: string
+                    maxLength: 74
+                    example: LUCROS_CESSANTES_APLICAVEL_AO_LUCRO_BRUTO_(LUCRO_LIQUIDO_+_DESPESAS_FIXAS)
+                    enum: [LUCROS_CESSANTES_APLICAVEL_AO_LUCRO_BRUTO_(LUCRO_LIQUIDO_+_DESPESAS_FIXAS),
+                    LUCROS_CESSANTES_APLICAVEL_AO_LUCRO_LIQUIDO,
+                    LUCROS_CESSANTES_APLICAVEL_AO_DESPESAS_FIXAS,
+                    PERDA_DE_RECEITA/INTERRUPCAO_DE_NEGOCIOS,
+                    OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
+                  description: Descrição Cobertura Contratatada - Geral
                   example: descrição cobertura
                 coverageAttributes:
                    $ref: '#/components/schemas/LostProfitCoverageAttributes'
-          allowApartPurchase:
-            type: boolean
-            description: Indicação se a cobertura permite contratação separada (por cobertura selecionada).
           traits:
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
+            description: O produto é classificado como Grandes Riscos?
           microinsurance:
             type: boolean
-            description: Indicação se o produto é classificado como microsseguro
+            description: É classificado como microsseguros?
           validity:
             $ref: '#/components/schemas/LostProfitValidity'
           premiumRates:
             type: array 
-            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas, nos termos do Anexo III
+            description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
             items:
                 type: string
                 maxLength: 1024
@@ -198,6 +200,7 @@ components:
           type: array
           items:
             type: string
+            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
             maxLength: 23
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
@@ -209,8 +212,6 @@ components:
     LostProfitTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required:
-        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -231,6 +232,7 @@ components:
         - targetAudiences
       properties:
         targetAudiences:
+          description: Público Alvo
           type: array
           items:
             type: string
@@ -245,7 +247,7 @@ components:
        - maxLMI
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura.
+          description: Valor de Limite Máximo de Indenização (LMI).
           $ref: '#/components/schemas/LostProfitCoverageAttributesDetails'
     
     LostProfitCoverageAttributesDetails:

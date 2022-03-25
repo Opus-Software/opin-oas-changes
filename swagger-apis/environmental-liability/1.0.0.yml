@@ -155,34 +155,36 @@ components:
                 - coverageDescription
               properties:
                 coverage:
+                  type: array
                   description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
-                  type: string
-                  maxLength: 74
-                  example: INSTALACOES_FIXAS
-                  enum: [INSTALACOES_FIXAS,
-                        TRANSPORTE_AMBIENTAL,
+                  items:
+                    type: string
+                    maxLength: 74
+                    example: INSTALACOES_FIXAS
+                    enum: [INSTALACOES_FIXAS,
+                        TRANSPORTE__AMBIENTAL,
                         OBRAS_E_PRESTACAO_DE_SERVICO,
                         OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos"
+                  description: Descrição Cobertura Contratatada - Geral
                   example: descrição cobertura
                 coverageAttributes:
                    $ref: '#/components/schemas/EnvironmentalLiabilityCoverageAttributes'
           allowApartPurchase:
             type: boolean
-            description: Indicação se a cobertura permite contratação separada (por cobertura selecionada).
+            description: Permissão para contratação separada
           traits:
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica.
+            description: O produto é classificado como Grandes Riscos?
           maxLMGDescription:
             type: string
-            description: Descritivo da composição do Limite Máximo de Garantia (LMG) por cobertura
+            description: Campo aberto para descrição da composição do Limite Máximo de Garantia (LMG) por produto
             maxLength: 1024
           maxLMG:
             type: number
-            description: Valor máximo de LMG aceito pela sociedade para o produto.
+            description: Valor de Limite Máximo de Garantia (LMG)
             maxLength: 36
             example: 1000
           assistanceServices:
@@ -191,6 +193,7 @@ components:
             $ref: '#/components/schemas/EnvironmentalLiabilityValidity'
           customerServices:
             type: array
+            description: Rede de Atendimento
             items:
                 type: string
                 maxLength: 17
@@ -213,58 +216,60 @@ components:
         properties:
           assistanceServices:
             type: boolean
-            description: Indicação se o produto possui serviços de assistências complementares.
+            description: O produto possui assistências?
             example: true
           assistanceServicesPackage:
-            type: array
-            items:
-              type: string
-              description: Para efeitos de comparabilidade considerar agrupamentos de serviços em 4 categorias, conforme os domínios
-              maxLength: 17
-              example: ATE_10_SERVICOS
-              enum: [ATE_10_SERVICOS, ATE_20_SERVICOS , ACIMA_20_SERVICOS, CUSTOMIZAVEL]
+            type: string
+            description: Pacotes de Assistência.
+            maxLength: 17
+            example: ATE_10_SERVICOS
+            enum: [ATE_10_SERVICOS, ATE_20_SERVICOS , ACIMA_20_SERVICOS, CUSTOMIZAVEL]
           complementaryAssistanceServicesDetail:
             type: string
             description: Campo livre para descrição dos serviços ofertados por cada sociedade participante, contendo minimamente cada um dos serviços assistenciais complementares oferecidos e se o pacote se trata de uma cobertura de assistência securitária ou se serviços de assistência
             maxLength: 1000
           chargeTypeSignaling:
-            description: Indicação se o pacote de assistência é gratuito ou contratado/pago.
-            type: string
-            maxLength: 8
-            example: GRATUITO
-            enum: [GRATUITO, PAGO]
+            type: array
+            description: Serviços de Assistências Complementares - Tipo de cobrança
+            items:
+              type: string
+              maxLength: 8
+              example: GRATUITO
+              enum: [GRATUITO, PAGO]
     
     EnvironmentalLiabilityPremiumPayment:
-      type: array
-      items:
-        type: object
-        required:
-          - paymentMethod
-          - paymentType
-        properties:
-          paymentMethod:
-            description: Metodo de pagamento
+      type: object
+      required:
+        - paymentMethod
+        - paymentType
+      properties:
+        paymentMethod:
+          type: array
+          description: Metodo de pagamento
+          items:
             type: string
             maxLength: 33
             example: CARTAO_DE_CREDITO
             enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO, PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
-          paymentDetail:
+        paymentDetail:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima)
+        paymentType:
+          type: array
+          description: Forma de Pagamento
+          items:
             type: string
-            maxLength: 100
-            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima)
-          paymentType:
-            type: array
-            description: Forma de Pagamento
-            items:
+            description: tipo de pagamento
+            maxLength: 10  
+            example: A_VISTA
+            enum: [A_VISTA, PARCELADO]
+        premiumRates:
+          type: array
+          description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
+          items:
               type: string
-              description: tipo de pagamento
-              maxLength: 10  
-              example: A_VISTA
-              enum: [A_VISTA, PARCELADO]
-          premiumRates:
-            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas, nos termos do Anexo III.
-            type: string
-            maxLength: 1024
+              maxLength: 1024
     
     EnvironmentalLiabilityValidity:
       type: object
@@ -275,9 +280,10 @@ components:
           type: array
           items:
             type: string
+            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
             maxLength: 23
             example: ANUAL
-            enum: [ANUAL, ANUAL_INTERMITENTE, PLURIANUAL, PLURIANUAL_INTERMITENTE, MENSAL, MENSAL_INTERMITENTE, DIARIO, DIARIO_INTERMITENTE, OUTROS]
+            enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
           type: string
           description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Prazo (acima).
@@ -286,8 +292,6 @@ components:
     EnvironmentalLiabilityTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required: 
-        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -321,6 +325,7 @@ components:
           maxLength: 1024
           example: https://openinsurance.com.br/aaa
         targetAudiences:
+          description: Público Alvo
           type: array
           items:
             type: string
@@ -332,28 +337,32 @@ components:
       type: object
       description: Informações de cobertura do Seguro Residencial.
       required:
-       - maxLMI
+       - LMI
        - insuredParticipation
        - idenizationBasis
       properties:
-        maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura.
+        LMI:
+          description: Valor de Limite Máximo de Indenização (LMI).
           $ref: '#/components/schemas/EnvironmentalLiabilityCoverageAttributesDetails'
         insuredParticipation:
           type: array
-          description: Lista com indicativo do tipo de participação do segurado para cada cobertura.
+          description: Participação do segurado
           items:
             type: string
             maxLength: 13
             example: FRANQUIA
             enum: [FRANQUIA, POS, NAO_SE_APLICA, OUTROS]
+        insuredParticipationOthers:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Participação do segurado
         insuredParticipationDescription:
           type: string
           maxLength: 1024
-          description: Lista com descrição referente ao campo “Participação do Segurado” para cada cobertura.
+          description: Campo aberto para descever a franquia, POS e/ou outras participações do segurado
         idenizationBasis:
           type: string
-          description: Lista com o indicativo da base de indenização para cada cobertura
+          description: Base de indenização
           maxLength: 14
           example: POR_OCORRENCIA
           enum: [POR_OCORRENCIA, POR_RECLAMACAO, OUTRAS]

@@ -129,7 +129,6 @@ components:
           - code
           - coverages
           - allowApartPurchase
-          - assistanceServices
           - maxLMGDescription
           - maxLMG 
           - traits
@@ -158,7 +157,7 @@ components:
               properties:
                 coverage:
                   type: string
-                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.9 do Anexo II.
+                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
                   maxLength: 55
                   enum: [ RESPONSABILIDADE_CIVIL_PERANTE_TERCEIROS,
                     PERDAS_DIRETAS_AO_SEGURADO,
@@ -167,35 +166,39 @@ components:
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante
                 coverageAttributes:
                    $ref: '#/components/schemas/CyberRiskCoverageAttributes'
           allowApartPurchase:
             type: boolean
             description: Indicação se a cobertura permite contratação separada (por cobertura selecionada).
             example: true
-          assistanceServices:
-            $ref: '#/components/schemas/CyberRiskAssistanceServices'  
           maxLMGDescription:
-            description: Descritivo da composição do Limite Máximo de Garantia (LMG) por cobertura
+            description: "Lista com valor de LMG aceito pela sociedade para cada produto. Em reais (R$) Campo aberto para descrição da composição do Limite Máximo de Garantia (LMG) por produto
+                Importante: Campo aberto relacionado ao produto que possui o campo. Quando não houver o campo, enviar 'Não se aplica'."
             type: string
             maxLength: 1024
           maxLMG:
-            description: Valor máximo de LMG aceito pela sociedade para o produto.
+            description: "No caso de contratação de várias coberturas numa mesma apólice, é comum o contrato estabelecer, para cada uma delas, um distinto limite máximo de responsabilidade por parte da seguradora. Cada um deles é denominado o Limite Máximo de Garantia (que está subordinada ao total apresentado no LMI), de cada cobertura contratada. Ressalte-se que estes limites são independentes, não se somando nem se comunicando, no entanto o total indenizado não pode superar o LMI. (Circular SUSEP 291/05); Lista com valor de LMG aceito pela sociedade para cada cobertura. Em reais (R$)"
             $ref: '#/components/schemas/CyberRiskCoverageAttributesDetails'
+          additional:
+            type: array
+            description: Campo aberto para descrição dos adicionais dos produtos
+            items:
+              description: A considerar os seguintes domínios abaixo
+              type: string
+              maxLength: 19
+              enum: [SORTEIO_(GRATUITO), CLUBE_DE_BENEFICIOS, CASHBACK, DESCONTOS, OUTROS]
+          additionalOthers:
+            type: string
+            maxLength: 100
+            description: Campo aberto para descrição de cada participante ao selecionar o domínio ‘Outros’ no campo acima ‘Adicionais’    
           traits:
             type: boolean
-            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica.
+            description: O produto é classificado como Grandes Riscos?
             example: true  
           validity:
-            $ref: '#/components/schemas/CyberRiskValidity'
-          customerServices:
-            type: array
-            items:
-              type: string
-              maxLength: 17
-              example: REDE_REFERENCIADA
-              enum: [REDE_REFERENCIADA, LIVRE_ESCOLHA]    
+            $ref: '#/components/schemas/CyberRiskValidity'  
           premiumPayment:
             $ref: '#/components/schemas/CyberRiskPremiumPayment'
           termsAndConditions:
@@ -212,78 +215,50 @@ components:
           type: array
           items:
             type: string
+            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
             maxLength: 23
             example: ANUAL
-            enum: [ANUAL, ANUAL_INTERMITENTE, PLURIANUAL, PLURIANUAL_INTERMITENTE, MENSAL, MENSAL_INTERMITENTE, DIARIO, DIARIO_INTERMITENTE, OUTROS]
+            enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
           type: string
           description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Prazo (acima).
           maxLength: 1024
     
-    CyberRiskAssistanceServices:
-      type: array
-      description: Agrupamento dos serviços de assistências disponíveis vinculado ao produto.
-      items:
-        type: object
-        required:
-          - assistanceServices
-        properties:
-          assistanceServices:
-            type: boolean
-            description: Indicação se o produto possui serviços de assistências complementares.
-            example: true
-          assistanceServicesPackage:
-            type: string
-            description: Para efeitos de comparabilidade considerar agrupamentos de serviços em 4 categorias, conforme os domínios
-            maxLength: 17
-            example: ATE_10_SERVICOS
-            enum: [ATE_10_SERVICOS, ATE_20_SERVICOS, ACIMA_20_SERVICOS, CUSTOMIZAVEL]
-          complementaryAssistanceServicesDetail:
-            type: string
-            description: Campo livre para descrição dos serviços ofertados por cada sociedade participante, contendo minimamente cada um dos serviços assistenciais complementares oferecidos e se o pacote se trata de uma cobertura de assistência securitária ou se serviços de assistência
-            maxLength: 1000
-          chargeTypeSignaling:
-            description: Indicação se o pacote de assistência é gratuito ou contratado/pago.
-            type: string
-            maxLength: 8
-            example: GRATUITO
-            enum: [GRATUITO, PAGO]
-    
     CyberRiskPremiumPayment:
-      type: array
-      items:
-        type: object
-        required:
-          - paymentMethod
-          - paymentType
-        properties:
-          paymentMethod:
+      type: object
+      required:
+        - paymentMethod
+        - paymentType
+      properties:
+        paymentMethod:
+          type: array
+          items:
             type: string
             description: Metodo de pagamento
             maxLength: 33
             enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO, PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
-          paymentDetail:
-            type: string  
-            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima)
-            maxLength: 100
-          paymentType:
-            type: array
-            description: Forma de pagamento
-            items:
-              type: string
-              maxLength: 9
-              example: A_VISTA
-              enum: [A_VISTA, PARCELADO]
-          premiumRates:
-            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas, nos termos do Anexo III.
+        paymentDetail:
+          type: string  
+          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima)
+          maxLength: 100
+        paymentType:
+          type: array
+          description: Forma de pagamento
+          items:
             type: string
-            maxLength: 1024
+            maxLength: 9
+            example: A_VISTA
+            enum: [A_VISTA, PARCELADO]
+        premiumRates:
+            type: array
+            description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
+            items:
+                type: string
+                maxLength: 1024
     
     CyberRiskTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
-      required:
-       - definition
       properties:
         susepProcessNumber:
           type: string
@@ -307,6 +282,7 @@ components:
       properties:
         contractType:
           type: array
+          description: Tipo de contratação
           items:
             type: string
             maxLength: 10
@@ -319,6 +295,7 @@ components:
           description: Público Alvo
           type: array
           items:
+            description: "Público a quem se destina o produto, podendo ser Pessoa Natural ou Pessoa Jurídica ou ambos:"
             type: string
             maxLength: 15
             example: PESSOA_NATURAL
@@ -333,23 +310,28 @@ components:
         - idenizationBasis
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura.
+          description: "Lista com valor de LMI aceito pela sociedade para cada cobertura. Em reais (R$)
+            Importante: Campo de valor numérico relacionado à cobertura que possui o campo. Quando não houver o campo, enviar o valor zerado."
           $ref: '#/components/schemas/CyberRiskCoverageAttributesDetails'  
         insuredParticipation:
           type: array
           items:
             type: string
-            description: Lista com indicativo do tipo de participação do segurado para cada cobertura.
+            description: Indicação se a participação do segurado (por cobertura selecionada) é por
             maxLength: 13
             example: FRANQUIA
             enum: [FRANQUIA, POS, NAO_SE_APLICA, OUTROS]
+        insuredParticipationOthers:
+          type: string
+          maxLength: 100
+          description: Campo livre para descrição por cada participante ao selecionar o domínio 'Outros' no campo Participação do segurado  
         insuredParticipationDescription:
           type: string
           maxLength: 1024
-          description: Lista com descrição referente ao campo “Participação do Segurado” para cada cobertura.
+          description: Campo aberto para descever a franquia ou POS
         idenizationBasis:
           type: string
-          description: Lista com o indicativo da base de indenização para cada cobertura
+          description: Indica a base de indenização da cobertura
           maxLength: 14
           example: POR_OCORRENCIA
           enum: [POR_OCORRENCIA, POR_RECLAMACAO, OUTRAS]
