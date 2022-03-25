@@ -129,10 +129,9 @@ components:
           - code
           - coverages
           - allowApartPurchase
-          - insuredPropertyType
-          - structuringType
+          - propertyType
           - assistanceServices
-          - insuranceTraits
+          - microInsurance
           - traits
           - validity
           - premiumPayment
@@ -159,34 +158,35 @@ components:
                 - coverageDescription
               properties:
                 coverage:
+                  description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.6 do Anexo II."
                   type: string
-                  maxLength: 143
-                  example: COBERTURA_BASICA_AMPLA_(COBERTURAS_PARA_QUAISQUER_EVENTOS_QUE_POSSAM_CAUSAR_DANOS_FISICOS_AO_IMOVEL_SEGURADO_EXCETO_OS_EXPRESSAMENTE_EXCLUIDOS)
-                  enum: [ COBERTURA_BASICA_AMPLA_(COBERTURAS_PARA_QUAISQUER_EVENTOS_QUE_POSSAM_CAUSAR_DANOS_FISICOS_AO_IMOVEL_SEGURADO_EXCETO_OS_EXPRESSAMENTE_EXCLUIDOS),
-                          COBERTURA_BASICA_SIMPLES_(COBERTURAS_DE_INCENDIO_QUEDA_DE_RAIO_DENTRO_DO_TERRENO_SEGURADO_E_EXPLOSAO_DE_QUALQUER_NATUREZA),
-                          ANUNCIOS_LUMINOSOS,
-                          DANOS_AO_JARDIM,
-                          DANOS_ELETRICOS,
-                          DESMORONAMENTO,
-                          DESPESAS_COM_ALUGUEL_,
-                          EQUIPAMENTOS,
-                          FIDELIDADE_DE_EMPREGADOS,
-                          IMPACTO_DE_VEICULOS,
-                          VIDA_E_ACIDENTES_PESSOAIS_-_EMPREGADOS,
-                          LUCROS_CESSANTES,
-                          QUEBRA_DE_VIDROS_ESPELHOS_MARMORES_E_GRANITOS,
-                          RESPONSABILIDADE_CIVIL,
-                          ROUBO,
-                          VALORES,
-                          VAZAMENTO,
-                          VENDAVAL,
-                          ALAGAMENTO,
-                          TUMULTO,
-                          OUTRAS]
+                  maxLength: 141
+                  example: COBERTURA_BASICA_AMPLA_COBERTURAS_PARA_QUAISQUER_EVENTOS_QUE_POSSAM_CAUSAR_DANOS_FISICOS_AO_IMOVEL_SEGURADO_EXCETO_OS_EXPRESSAMENTE_EXCLUIDOS
+                  enum: [COBERTURA_BASICA_AMPLA_COBERTURAS_PARA_QUAISQUER_EVENTOS_QUE_POSSAM_CAUSAR_DANOS_FISICOS_AO_IMOVEL_SEGURADO_EXCETO_OS_EXPRESSAMENTE_EXCLUIDOS,
+                        COBERTURA_BASICA_SIMPLES_COBERTURAS_DE_INCENDIO_QUEDA_DE_RAIO_DENTRO_DO_TERRENO_SEGURADO_E_EXPLOSAO_DE_QUALQUER_NATUREZA,
+                        ANUNCIOS_LUMINOSOS,
+                        DANOS_AO_JARDIM,
+                        DANOS_ELETRICOS,
+                        DESMORONAMENTO,
+                        DESPESAS_COM_ALUGUEL,
+                        EQUIPAMENTOS,
+                        FIDELIDADE_DE_EMPREGADOS,
+                        IMPACTO_DE_VEICULOS,
+                        VIDA_E_ACIDENTES_PESSOAIS_EMPREGADOS,
+                        LUCROS_CESSANTES,
+                        QUEBRA_DE_VIDROS_ESPELHOS_MARMORES_E_GRANITOS,
+                        RESPONSABILIDADE_CIVIL,
+                        ROUBO,
+                        VALORES,
+                        VAZAMENTO,
+                        VENDAVAL,
+                        ALAGAMENTO,
+                        TUMULTO,
+                        OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
                   example: descrição cobertura
                 coverageAttributes:
                    $ref: '#/components/schemas/CondominiumCoverageAttributes'
@@ -194,30 +194,21 @@ components:
             type: boolean
             description: Indicação se a cobertura permite contratação separada (por cobertura selecionada).
             example: true
-          insuredPropertyType:
-            type: string
-            maxLength: 22
-            example: CONDOMINIO_RESIDENCIAL
-            enum: [CONDOMINIO_RESIDENCIAL, CONDOMINIO_COMERCIAL, CONDOMINIO_MISTOS]
-          structuringType:
-            type: string
-            description: Qual é o tipo de estrutura do condomínio
-            maxLength: 21
-            enum: [CONDOMINIO_HORIZONTAL, CONDOMINIO_VERTICAL, MISTO]
+          propertyType:
+            $ref: '#/components/schemas/CondominiumPropertyType'  
           commercializationArea:
             type: number
             maxLength: 8
-            description: O conjunto de dados de Produtos que vai retornar está condicionado ao input do valor de CEP (Filtro). Nesse contexto será necessário que o CEP de consulta seja inserido.
-              Código de Endereçamento Postal. Composto por um conjunto numérico de oito dígitos, o objetivo principal do CEP é orientar e acelerar o encaminhamento, o tratamento e a entrega de objetos postados nos Correios, por meio da sua atribuição a localidades, logradouros, unidades dos Correios, serviços, órgãos públicos, empresas e edifícios. p.ex. 01311000
+            description: Deve ser informado o CEP do imóvel. Campo de entrada na AP
           assistanceServices:
             $ref: '#/components/schemas/CondominiumAssistanceServices'
-          insuranceTraits:
+          microInsurance:
             type: boolean
-            description: É classificado como microsseguros?
+            description: Indicação se o produto é classificado como microsseguro.
             example: true
           traits:
             type: boolean
-            description: O produto é classificado como Grandes Riscos?
+            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
             example: true
           validity:
             $ref: '#/components/schemas/CondominiumValidity'
@@ -228,6 +219,24 @@ components:
           minimumRequirements:
             $ref: '#/components/schemas/CondominiumMinimumRequirements'
     
+    CondominiumPropertyType:
+      type: array
+      items:
+        type: object
+        required:
+          - insuredPropertyType
+          - structuringType
+        properties:
+          insuredPropertyType:
+            type: string
+            maxLength: 22
+            example: CONDOMINIO_RESIDENCIAL
+            enum: [CONDOMINIO_RESIDENCIAL, CONDOMINIO_COMERCIAL]
+          structuringType:
+            type: string
+            maxLength: 21
+            enum: [CONDOMINIO_HORIZONTAL, CONDOMINIO_VERTICAL]
+    
     CondominiumAssistanceServices:
       type: array
       description: Agrupamento dos serviços de assistências disponíveis vinculado ao produto.
@@ -235,13 +244,10 @@ components:
         type: object
         required:
           - assistanceServices
-          - assistanceServicesPackage
-          - complementaryAssistanceServicesDetail
-          - chargeTypeSignaling
         properties:
           assistanceServices:
             type: boolean
-            description: O produto possui assistências?
+            description: Indicação se o produto possui serviços de assistências complementares.
             example: true
           assistanceServicesPackage:
             type: array
@@ -257,13 +263,11 @@ components:
             maxLength: 1000
             example: reboque pane seca
           chargeTypeSignaling:
-            type: array
-            items:
-              type: string
-              description: Sinalização em campo exclusivo se o pacote de Assistência é gratuita ou contratada/paga.
-              maxLength: 8
-              example: GRATUITO
-              enum: [GRATUITO, PAGO]
+            type: string
+            description: Indicação se o pacote de Assistência é gratuita ou contratada/paga.
+            maxLength: 8
+            example: GRATUITO
+            enum: [GRATUITO, PAGO]
     
     CondominiumValidity:
       type: object
@@ -274,7 +278,6 @@ components:
           type: array
           items:
             type: string
-            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
             maxLength: 23
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
@@ -284,40 +287,40 @@ components:
           maxLength: 100
     
     CondominiumPremiumPayment:
-      type: object
-      required:
-        - paymentMethod
-        - paymentType
-      properties:
-        paymentMethod:
-          type: array
-          items:
+      type: array
+      items:
+        type: object
+        required:
+          - paymentMethod
+          - paymentType
+        properties:
+          paymentMethod:
             type: string
             description: Metodo de pagamento
             maxLength: 33
             enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO, PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
-        paymentDetail:
-          type: string
-          maxLength: 100 
-          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
-        paymentType:
-          type: array
-          description: Forma de pagamento
-          items:
+          paymentDetail:
             type: string
-            maxLength: 9
-            example: A_VISTA
-            enum: [A_VISTA, PARCELADO]
-        premiumRates:
-            type: array 
-            description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
+            maxLength: 100 
+            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
+          paymentType:
+            type: array
+            description: Forma de pagamento
             items:
-                type: string
-                maxLength: 1024
+              type: string
+              maxLength: 9
+              example: A_VISTA
+              enum: [A_VISTA, PARCELADO]
+          premiumRates:
+              description: Distribuição de frequência relativa aos valores referentes às taxas cobradas, nos termos do Anexo III
+              type: string
+              maxLength: 1024
         
     CondominiumTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
+      required:
+       - definition
       properties:
         susepProcessNumber:
           type: string
@@ -351,13 +354,12 @@ components:
           maxLength: 1024
           description: Campo aberto contendo todos os requisitos mínimos para contratação (possibilidade de incluir URL).      
         targetAudiences:
-          description: Público Alvo
           type: array
           items:
             type: string
             maxLength: 30
             example: PESSOA_NATURAL
-            enum: [PESSOA_NATURAL, PESSOA_NATURAL_ESTRANGEIRO, PESSOA_JURIDICA]
+            enum: [PESSOA_NATURAL, PESSOA_NATURAL_ESTRANGEIRO]
     
     CondominiumCoverageAttributes:
       type: object
@@ -367,20 +369,17 @@ components:
        - insuredParticipation
       properties:
         maxLMI:
-          description: Lista com valor de LMI aceito pela sociedade para cada cobertura. Em reais (R$)
-            Importante. Campo de valor numérico relacionado à cobertura que possui o campo. Quando não houver o campo, enviar o valor zerado.
+          description: Lista com valor de LMI aceito pela sociedade para cada cobertura.
           $ref: '#/components/schemas/CondominiumCoverageAttributesDetails'
         insuredParticipation:
+          description: Lista com indicativo do tipo de participação do segurado para cada cobertura.
           type: array
           items:
             type: string
             maxLength: 13
             example: POS
             enum: [POS, FRANQUIA, NAO_SE_APLICA]
-        insuredParticipationOthers:
-          type: string
-          maxLength: 100
-          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Participação do segurado
+
     
     CondominiumCoverageAttributesDetails:
         type: object

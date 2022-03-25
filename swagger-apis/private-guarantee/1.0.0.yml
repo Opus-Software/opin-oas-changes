@@ -129,7 +129,7 @@ components:
           - code
           - coverages
           - allowApartPurchase
-          - maxLMG
+          - traits
           - validity
           - premiumPayment
           - termsAndConditions
@@ -157,7 +157,7 @@ components:
                  coverage:
                    type: string
                    description: Nome Cobertura Contratatada - Básica
-                   enum: [CONSTRUCAO_(OBRAS),        
+                   enum: [CONSTRUCAO_OBRAS,        
                       FORNECIMENTO,
                       PRESTACAO_DE_SERVICOS,     
                       RETENCAO_DE_PAGAMENTOS,    
@@ -170,15 +170,15 @@ components:
                  coverageDescription:
                    type: string
                    maxLength: 3000
-                   description: Descrição Cobertura Contratatada - Básica
+                   description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
+                 coverageAttributes:
+                   $ref: '#/components/schemas/PrivateGuaranteeCoverageAttributes'
           allowApartPurchase:
             type: boolean
             description: Permissão para Contratação Separada
-          maxLMG:
-            type: number
-            maxLength: 36
-            description: "Lista com valor de LMG aceito pela sociedade para cada produto. Em reais (R$)
-              Importante: Campo de valor numérico relacionado ao produto que possui o campo. Quando não houver o campo, enviar o valor zerado."
+          traits:
+            type: boolean
+            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
           validity:
             $ref: '#/components/schemas/PrivateGuaranteeValidity'
           premiumPayment:
@@ -187,6 +187,53 @@ components:
             $ref: '#/components/schemas/PrivateGuaranteeTerms'
           minimumRequirements:
             $ref: '#/components/schemas/PrivateGuaranteeMinimumRequirements'
+    
+    PrivateGuaranteeCoverageAttributes:
+      type: object
+      description: Informações de cobertura do Seguro.
+      required:
+        - maxLMI
+        - insuredParticipation
+      properties:
+        maxLMI:
+          description: Lista com valor de LMI aceito pela sociedade para cada cobertura
+          $ref: '#/components/schemas/PrivateGuaranteeCoverageAttributesDetails'
+        insuredParticipation:
+          type: array
+          description: Lista com indicativo do tipo de participação do segurado para cada cobertura.
+          items:
+            type: string
+            maxLength: 13
+            example: FRANQUIA
+            enum: [FRANQUIA, POS, NAO_SE_APLICA, OUTROS]
+        insuredParticipationDescription:
+          type: string
+          maxLength: 1024
+          description: Lista com descrição referente ao campo “Participação do Segurado” para cada cobertura.
+    
+    PrivateGuaranteeCoverageAttributesDetails:
+        type: object
+        required:
+          - amount
+          - unit
+        properties:
+          amount:
+            type: number
+          unit:
+            $ref: '#/components/schemas/PrivateGuaranteeCoverageAttributesDetailsUnit'
+    
+    PrivateGuaranteeCoverageAttributesDetailsUnit:
+      type: object
+      required:
+        - code
+        - description
+      properties:
+        code: 
+          type: string
+          example: R$
+        description: 
+          type: string
+          example: REAL
     
     PrivateGuaranteeValidity:
       type: object
@@ -198,7 +245,7 @@ components:
           items:
             type: string
             maxLength: 23
-            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
+            description: Prazo
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
@@ -207,42 +254,40 @@ components:
           maxLength: 100
     
     PrivateGuaranteePremiumPayment:
-      type: object
-      required:
-        - paymentMethod
-        - paymentType
-      properties:
-        paymentMethod:
-          type: array
-          items:
+      type: array
+      items:
+        type: object
+        required:
+          - paymentMethod
+          - paymentType
+        properties:
+          paymentMethod:
             type: string
             maxLength: 33
             description: Metodo de pagamento
             enum: [CARTAO_DE_CREDITO, CARTAO_DE_DEBITO, DEBITO_EM_CONTA_CORRENTE, DEBITO_EM_CONTA_POUPANCA, BOLETO_BANCARIO;,PIX, CONSIGNACAO_EM_FOLHA_DE_PAGAMENTO, PONTOS_DE_PROGRAMA_DE_BENEFICIO, OUTROS]
-        paymentDetail:
-          type: string  
-          maxLength: 1024
-          description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
-        paymentType:
-          type: array
-          description: tipo de pagamento 
-          items:
-            type: string 
-            maxLength: 9
-            example: A_VISTA
-            enum: [A_VISTA, PARCELADO]
-        premiumRates:
-            type: array
+          paymentDetail:
+            type: string  
             maxLength: 1024
-            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas.
+            description: Campo livre para descrição por cada participante ao selecionar o domínio “Outros” no campo Meio de pagamento (acima) 
+          paymentType:
+            type: array
+            description: tipo de pagamento 
             items:
-                type: string
+              type: string 
+              maxLength: 9
+              example: A_VISTA
+              enum: [A_VISTA, PARCELADO]
+          premiumRates:
+              type: string
+              maxLength: 1024
+              description: Distribuição de frequência relativa aos valores referentes às taxas cobradas
     
     PrivateGuaranteeTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
       required:
-        - susepProcessNumber
+        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -261,6 +306,7 @@ components:
       description: Requisitos mínimos.
       required:
         - contractType
+        - minimumRequirementDetails
         - targetAudiences
       properties:
         contractType:
@@ -269,6 +315,11 @@ components:
             type: string
             maxLength: 10
             enum: [COLETIVO, INDIVIDUAL]
+        minimumRequirementDetails:
+          type: string
+          description: Campo aberto contendo todos os requisitos mínimos para contratação (possibilidade de incluir URL).
+          maxLength: 1024
+          example: https://openinsurance.com.br/aaa
         targetAudiences:
           description: Público Alvo
           type: array
