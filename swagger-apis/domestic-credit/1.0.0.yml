@@ -128,6 +128,7 @@ components:
           - name
           - code
           - coverages
+          - allowApartPurchase
           - traits
           - validity
           - termsAndConditions
@@ -152,29 +153,30 @@ components:
                 - coverageDescription
               properties:
                 coverage:
-                  type: array
                   description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
-                  items:
-                    type: string
-                    example: COBERTURAS_DETALHAMENTO_CONDICOES_ESPECIAIS_E_PARTICULARES
-                    enum: [
-                INADIMPLENCIA,
+                  type: string
+                  example: NAO_PAGAMENTO_DA_CARTEIRA_DE_CLIENTES_DO_SEGURADO
+                  enum: [
+                NAO_PAGAMENTO_DA_CARTEIRA_DE_CLIENTES_DO_SEGURADO,
                 OUTRAS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
                 coverageAttributes:
                       $ref: '#/components/schemas/DomesticCreditCoverageAttributes'
+          allowApartPurchase:
+            type: boolean
+            description: Permissão para Contratação Separada
           traits:
             type: boolean
-            description: O produto é classificado como Grandes Riscos?
+            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
             example: true
           validity:
             $ref: '#/components/schemas/DomesticCreditValidity'
           premiumRates:
             type: array
-            description: Faixa de Preço, conforme estabelecido no inciso VII do Art. 2º do Anexo III da Circular SUSEP 635/2021, inclusive sobre sua faculdade para alguns produtos
+            description: Distribuição de frequência relativa aos valores referentes às taxas cobradas
             items:
               type: string
               maxLength: 1024
@@ -193,7 +195,7 @@ components:
           items:
             type: string
             maxLength: 23
-            description: Prazo de vigência do seguro contratado Intervalo contínuo de tempo durante o qual está em vigor o contrato de seguro. (RESOLUÇÃO CNSP Nº 341/2016).
+            description: Prazo
             example: ANUAL
             enum: [ANUAL , ANUAL_INTERMITENTE , PLURIANUAL , PLURIANUAL_INTERMITENTE , MENSAL, MENSAL_INTERMITENTE , DIARIO , DIARIO_INTERMITENTE, OUTROS]
         termOthers:
@@ -204,6 +206,8 @@ components:
     DomesticCreditTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
+      required:
+        - definition
       properties:
         susepProcessNumber:
           type: string
@@ -241,7 +245,7 @@ components:
       - maxLMI
       properties:
         maxLMI:
-          description: Valor de Limite Máximo de Indenização (LMI).
+          description: Lista com valor de LMI aceito pela sociedade para cada cobertura.
           $ref: '#/components/schemas/DomesticCreditCoverageAttributesDetails'
     
     DomesticCreditCoverageAttributesDetails:

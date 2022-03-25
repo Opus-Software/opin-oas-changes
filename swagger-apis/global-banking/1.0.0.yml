@@ -125,9 +125,9 @@ components:
       items:
         type: object
         required:
-          - name
           - code
           - coverages
+          - allowApartPurchase
           - traits
           - validity
           - termsAndConditions
@@ -153,29 +153,27 @@ components:
                 - coverageDescription
               properties:
                 coverage:
-                  type: array
                   description: Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas
-                  items:
-                    type: string
-                    example: DANOS_MATERIAIS_CAUSADOS_AO_COFRE_FORTE
-                    description: Nome Cobertura Contratatada - Geral
-                    enum: [ DANOS_MATERIAIS_CAUSADOS_AO_COFRE_FORTE,
-                    DANOS_MATERIAIS_CAUSADOS_AOS_CAIXAS_ELETRONICOS_-_ATM,
+                  type: string
+                  example: DANOS_MATERIAIS_CAUSADOS_AO_COFRE_FORTE
+                  enum: [ DANOS_MATERIAIS_CAUSADOS_AO_COFRE_FORTE,
+                    DANOS_MATERIAIS_CAUSADOS_AOS_CAIXAS_ELETRONICOS_ATM,
                     INFIDELIDADE_DE_FUNCIONARIOS,
-                    VALORES_NO_INTERIOR_DO_ESTABELECIMENTO,
-                    VALORES_NO_INTERIOR_DE_CAIXAS_ELETRONICOS_-_ATM,
+                    VALORES_NO_INTERIOR_DE_CAIXAS_ELETRONICOS_ATM,
                     VALORES_EM_MAOS_DE_PORTADORES_EM_TRANSITO,
-                    OUTROS
-                    ]
+                    OUTROS]
                 coverageDescription:
                   type: string
                   maxLength: 3000
-                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos a ser feito por cada participante
+                  description: Campo aberto para detalhamento de cada uma das coberturas possíveis dos produtos
                 coverageAttributes:
                    $ref: '#/components/schemas/GlobalBankingCoverageAttributes'
+          allowApartPurchase:
+            type: boolean
+            description: Permissão para Contratação Separada
           traits:
             type: boolean
-            description: O produto é classificado como Grandes Riscos?
+            description: Indicação se o produto é classificado como destinado para cobertura de grandes riscos, sendo tal classificação de acordo com regulamentação específica
           validity:
             $ref: '#/components/schemas/GlobalBankingValidity'
           premiumRates:
@@ -210,6 +208,8 @@ components:
     GlobalBankingTerms:
       type: object
       description: Informações dos termos e condições conforme número do processo SUSEP.
+      required:
+        - definition
       properties:
         susepProcessNumber:
           type: string
