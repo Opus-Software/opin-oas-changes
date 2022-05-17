@@ -192,7 +192,7 @@ components:
               maxLength: 150
               description: "Deverá trazer toda a informação referente ao endereço do intermediário: Tipo de logradouro + Nome do logradouro + Número do Logradouro (se não existir usar ' s/n') + complemento (se houver), como, p.ex.: 'R Diamantina, 59, bloco 35, fundos’ 'Praça da Boa Vontade s/n'"
               example: "'Rua Diamantina, 59, bloco 35'
-                Praça da Boa Vontade, s/n" 
+                Praça da Boa Vontade, s/n"
             additionalInfo:
               type: string
               maxLength: 30
@@ -562,6 +562,7 @@ components:
                   SEGUNDA_FEIRA,
                   TERCA_FEIRA,
                   QUARTA_FEIRA,
+                  QUINTA_FEIRA,
                   SEXTA_FEIRA,
                   SABADO]
             example: DOMINGO
