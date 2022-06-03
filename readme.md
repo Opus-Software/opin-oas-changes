@@ -29,7 +29,7 @@
 | global-banking | [1.0.0](swagger-apis/global-banking/1.0.0.yml) |  |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) |  |  |  |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) |  |  |  |
-| intermediary | [1.0.0](swagger-apis/intermediary/1.0.0.yml) |  |  |  |
+| intermediary | [1.0.0](swagger-apis/intermediary/1.0.0.yml) | [1.1.0](swagger-apis/intermediary/1.1.0.yml) | [YAML](diffs/intermediary/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/intermediary/1.0.0_1.1.0.yml) |
 | life-pension | [1.0.3](swagger-apis/life-pension/1.0.3.yml) |  |  |  |
 | lost-profit | [1.0.0](swagger-apis/lost-profit/1.0.0.yml) |  |  |  |
 | named-operational-risks | [1.0.0](swagger-apis/named-operational-risks/1.0.0.yml) |  |  |  |
@@ -38,7 +38,7 @@
 | person | [1.0.3](swagger-apis/person/1.0.3.yml) |  |  |  |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) |  |  |  |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) |  |  |  |
-| referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) |  |  |  |
+| referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) |  |  |  |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) |  |  |  |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) |  |  |  |
@@ -71,7 +71,7 @@
 | global-banking | [1.0.0](swagger-apis/global-banking/1.0.0.yml) |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) |  |  |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) |  |  |
-| intermediary | [1.0.0](swagger-apis/intermediary/1.0.0.yml) |  |  |
+| intermediary | [1.0.0](swagger-apis/intermediary/1.0.0.yml) | [1.1.0](swagger-apis/intermediary/1.1.0.yml) | [YAML](diffs/intermediary/1.0.0_1.1.0.yml) |
 | life-pension | [1.0.0](swagger-apis/life-pension/1.0.0.yml) | [1.0.2](swagger-apis/life-pension/1.0.2.yml) | [YAML](diffs/life-pension/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/life-pension/1.0.2.yml) | [1.0.3](swagger-apis/life-pension/1.0.3.yml) | [YAML](diffs/life-pension/1.0.2_1.0.3.yml) |
 | lost-profit | [1.0.0](swagger-apis/lost-profit/1.0.0.yml) |  |  |
@@ -82,7 +82,7 @@
 |  | [1.0.2](swagger-apis/person/1.0.2.yml) | [1.0.3](swagger-apis/person/1.0.3.yml) | [YAML](diffs/person/1.0.2_1.0.3.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) |  |  |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) |  |  |
-| referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) |  |  |
+| referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) |  |  |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) |  |  |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) |  |  |
