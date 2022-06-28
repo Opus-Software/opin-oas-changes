@@ -12,7 +12,6 @@
 | auto-insurance | [1.0.2](swagger-apis/auto-insurance/1.0.2.yml) |  |  |  |
 | business | [1.0.0](swagger-apis/business/1.0.0.yml) |  |  |  |
 | capitalization-title | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) |  |  |  |
-| chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |  |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |  |
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) |  |  |  |
@@ -55,7 +54,6 @@
 | auto-insurance | [1.0.0](swagger-apis/auto-insurance/1.0.0.yml) | [1.0.2](swagger-apis/auto-insurance/1.0.2.yml) | [YAML](diffs/auto-insurance/1.0.0_1.0.2.yml) |
 | business | [1.0.0](swagger-apis/business/1.0.0.yml) |  |  |
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [YAML](diffs/capitalization-title/1.0.0_1.0.2.yml) |
-| chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [YAML](diffs/data-channels/1.0.0_1.0.2.yml) |
@@ -99,6 +97,7 @@
 | BensEmGeralSwagger | [1.0.0](swagger-apis/BensEmGeralSwagger/1.0.0.yml) |  |  |  |
 | canais-atendimento | [1.0.0](swagger-apis/canais-atendimento/1.0.0.yml) |  |  |  |
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |  |
+| chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
@@ -135,6 +134,7 @@
 | BensEmGeralSwagger | [1.0.0](swagger-apis/BensEmGeralSwagger/1.0.0.yml) |  |  |
 | canais-atendimento | [1.0.0](swagger-apis/canais-atendimento/1.0.0.yml) |  |  |
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |
+| chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
