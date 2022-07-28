@@ -17,6 +17,7 @@
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |  |
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) |  |  |  |
+| dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |  |
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |  |
@@ -72,6 +73,7 @@
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [YAML](diffs/data-channels/1.0.0_1.0.2.yml) |
+| dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |
