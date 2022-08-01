@@ -17,7 +17,6 @@
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |  |
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) |  |  |  |
-| dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |  |
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |  |
@@ -73,7 +72,6 @@
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [YAML](diffs/data-channels/1.0.0_1.0.2.yml) |
-| dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |
@@ -130,6 +128,7 @@
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |  |
+| dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |  |
 | EmpresarialSwagger | [1.0.0](swagger-apis/EmpresarialSwagger/1.0.0.yml) |  |  |  |
 | EngenhariaSwagger | [1.0.0](swagger-apis/EngenhariaSwagger/1.0.0.yml) |  |  |  |
 | EnvironmentalSwagger | [1.0.0](swagger-apis/EnvironmentalSwagger/1.0.0.yml) |  |  |  |
@@ -167,6 +166,7 @@
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |
+| dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |
 | EmpresarialSwagger | [1.0.0](swagger-apis/EmpresarialSwagger/1.0.0.yml) |  |  |
 | EngenhariaSwagger | [1.0.0](swagger-apis/EngenhariaSwagger/1.0.0.yml) |  |  |
 | EnvironmentalSwagger | [1.0.0](swagger-apis/EnvironmentalSwagger/1.0.0.yml) |  |  |
