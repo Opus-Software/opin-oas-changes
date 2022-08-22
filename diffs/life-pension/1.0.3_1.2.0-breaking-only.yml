@@ -1,0 +1,60 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /life-pension
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Items changed
+            - Properties changed
+              - Modified property: products
+                - Items changed
+                  - Properties changed
+                    - Modified property: productDetails
+                      - Items changed
+                        - Properties changed
+                          - Modified property: defferalPeriod
+                            - Properties changed
+                              - Modified property: investimentFunds
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: minimumContributionAmount
+                                      - MaxLength changed from 5 to 15
+                          - Modified property: grantPeriodBenefit
+                            - Properties changed
+                              - Modified property: investimentFunds
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: minimumContributionAmount
+                                      - MaxLength changed from 5 to 15
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Items changed
+            - Properties changed
+              - Modified property: products
+                - Items changed
+                  - Properties changed
+                    - Modified property: productDetails
+                      - Items changed
+                        - Properties changed
+                          - Modified property: defferalPeriod
+                            - Properties changed
+                              - Modified property: investimentFunds
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: minimumContributionAmount
+                                      - MaxLength changed from 5 to 15
+                          - Modified property: grantPeriodBenefit
+                            - Properties changed
+                              - Modified property: investimentFunds
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: minimumContributionAmount
+                                      - MaxLength changed from 5 to 15
