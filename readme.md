@@ -13,6 +13,7 @@
 | business | [1.0.0](swagger-apis/business/1.0.0.yml) |  |  |  |
 | capitalization-title | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) |  |  |  |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |  |
+| consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) |  |  |  |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) |  |  |  |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |  |
@@ -51,6 +52,7 @@
 | person | [1.0.3](swagger-apis/person/1.0.3.yml) | [1.2.0](swagger-apis/person/1.2.0.yml) | [YAML](diffs/person/1.0.3_1.2.0-breaking-only.yml) | [YAML](diffs/person/1.0.3_1.2.0.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) |  |  |  |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) |  |  |  |
+| quotes | [1.0.1](swagger-apis/quotes/1.0.1.yml) |  |  |  |
 | referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) |  |  |  |
 | resources | [1.0.4](swagger-apis/resources/1.0.4.yml) |  |  |  |
@@ -71,6 +73,7 @@
 | business | [1.0.0](swagger-apis/business/1.0.0.yml) |  |  |
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [YAML](diffs/capitalization-title/1.0.0_1.0.2.yml) |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |
+| consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) |  |  |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) |  |  |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |
@@ -114,6 +117,7 @@
 |  | [1.0.3](swagger-apis/person/1.0.3.yml) | [1.2.0](swagger-apis/person/1.2.0.yml) | [YAML](diffs/person/1.0.3_1.2.0.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) |  |  |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) |  |  |
+| quotes | [1.0.1](swagger-apis/quotes/1.0.1.yml) |  |  |
 | referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) |  |  |
 | resources | [1.0.4](swagger-apis/resources/1.0.4.yml) |  |  |
