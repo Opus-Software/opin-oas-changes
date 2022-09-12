@@ -22,6 +22,7 @@
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |  |
+| embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |  |
 | engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) |  |  |  |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) |  |  |  |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) |  |  |  |
@@ -86,6 +87,7 @@
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |
+| embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |
 | engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) |  |  |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) |  |  |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) |  |  |
