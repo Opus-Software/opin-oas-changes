@@ -15,7 +15,7 @@
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |  |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) |  |  |  |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) |  |  |  |
-| customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |  |
+| customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.0](swagger-apis/customers/1.1.0.yml) | [YAML](diffs/customers/1.0.5_1.1.0-breaking-only.yml) | [YAML](diffs/customers/1.0.5_1.1.0.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |  |
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0-breaking-only.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0.yml) |
 | dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |  |
@@ -40,7 +40,7 @@
 | insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) |  |  |  |
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) |  |  |  |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) |  |  |  |
-| insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) |  |  |  |
+| insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0.yml) |
 | insurance-person | [1.0.0](swagger-apis/insurance-person/1.0.0.yml) |  |  |  |
 | insurance-petroleum | [1.0.0](swagger-apis/insurance-petroleum/1.0.0.yml) |  |  |  |
 | insurance-responsibility | [1.0.0](swagger-apis/insurance-responsibility/1.0.0.yml) |  |  |  |
@@ -78,7 +78,7 @@
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) |  |  |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) |  |  |
-| customers | [1.0.5](swagger-apis/customers/1.0.5.yml) |  |  |
+| customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.0](swagger-apis/customers/1.1.0.yml) | [YAML](diffs/customers/1.0.5_1.1.0.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [YAML](diffs/data-channels/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0.yml) |
@@ -104,7 +104,7 @@
 | insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) |  |  |
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) |  |  |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) |  |  |
-| insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) |  |  |
+| insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0.yml) |
 | insurance-person | [1.0.0](swagger-apis/insurance-person/1.0.0.yml) |  |  |
 | insurance-petroleum | [1.0.0](swagger-apis/insurance-petroleum/1.0.0.yml) |  |  |
 | insurance-responsibility | [1.0.0](swagger-apis/insurance-responsibility/1.0.0.yml) |  |  |
