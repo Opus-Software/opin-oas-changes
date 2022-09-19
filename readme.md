@@ -22,7 +22,6 @@
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |  |
-| embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |  |
 | engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) |  |  |  |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) |  |  |  |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) |  |  |  |
@@ -87,7 +86,6 @@
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) |  |  |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |
-| embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |
 | engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) |  |  |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) |  |  |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) |  |  |
@@ -147,6 +145,7 @@
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |  |
+| embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |  |
 | EmpresarialSwagger | [1.0.0](swagger-apis/EmpresarialSwagger/1.0.0.yml) |  |  |  |
 | EngenhariaSwagger | [1.0.0](swagger-apis/EngenhariaSwagger/1.0.0.yml) |  |  |  |
 | EnvironmentalSwagger | [1.0.0](swagger-apis/EnvironmentalSwagger/1.0.0.yml) |  |  |  |
@@ -184,6 +183,7 @@
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |
+| embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |
 | EmpresarialSwagger | [1.0.0](swagger-apis/EmpresarialSwagger/1.0.0.yml) |  |  |
 | EngenhariaSwagger | [1.0.0](swagger-apis/EngenhariaSwagger/1.0.0.yml) |  |  |
 | EnvironmentalSwagger | [1.0.0](swagger-apis/EnvironmentalSwagger/1.0.0.yml) |  |  |
