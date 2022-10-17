@@ -1,0 +1,115 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /business/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: productsServices
+                    - Items changed
+                      - Properties changed
+                        - Modified property: procurators
+                          - Items changed
+                            - Required changed
+                              - Deleted required property: civilName
+                              - Deleted required property: cpfNumber
+                        - Modified property: type
+                          - MaxLength changed from 24 to null
+GET /business/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: contact
+                    - Required changed
+                      - Deleted required property: phones
+                  - Modified property: document
+                    - Required changed
+                      - Deleted required property: country
+GET /business/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: informedPatrimony
+                    - Properties changed
+                      - Modified property: amount
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                  - Modified property: informedRevenue
+                    - Properties changed
+                      - Modified property: amount
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                      - Modified property: year
+                        - Format changed from 'date-year' to 'date-fullyear'
+GET /personal/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: productsServices
+                    - Items changed
+                      - Properties changed
+                        - Modified property: procurators
+                          - Items changed
+                            - Required changed
+                              - Deleted required property: civilName
+                              - Deleted required property: cpfNumber
+                        - Modified property: type
+                          - MaxLength changed from 24 to null
+GET /personal/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: filiation
+                    - Required changed
+                      - Deleted required property: civilName
+GET /personal/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: informedPatrimony
+                    - Properties changed
+                      - Modified property: amount
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                      - Modified property: year
+                        - Format changed from 'date-year' to 'date-fullyear'
+                  - Modified property: informedRevenue
+                    - Properties changed
+                      - Modified property: amount
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'

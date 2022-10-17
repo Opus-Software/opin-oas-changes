@@ -14,8 +14,8 @@
 | capitalization-title | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) |  |  |  |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |  |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) |  |  |  |
-| consents | [1.0.4](swagger-apis/consents/1.0.4.yml) |  |  |  |
-| customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.0](swagger-apis/customers/1.1.0.yml) | [YAML](diffs/customers/1.0.5_1.1.0-breaking-only.yml) | [YAML](diffs/customers/1.0.5_1.1.0.yml) |
+| consents | [1.0.5](swagger-apis/consents/1.0.5.yml) |  |  |  |
+| customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.1](swagger-apis/customers/1.1.1.yml) | [YAML](diffs/customers/1.0.5_1.1.1-breaking-only.yml) | [YAML](diffs/customers/1.0.5_1.1.1.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |  |
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0-breaking-only.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0.yml) |
 | dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) |  |  |  |
@@ -41,7 +41,7 @@
 | insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) |  |  |  |
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) |  |  |  |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) |  |  |  |
-| insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0.yml) |
+| insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.1-breaking-only.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.1.yml) |
 | insurance-person | [1.0.0](swagger-apis/insurance-person/1.0.0.yml) |  |  |  |
 | insurance-petroleum | [1.0.0](swagger-apis/insurance-petroleum/1.0.0.yml) |  |  |  |
 | insurance-responsibility | [1.0.0](swagger-apis/insurance-responsibility/1.0.0.yml) |  |  |  |
@@ -59,7 +59,7 @@
 | quotes | [1.0.1](swagger-apis/quotes/1.0.1.yml) |  |  |  |
 | referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) |  |  |  |
-| resources | [1.0.4](swagger-apis/resources/1.0.4.yml) |  |  |  |
+| resources | [1.0.4](swagger-apis/resources/1.0.4.yml) | [1.1.0](swagger-apis/resources/1.1.0.yml) | [YAML](diffs/resources/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/resources/1.0.4_1.1.0.yml) |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) |  |  |  |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) |  |  |  |
 | transport | [1.0.0](swagger-apis/transport/1.0.0.yml) |  |  |  |
@@ -78,8 +78,9 @@
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [YAML](diffs/capitalization-title/1.0.0_1.0.2.yml) |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) |  |  |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) |  |  |
-| consents | [1.0.4](swagger-apis/consents/1.0.4.yml) |  |  |
+| consents | [1.0.4](swagger-apis/consents/1.0.4.yml) | [1.0.5](swagger-apis/consents/1.0.5.yml) | [YAML](diffs/consents/1.0.4_1.0.5.yml) |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.0](swagger-apis/customers/1.1.0.yml) | [YAML](diffs/customers/1.0.5_1.1.0.yml) |
+|  | [1.1.0](swagger-apis/customers/1.1.0.yml) | [1.1.1](swagger-apis/customers/1.1.1.yml) | [YAML](diffs/customers/1.1.0_1.1.1.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) |  |  |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [YAML](diffs/data-channels/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0.yml) |
@@ -107,6 +108,7 @@
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) |  |  |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) |  |  |
 | insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0.yml) |
+|  | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [YAML](diffs/insurance-patrimonial/1.1.0_1.1.1.yml) |
 | insurance-person | [1.0.0](swagger-apis/insurance-person/1.0.0.yml) |  |  |
 | insurance-petroleum | [1.0.0](swagger-apis/insurance-petroleum/1.0.0.yml) |  |  |
 | insurance-responsibility | [1.0.0](swagger-apis/insurance-responsibility/1.0.0.yml) |  |  |
@@ -128,7 +130,7 @@
 | quotes | [1.0.1](swagger-apis/quotes/1.0.1.yml) |  |  |
 | referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) |  |  |
-| resources | [1.0.4](swagger-apis/resources/1.0.4.yml) |  |  |
+| resources | [1.0.4](swagger-apis/resources/1.0.4.yml) | [1.1.0](swagger-apis/resources/1.1.0.yml) | [YAML](diffs/resources/1.0.4_1.1.0.yml) |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) |  |  |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) |  |  |
 | transport | [1.0.0](swagger-apis/transport/1.0.0.yml) |  |  |

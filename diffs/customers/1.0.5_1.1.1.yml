@@ -1,0 +1,156 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /business/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: productsServices
+                    - Items changed
+                      - Properties changed
+                        - Modified property: procurators
+                          - Items changed
+                            - Required changed
+                              - Deleted required property: civilName
+                              - Deleted required property: cpfNumber
+                            - Properties changed
+                              - Modified property: civilName
+                                - Description changed from 'Nome civil completo da pessoa natural. (Direito fundamental da pessoa, o nome civil é aquele atribuído à pessoa natural desde o registro de seu nascimento, com o qual será identificada por toda a sua vida, bem como após a sua morte)' to '(Caso Natureza dos poderes vigentes de representante for “Representante legal” ou “Procurador”) Nome ou razão social do representante'
+                              - Modified property: cpfNumber
+                                - Description changed from 'Número completo do CPF. O CPF é o Cadastro de Pessoa natural. Ele é um documento feito pela Receita Federal e serve para identificar os contribuintes. O CPF é uma numeração com 11 dígitos, que só mudam por decisão judicial. O documento é emitido pela receita federal' to '(Caso Natureza dos poderes vigentes de representantefor “Representante legal” ou “Procurador”) CPF ou CNPJ do representante'
+                              - Modified property: socialName
+                                - Description changed from 'Nome social da pessoa natural, se houver. 
+(aquele pelo qual travestis e transexuais se reconhecem, 
+bem como são identificados por sua comunidade e em seu meio social, conforme Decreto Local).  
+' to '(Caso Natureza dos poderes vigentes de representante for “Representante legal” ou “Procurador”) Nome social do representante'
+                        - Modified property: type
+                          - MaxLength changed from 24 to null
+GET /business/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: contact
+                    - Required changed
+                      - Deleted required property: phones
+                  - Modified property: document
+                    - Required changed
+                      - Deleted required property: country
+GET /business/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: informedPatrimony
+                    - Properties changed
+                      - New property: date
+                      - Deleted property: year
+                      - Modified property: amount
+                        - Description changed from 'Valor da renda
+' to 'Valor do patrimônio
+'
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                  - Modified property: informedRevenue
+                    - Properties changed
+                      - Modified property: amount
+                        - Description changed from 'Valor da renda
+' to 'Valor do faturamento
+'
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                      - Modified property: currency
+                        - Description changed from 'Moeda referente ao valor do patrimônio, segundo modelo ISO-4217.' to 'Moeda referente ao valor do faturamento, segundo modelo ISO-4217.'
+                      - Modified property: year
+                        - Format changed from 'date-year' to 'date-fullyear'
+                        - Description changed from 'Data de referência da renda, conforme especificação RFC-3339.' to 'Ano de referência do faturamento, conforme especificação RFC-3339.'
+                        - MaxLength changed from 20 to 4
+GET /personal/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: productsServices
+                    - Items changed
+                      - Properties changed
+                        - Modified property: procurators
+                          - Items changed
+                            - Required changed
+                              - Deleted required property: civilName
+                              - Deleted required property: cpfNumber
+                            - Properties changed
+                              - Modified property: civilName
+                                - Description changed from 'Nome civil completo da pessoa natural. (Direito fundamental da pessoa, o nome civil é aquele atribuído à pessoa natural desde o registro de seu nascimento, com o qual será identificada por toda a sua vida, bem como após a sua morte)' to '(Caso Natureza dos poderes vigentes de representante for “Representante legal” ou “Procurador”) Nome ou razão social do representante'
+                              - Modified property: cpfNumber
+                                - Description changed from 'Número completo do CPF. O CPF é o Cadastro de Pessoa natural. Ele é um documento feito pela Receita Federal e serve para identificar os contribuintes. O CPF é uma numeração com 11 dígitos, que só mudam por decisão judicial. O documento é emitido pela receita federal' to '(Caso Natureza dos poderes vigentes de representantefor “Representante legal” ou “Procurador”) CPF ou CNPJ do representante'
+                              - Modified property: socialName
+                                - Description changed from 'Nome social da pessoa natural, se houver. 
+(aquele pelo qual travestis e transexuais se reconhecem, 
+bem como são identificados por sua comunidade e em seu meio social, conforme Decreto Local).  
+' to '(Caso Natureza dos poderes vigentes de representante for “Representante legal” ou “Procurador”) Nome social do representante'
+                        - Modified property: type
+                          - MaxLength changed from 24 to null
+GET /personal/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: filiation
+                    - Required changed
+                      - Deleted required property: civilName
+GET /personal/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: informedPatrimony
+                    - Properties changed
+                      - Modified property: amount
+                        - Description changed from 'Valor da renda
+' to 'Valor do patrimônio
+'
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                      - Modified property: year
+                        - Format changed from 'date-year' to 'date-fullyear'
+                        - Description changed from 'Data de referência da renda, conforme especificação RFC-3339.' to 'Ano de referência do patrimônio, conforme especificação RFC-3339.'
+                        - MaxLength changed from 20 to 4
+                  - Modified property: informedRevenue
+                    - Properties changed
+                      - New property: date
+                      - Deleted property: year
+                      - Modified property: amount
+                        - Pattern changed from '^-?\d{1,15}\.\d{2,4}$' to '^-?\d{1,15}(\.\d{1,4})?$'
+                      - Modified property: currency
+                        - Description changed from 'Moeda referente ao valor do patrimônio, segundo modelo ISO-4217.' to 'Moeda referente ao valor da renda, segundo modelo ISO-4217.'

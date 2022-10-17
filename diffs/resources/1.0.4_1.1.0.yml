@@ -1,0 +1,64 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: type
+                    - Description changed from 'Tipo de recurso (vide Enum):
+- CUSTOMERS_PERSONAL_IDENTIFICATIONS: Informações de identificação PF
+- CUSTOMERS_PERSONAL_QUALIFICATION: Informações de qualificação PF                    
+- CUSTOMERS_PERSONAL_ADITTIONALINFO: Informações complementares PF
+- CUSTOMERS_BUSINESS_IDENTIFICATIONS: Informações de identificação PJ
+- CUSTOMERS_BUSINESS_QUALIFICATION: Informações de qualificação PJ
+- CUSTOMERS_BUSINESS_ADITTIONALINFO: Informações complementares PJ
+- CAPITALIZATION_TITLES: Produtos de Titulos de Capitalização
+- PENSION_RISK: Produtos de Previdência Risco                    
+- DAMAGES_AND_PEOPLE_PATRIMONIAL: Produtos de Patrimonial
+- DAMAGES_AND_PEOPLE_AERONAUTICAL: Produtos de Aeronáuticos
+- DAMAGES_AND_PEOPLE_NAUTICAL: Produtos de Marítimo
+- DAMAGES_AND_PEOPLE_NUCLEAR: Produtos de Nuclear
+- DAMAGES_AND_PEOPLE_OIL: Produtos de Petróleo
+- DAMAGES_AND_PEOPLE_RESPONSABILITY: Produtos de Responsabilidade
+- DAMAGES_AND_PEOPLE_TRANSPORT: Produtos de Transportes
+- DAMAGES_AND_PEOPLE_FINANCIAL_RISKS: Produtos de Riscos Financeiros
+- DAMAGES_AND_PEOPLE_RURAL: Produtos de Rural
+- DAMAGES_AND_PEOPLE_AUTO: Produtos de Automóveis
+- DAMAGES_AND_PEOPLE_HOUSING: Produtos de Habitacional
+- DAMAGES_AND_PEOPLE_PEOPLE: Produtos de Pessoas (Repartição simples)
+- DAMAGES_AND_PEOPLE_ACCEPTANCE_AND_BRANCHES_ABROAD: Aceitação e Sucursal no exterior
+' to 'Tipo de recurso (vide Enum):
+- CUSTOMERS_PERSONAL_IDENTIFICATIONS: Informações de identificação PF
+- CUSTOMERS_PERSONAL_QUALIFICATION: Informações de qualificação PF                    
+- CUSTOMERS_PERSONAL_ADITTIONALINFO: Informações complementares PF
+- CUSTOMERS_BUSINESS_IDENTIFICATIONS: Informações de identificação PJ
+- CUSTOMERS_BUSINESS_QUALIFICATION: Informações de qualificação PJ
+- CUSTOMERS_BUSINESS_ADITTIONALINFO: Informações complementares PJ
+- CAPITALIZATION_TITLES: Produtos de Titulos de Capitalização
+- PENSION_RISK: Produtos de Previdência Risco                    
+- DAMAGES_AND_PEOPLE_PATRIMONIAL: Produtos de Patrimonial
+- DAMAGES_AND_PEOPLE_AERONAUTICAL: Produtos de Aeronáuticos
+- DAMAGES_AND_PEOPLE_NAUTICAL: Produtos de Marítimo
+- DAMAGES_AND_PEOPLE_NUCLEAR: Produtos de Nuclear
+- DAMAGES_AND_PEOPLE_OIL: Produtos de Petróleo
+- DAMAGES_AND_PEOPLE_RESPONSIBILITY: Produtos de Responsabilidade
+- DAMAGES_AND_PEOPLE_TRANSPORT: Produtos de Transportes
+- DAMAGES_AND_PEOPLE_FINANCIAL_RISKS: Produtos de Riscos Financeiros
+- DAMAGES_AND_PEOPLE_RURAL: Produtos de Rural
+- DAMAGES_AND_PEOPLE_AUTO: Produtos de Automóveis
+- DAMAGES_AND_PEOPLE_HOUSING: Produtos de Habitacional
+- DAMAGES_AND_PEOPLE_PEOPLE: Produtos de Pessoas (Repartição simples)
+- DAMAGES_AND_PEOPLE_ACCEPTANCE_AND_BRANCHES_ABROAD: Aceitação e Sucursal no exterior
+'
+                    - New enum values: [DAMAGES_AND_PEOPLE_RESPONSIBILITY]
+                    - Deleted enum values: [DAMAGES_AND_PEOPLE_RESPONSABILITY]
