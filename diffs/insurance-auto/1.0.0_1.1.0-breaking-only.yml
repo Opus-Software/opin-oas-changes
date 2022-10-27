@@ -1,0 +1,133 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+GET /{policyId}/claim
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: amount
+                    - Properties changed
+                      - Modified property: amount
+                        - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+GET /{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: beneficiaries
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: address
+                      - Deleted required property: city
+                      - Deleted required property: country
+                      - Deleted required property: postCode
+                      - Deleted required property: state
+                    - Properties changed
+                      - Deleted property: address
+                      - Deleted property: city
+                      - Deleted property: country
+                      - Deleted property: postCode
+                      - Deleted property: state
+                - Modified property: bonusDiscountRate
+                  - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                - Modified property: coinsuranceRetainedPercentage
+                  - Pattern changed from '^\d{1,3}\.\d{1,9}$' to '^\d{1,3}(\.\d{1,9})?$'
+                - Modified property: coinsurers
+                  - Items changed
+                    - Properties changed
+                      - Modified property: cededPercentage
+                        - Pattern changed from '^\d{1,3}\.\d{1,9}$' to '^\d{1,3}(\.\d{1,9})?$'
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: POS
+                        - Properties changed
+                          - Modified property: maxValue
+                            - Properties changed
+                              - Modified property: amount
+                                - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                          - Modified property: minValue
+                            - Properties changed
+                              - Modified property: amount
+                                - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                          - Modified property: percentage
+                            - Pattern changed from '^\d{1,3}\.\d{1,9}$' to '^\d{1,3}(\.\d{1,9})?$'
+                      - Modified property: deductible
+                        - Properties changed
+                          - Modified property: amount
+                            - Properties changed
+                              - Modified property: amount
+                                - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                - Modified property: insuredObjects
+                  - Items changed
+                    - Properties changed
+                      - Modified property: coverages
+                        - Items changed
+                          - Properties changed
+                            - Modified property: LMI
+                              - Properties changed
+                                - Modified property: amount
+                                  - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                            - Modified property: adjustmentRate
+                              - Pattern changed from '^\d{1,3}\.\d{1,9}$' to '^\d{1,3}(\.\d{1,9})?$'
+                            - Modified property: partialCompensationPercentage
+                              - Pattern changed from '^\d{1,3}\.\d{1,9}$' to '^\d{1,3}(\.\d{1,9})?$'
+                            - Modified property: percentageOverLMI
+                              - Pattern changed from '^\d{1,3}\.\d{1,9}$' to '^\d{1,3}(\.\d{1,9})?$'
+                            - Modified property: premiumAmount
+                              - Properties changed
+                                - Modified property: amount
+                                  - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                      - Modified property: type
+                        - Deleted enum values: [CONTRATO PROCESSO_ADMINISTRATIVO PROCESSO_JUDICIAL OUTROS]
+                - Modified property: intermediaries
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: identification
+                      - Deleted required property: identificationType
+                - Modified property: maxLMG
+                  - Properties changed
+                    - Modified property: amount
+                      - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+GET /{policyId}/premium
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: amount
+                  - Properties changed
+                    - Modified property: amount
+                      - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: premiumAmount
+                        - Properties changed
+                          - Modified property: amount
+                            - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                - Modified property: payments
+                  - Items changed
+                    - Properties changed
+                      - Modified property: amount
+                        - Properties changed
+                          - Modified property: amount
+                            - Pattern changed from '^\d{1,16}\.\d{2}$' to '^\d{1,16}(\.\d{1,2})?$'
+                      - Modified property: movementType
+                        - Deleted enum values: [LIQUIDACAO_DE_CUSTO_DE_AQUISICAO LIQUIDACAO_DE_RESTITUICAO_DE_CUSTO_DE_AQUISICAO ESTORNO_DE_CUSTO_DE_AQUISICAO]
