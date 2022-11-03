@@ -23,7 +23,7 @@
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |  |
 | embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |  |
-| engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) |  |  |  |
+| engineering | [1.0.1](swagger-apis/engineering/1.0.1.yml) |  |  |  |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) |  |  |  |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) |  |  |  |
 | errors-omissions-liability | [1.0.0](swagger-apis/errors-omissions-liability/1.0.0.yml) |  |  |  |
@@ -31,7 +31,7 @@
 | extended-warranty | [1.0.0](swagger-apis/extended-warranty/1.0.0.yml) |  |  |  |
 | financial-risk | [1.0.0](swagger-apis/financial-risk/1.0.0.yml) |  |  |  |
 | general-liability | [1.0.0](swagger-apis/general-liability/1.0.0.yml) |  |  |  |
-| global-banking | [1.0.0](swagger-apis/global-banking/1.0.0.yml) |  |  |  |
+| global-banking | [1.0.1](swagger-apis/global-banking/1.0.1.yml) |  |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) |  |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
@@ -42,6 +42,7 @@
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nautical/1.1.0.yml) | [YAML](diffs/insurance-nautical/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-nautical/1.0.0_1.1.0.yml) |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nuclear/1.1.0.yml) | [YAML](diffs/insurance-nuclear/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-nuclear/1.0.0_1.1.0.yml) |
 | insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.1-breaking-only.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.1.yml) |
+|  | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [1.2.0](swagger-apis/insurance-patrimonial/1.2.0.yml) | [YAML](diffs/insurance-patrimonial/1.1.1_1.2.0-breaking-only.yml) | [YAML](diffs/insurance-patrimonial/1.1.1_1.2.0.yml) |
 | insurance-person | [1.0.0](swagger-apis/insurance-person/1.0.0.yml) |  |  |  |
 | insurance-petroleum | [1.0.0](swagger-apis/insurance-petroleum/1.0.0.yml) | [1.1.0](swagger-apis/insurance-petroleum/1.1.0.yml) | [YAML](diffs/insurance-petroleum/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-petroleum/1.0.0_1.1.0.yml) |
 | insurance-responsibility | [1.0.0](swagger-apis/insurance-responsibility/1.0.0.yml) | [1.1.0](swagger-apis/insurance-responsibility/1.1.0.yml) | [YAML](diffs/insurance-responsibility/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-responsibility/1.0.0_1.1.0.yml) |
@@ -89,7 +90,7 @@
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) |  |  |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) |  |  |
 | embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) |  |  |
-| engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) |  |  |
+| engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) | [1.0.1](swagger-apis/engineering/1.0.1.yml) | [YAML](diffs/engineering/1.0.0_1.0.1.yml) |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) |  |  |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) |  |  |
 | errors-omissions-liability | [1.0.0](swagger-apis/errors-omissions-liability/1.0.0.yml) |  |  |
@@ -97,7 +98,7 @@
 | extended-warranty | [1.0.0](swagger-apis/extended-warranty/1.0.0.yml) |  |  |
 | financial-risk | [1.0.0](swagger-apis/financial-risk/1.0.0.yml) |  |  |
 | general-liability | [1.0.0](swagger-apis/general-liability/1.0.0.yml) |  |  |
-| global-banking | [1.0.0](swagger-apis/global-banking/1.0.0.yml) |  |  |
+| global-banking | [1.0.0](swagger-apis/global-banking/1.0.0.yml) | [1.0.1](swagger-apis/global-banking/1.0.1.yml) | [YAML](diffs/global-banking/1.0.0_1.0.1.yml) |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
@@ -109,6 +110,7 @@
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nuclear/1.1.0.yml) | [YAML](diffs/insurance-nuclear/1.0.0_1.1.0.yml) |
 | insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [YAML](diffs/insurance-patrimonial/1.1.0_1.1.1.yml) |
+|  | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [1.2.0](swagger-apis/insurance-patrimonial/1.2.0.yml) | [YAML](diffs/insurance-patrimonial/1.1.1_1.2.0.yml) |
 | insurance-person | [1.0.0](swagger-apis/insurance-person/1.0.0.yml) |  |  |
 | insurance-petroleum | [1.0.0](swagger-apis/insurance-petroleum/1.0.0.yml) | [1.1.0](swagger-apis/insurance-petroleum/1.1.0.yml) | [YAML](diffs/insurance-petroleum/1.0.0_1.1.0.yml) |
 | insurance-responsibility | [1.0.0](swagger-apis/insurance-responsibility/1.0.0.yml) | [1.1.0](swagger-apis/insurance-responsibility/1.1.0.yml) | [YAML](diffs/insurance-responsibility/1.0.0_1.1.0.yml) |
