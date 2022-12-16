@@ -38,7 +38,7 @@
 | insurance-auto | [1.0.0](swagger-apis/insurance-auto/1.0.0.yml) | [1.1.0](swagger-apis/insurance-auto/1.1.0.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0.yml) |
 | insurance-aviation | [1.0.0](swagger-apis/insurance-aviation/1.0.0.yml) | [1.1.0](swagger-apis/insurance-aviation/1.1.0.yml) | [YAML](diffs/insurance-aviation/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-aviation/1.0.0_1.1.0.yml) |
 | insurance-financial-risk | [1.0.0](swagger-apis/insurance-financial-risk/1.0.0.yml) | [1.1.0](swagger-apis/insurance-financial-risk/1.1.0.yml) | [YAML](diffs/insurance-financial-risk/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-financial-risk/1.0.0_1.1.0.yml) |
-| insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) |  |  |  |
+| insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) | [1.1.0](swagger-apis/insurance-housing/1.1.0.yml) | [YAML](diffs/insurance-housing/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-housing/1.0.0_1.1.0.yml) |
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nautical/1.1.0.yml) | [YAML](diffs/insurance-nautical/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-nautical/1.0.0_1.1.0.yml) |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nuclear/1.1.0.yml) | [YAML](diffs/insurance-nuclear/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-nuclear/1.0.0_1.1.0.yml) |
 | insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.1](swagger-apis/insurance-patrimonial/1.1.1.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.1-breaking-only.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.1.yml) |
@@ -105,7 +105,7 @@
 | insurance-auto | [1.0.0](swagger-apis/insurance-auto/1.0.0.yml) | [1.1.0](swagger-apis/insurance-auto/1.1.0.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0.yml) |
 | insurance-aviation | [1.0.0](swagger-apis/insurance-aviation/1.0.0.yml) | [1.1.0](swagger-apis/insurance-aviation/1.1.0.yml) | [YAML](diffs/insurance-aviation/1.0.0_1.1.0.yml) |
 | insurance-financial-risk | [1.0.0](swagger-apis/insurance-financial-risk/1.0.0.yml) | [1.1.0](swagger-apis/insurance-financial-risk/1.1.0.yml) | [YAML](diffs/insurance-financial-risk/1.0.0_1.1.0.yml) |
-| insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) |  |  |
+| insurance-housing | [1.0.0](swagger-apis/insurance-housing/1.0.0.yml) | [1.1.0](swagger-apis/insurance-housing/1.1.0.yml) | [YAML](diffs/insurance-housing/1.0.0_1.1.0.yml) |
 | insurance-nautical | [1.0.0](swagger-apis/insurance-nautical/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nautical/1.1.0.yml) | [YAML](diffs/insurance-nautical/1.0.0_1.1.0.yml) |
 | insurance-nuclear | [1.0.0](swagger-apis/insurance-nuclear/1.0.0.yml) | [1.1.0](swagger-apis/insurance-nuclear/1.1.0.yml) | [YAML](diffs/insurance-nuclear/1.0.0_1.1.0.yml) |
 | insurance-patrimonial | [1.0.0](swagger-apis/insurance-patrimonial/1.0.0.yml) | [1.1.0](swagger-apis/insurance-patrimonial/1.1.0.yml) | [YAML](diffs/insurance-patrimonial/1.0.0_1.1.0.yml) |

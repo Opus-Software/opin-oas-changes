@@ -1,0 +1,10 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: 4
+------------------------
+GET /  
+GET /{policyId}/claim  
+GET /{policyId}/policy-info  
+GET /{policyId}/premium  
+### Modified Endpoints: None
+----------------------------

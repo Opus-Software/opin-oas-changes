@@ -1,0 +1,17 @@
+﻿### New Endpoints: 4
+--------------------
+GET /insurance-housing  
+GET /insurance-housing/{policyId}/claim  
+GET /insurance-housing/{policyId}/policy-info  
+GET /insurance-housing/{policyId}/premium  
+### Deleted Endpoints: 4
+------------------------
+GET /  
+GET /{policyId}/claim  
+GET /{policyId}/policy-info  
+GET /{policyId}/premium  
+### Modified Endpoints: None
+----------------------------
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-housing/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
