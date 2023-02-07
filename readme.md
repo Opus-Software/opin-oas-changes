@@ -34,6 +34,7 @@
 | global-banking | [1.0.1](swagger-apis/global-banking/1.0.1.yml) |  |  |  |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) |  |  |  |
+| ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
 | insurance-auto | [1.0.0](swagger-apis/insurance-auto/1.0.0.yml) | [1.1.0](swagger-apis/insurance-auto/1.1.0.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0.yml) |
 | insurance-aviation | [1.0.0](swagger-apis/insurance-aviation/1.0.0.yml) | [1.1.0](swagger-apis/insurance-aviation/1.1.0.yml) | [YAML](diffs/insurance-aviation/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-aviation/1.0.0_1.1.0.yml) |
@@ -101,6 +102,7 @@
 | global-banking | [1.0.0](swagger-apis/global-banking/1.0.0.yml) | [1.0.1](swagger-apis/global-banking/1.0.1.yml) | [YAML](diffs/global-banking/1.0.0_1.0.1.yml) |
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) |  |  |
+| ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
 | insurance-auto | [1.0.0](swagger-apis/insurance-auto/1.0.0.yml) | [1.1.0](swagger-apis/insurance-auto/1.1.0.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0.yml) |
 | insurance-aviation | [1.0.0](swagger-apis/insurance-aviation/1.0.0.yml) | [1.1.0](swagger-apis/insurance-aviation/1.1.0.yml) | [YAML](diffs/insurance-aviation/1.0.0_1.1.0.yml) |
