@@ -1,0 +1,267 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /referenced-network/{countrySubDivision}/{serviceType}
+- Responses changed
+  - New response: 422
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: identification
+                            - Items changed
+                              - Properties changed
+                                - Modified property: access
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: phones
+                                        - Items changed
+                                          - Properties changed
+                                            - Modified property: areaCode
+                                              - Example changed from 11 to '11'
+                                            - Modified property: countryCallingCode
+                                              - Example changed from 55 to '55'
+                                            - Modified property: number
+                                              - Example changed from 3.0041e+07 to '30041000'
+                                      - Modified property: standards
+                                        - Items changed
+                                          - Properties changed
+                                            - Modified property: weekday
+                                              - MaxLength changed from 13 to null
+                                - Modified property: cnpjNumber
+                                  - Example changed from 1.2341234123412e+13 to '12341234123412'
+                                - Modified property: postalAddress
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: address
+                                        - MaxLength changed from 150 to 200
+                                      - Modified property: country
+                                        - MaxLength changed from 46 to null
+                                      - Modified property: countrySubDivision
+                                        - MaxLength changed from 2 to null
+                                      - Modified property: geographicCoordinates
+                                        - Properties changed
+                                          - Modified property: latitude
+                                            - Example changed from -89.836518 to '-89.8365180'
+                                            - MaxLength changed from 11 to null
+                                            - Pattern changed from '' to '^-?\d{1,3}\.\d{1,10}$'
+                                          - Modified property: longitude
+                                            - Example changed from -179.836519 to '-179.836519'
+                                            - MaxLength changed from 11 to null
+                                            - Pattern changed from '' to '^-?\d{1,3}\.\d{1,10}$'
+                                      - Modified property: postCode
+                                        - Example changed from 1.3102e+06 to '1310200'
+                                - Modified property: products
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverage
+                                        - Items changed
+                                          - MaxLength changed from 150 to 200
+                                - Modified property: services
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: name
+                                        - Items changed
+                                          - New enum values: [VIDROS_E_ACESSORIOS]
+                                          - MaxLength changed from 57 to null
+                                      - Modified property: type
+                                        - MaxLength changed from 27 to null
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+  - Modified response: 204
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: identification
+                            - Items changed
+                              - Properties changed
+                                - Modified property: access
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: phones
+                                        - Items changed
+                                          - Properties changed
+                                            - Modified property: areaCode
+                                              - Example changed from 11 to '11'
+                                            - Modified property: countryCallingCode
+                                              - Example changed from 55 to '55'
+                                            - Modified property: number
+                                              - Example changed from 3.0041e+07 to '30041000'
+                                      - Modified property: standards
+                                        - Items changed
+                                          - Properties changed
+                                            - Modified property: weekday
+                                              - MaxLength changed from 13 to null
+                                - Modified property: cnpjNumber
+                                  - Example changed from 1.2341234123412e+13 to '12341234123412'
+                                - Modified property: postalAddress
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: address
+                                        - MaxLength changed from 150 to 200
+                                      - Modified property: country
+                                        - MaxLength changed from 46 to null
+                                      - Modified property: countrySubDivision
+                                        - MaxLength changed from 2 to null
+                                      - Modified property: geographicCoordinates
+                                        - Properties changed
+                                          - Modified property: latitude
+                                            - Example changed from -89.836518 to '-89.8365180'
+                                            - MaxLength changed from 11 to null
+                                            - Pattern changed from '' to '^-?\d{1,3}\.\d{1,10}$'
+                                          - Modified property: longitude
+                                            - Example changed from -179.836519 to '-179.836519'
+                                            - MaxLength changed from 11 to null
+                                            - Pattern changed from '' to '^-?\d{1,3}\.\d{1,10}$'
+                                      - Modified property: postCode
+                                        - Example changed from 1.3102e+06 to '1310200'
+                                - Modified property: products
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverage
+                                        - Items changed
+                                          - MaxLength changed from 150 to 200
+                                - Modified property: services
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: name
+                                        - Items changed
+                                          - New enum values: [VIDROS_E_ACESSORIOS]
+                                          - MaxLength changed from 57 to null
+                                      - Modified property: type
+                                        - MaxLength changed from 27 to null
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/channels/v1' to 'https://api.organizacao.com.br/open-insurance/channels/v1/referenced-network'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/channels\/v\d+)(\/referenced-network.*)?$'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/channels/v1
+  - Description changed from 'Servidor de Homologacao' to 'Servidor de Producao'

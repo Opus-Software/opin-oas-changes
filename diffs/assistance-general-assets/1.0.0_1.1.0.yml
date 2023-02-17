@@ -1,0 +1,11 @@
+﻿### New Endpoints: 1
+--------------------
+GET /assistance-general-assets  
+### Deleted Endpoints: 1
+------------------------
+GET /assistance-general-assets/  
+### Modified Endpoints: None
+----------------------------
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologacao' to 'Servidor de Producao'

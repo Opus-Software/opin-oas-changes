@@ -1,0 +1,42 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /home-insurance/commercializationArea/{commercializationArea}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: last
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: next
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: self
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: last
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: next
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'
+                - Modified property: self
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/home-insurance.*)?$'

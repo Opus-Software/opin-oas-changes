@@ -1,0 +1,1 @@
+﻿failed to load base spec from "/data/1.2.0.yml" with bad data in "#/components/schemas/ResponseBranchesList" (expecting ref to response object)

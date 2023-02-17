@@ -1,0 +1,102 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-housing
+- Responses changed
+  - Deleted response: 402
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+GET /insurance-housing/{policyId}/claim
+- Responses changed
+  - Deleted response: 402
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+GET /insurance-housing/{policyId}/policy-info
+- Responses changed
+  - Deleted response: 402
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: branchInfo
+                  - Properties changed
+                    - Modified property: insuredObjects
+                      - Items changed
+                        - Properties changed
+                          - Modified property: lenders
+                            - Items changed
+                              - Type changed from 'string' to 'object'
+                              - MaxLength changed from 14 to null
+                - Modified property: intermediaries
+                  - Items changed
+                    - Properties changed
+                      - Modified property: type
+                        - Deleted enum values: [ESTIPULANTE]
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+GET /insurance-housing/{policyId}/premium
+- Responses changed
+  - Deleted response: 402
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^https?:\/\/(www\.)?(api\.)?.+?(\.com)(\.br)?\/open-insurance\/[a-zA-Z0-9]+\/v\d{1,3}(\/[a-zA-Z0-9]+)?$\Z' to '^(https:\/\/)(.*?)(\/open-insurance\/insurance-housing\/v\d+)(\/insurance-housing.*)?$'

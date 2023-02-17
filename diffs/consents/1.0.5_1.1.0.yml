@@ -1,0 +1,12 @@
+﻿### New Endpoints: 3
+--------------------
+POST /consents  
+DELETE /consents/{consentId}  
+GET /consents/{consentId}  
+### Deleted Endpoints: 3
+------------------------
+POST /  
+DELETE /{consentId}  
+GET /{consentId}  
+### Modified Endpoints: None
+----------------------------

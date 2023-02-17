@@ -1,0 +1,44 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /metrics
+- Responses changed
+  - New response: 204
+  - New response: 400
+  - New response: 401
+  - New response: 403
+  - New response: 404
+  - New response: 405
+  - New response: 406
+  - New response: 422
+  - New response: 429
+  - New response: 500
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: requestTime
+                  - Example changed from '2022-04-18T19:24:40.842Z ou 2022-04-18T19:24:40+00:20 ou 2022-04-01T12:00:27-08:00 ou 2022-04-01T12:00:27Z' to '2022-04-18T19:24:40.842Z'
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/admin/v1/<resource>' to 'https://api.organizacao.com.br/open-insurance/admin/v1/metrics'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/admin\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/admin/v1/<resource>' to 'https://api.organizacao.com.br/open-insurance/admin/v1/metrics'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/admin\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Example changed from null to 'https://api.organizacao.com.br/open-insurance/admin/v1/metrics'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/admin\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Example changed from null to 'https://api.organizacao.com.br/open-insurance/admin/v1/metrics'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/admin\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/admin/v1/<resource>' to 'https://api.organizacao.com.br/open-insurance/admin/v1/metrics'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/admin\/v\d+)(\/.*)?$'

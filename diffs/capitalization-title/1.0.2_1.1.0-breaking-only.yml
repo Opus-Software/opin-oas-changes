@@ -1,0 +1,48 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /capitalization-title
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Required changed
+            - Deleted required property: brand
+          - Properties changed
+            - Deleted property: brand
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: last
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: next
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: self
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Required changed
+            - Deleted required property: brand
+          - Properties changed
+            - Deleted property: brand
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: last
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: next
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: self
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'

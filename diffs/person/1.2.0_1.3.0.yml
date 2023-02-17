@@ -1,0 +1,11 @@
+﻿### New Endpoints: 1
+--------------------
+GET /person  
+### Deleted Endpoints: 1
+------------------------
+GET /person/  
+### Modified Endpoints: None
+----------------------------
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

@@ -1,0 +1,65 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /capitalization-title
+- Responses changed
+  - New response: 204
+  - New response: 422
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Required changed
+            - Deleted required property: brand
+          - Properties changed
+            - New property: data
+            - Deleted property: brand
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/products-services/v1' to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/products-services/v1' to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: next
+                  - Example changed from null to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: prev
+                  - Example changed from null to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/products-services/v1' to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Required changed
+            - Deleted required property: brand
+          - Properties changed
+            - New property: data
+            - Deleted property: brand
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/products-services/v1' to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/products-services/v1' to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: next
+                  - Example changed from null to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: prev
+                  - Example changed from null to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/products-services/v1' to 'https://api.organizacao.com.br/open-insurance/products-services/v1/capitalization-title'
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/products-services\/v\d+)(\/capitalization-title.*)?$'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

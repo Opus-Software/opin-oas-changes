@@ -1,0 +1,49 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 7
+-------------------------
+DELETE /register
+- Description changed from '' to 'Exclusão do registro da aplicação cliente. Uma das implementações possíveis, como descritas no Apêndice B da RFC 7592'
+GET /register
+- Description changed from '' to 'Consulta de dados do registro da aplicação cliente. Uma das implementações possíveis, como descritas no Apêndice B da RFC 7592'
+POST /register
+- Description changed from '' to 'Registro da aplicação cliente.'
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: grant_types
+            - Example changed from null to [client_credentials authorization_code refresh_token]
+            - Items changed
+              - Example changed from [client_credentials authorization_code refresh_token] to null
+PUT /register
+- Description changed from '' to 'Alteração de dados do registro da aplicação cliente. Uma das implementações possíveis, como descritas no Apêndice B da RFC 7592'
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: grant_types
+            - Example changed from null to [client_credentials authorization_code refresh_token]
+            - Items changed
+              - Example changed from [client_credentials authorization_code refresh_token] to null
+DELETE /register/{clientId}
+- Description changed from '' to 'Exclusão do registro da aplicação cliente. Uma das implementações possíveis, como descritas no Apêndice B da RFC 7592'
+GET /register/{clientId}
+- Description changed from '' to 'Consulta de dados do registro da aplicação cliente. Uma das implementações possíveis, como descritas no Apêndice B da RFC 7592'
+PUT /register/{clientId}
+- Description changed from '' to 'Alteração de dados do registro da aplicação cliente. Uma das implementações possíveis, como descritas no Apêndice B da RFC 7592'
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: grant_types
+            - Example changed from null to [client_credentials authorization_code refresh_token]
+            - Items changed
+              - Example changed from [client_credentials authorization_code refresh_token] to null
+Servers changed
+- New server: http://api.organizacao.com.br/open-insurance

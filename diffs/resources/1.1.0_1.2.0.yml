@@ -1,0 +1,8 @@
+﻿### New Endpoints: 1
+--------------------
+GET /resources  
+### Deleted Endpoints: 1
+------------------------
+GET /  
+### Modified Endpoints: None
+----------------------------

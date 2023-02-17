@@ -1,0 +1,857 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /business/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - Deleted required property: relationshipBeginning
+                - Properties changed
+                  - Modified property: productsServices
+                    - Items changed
+                      - Properties changed
+                        - Modified property: contract
+                          - MaxLength changed from 17 to 60
+                        - Modified property: procurators
+                          - Items changed
+                            - Properties changed
+                              - Modified property: cpfNumber
+                                - MaxLength changed from 11 to 14
+                              - Modified property: nature
+                                - MaxLength changed from 19 to null
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+GET /business/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: contact
+                    - Properties changed
+                      - Modified property: phones
+                        - Items changed
+                          - Properties changed
+                            - Modified property: areaCode
+                              - MaxLength changed from 2 to null
+                      - Modified property: postalAddresses
+                        - Items changed
+                          - Properties changed
+                            - Modified property: address
+                              - MaxLength changed from 150 to 200
+                            - Modified property: geographicCoordinates
+                              - Properties changed
+                                - Modified property: latitude
+                                  - MaxLength changed from 13 to null
+                                  - Pattern changed from '^-?\d{1,2}\.\d{1,9}$' to '^-?\d{1,3}\.\d{1,10}$'
+                                - Modified property: longitude
+                                  - MaxLength changed from 13 to null
+                                  - Pattern changed from '^-?\d{1,3}\.\d{1,8}$' to '^-?\d{1,3}\.\d{1,10}$'
+                  - Modified property: type
+                    - MaxLength changed from 7 to null
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+GET /business/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: informedPatrimony
+                    - Properties changed
+                      - Modified property: amount
+                        - Type changed from 'number' to 'string'
+                        - MaxLength changed from 20 to null
+                        - Pattern changed from '^-?\d{1,15}(\.\d{1,4})?$' to '^-?\d{1,15}\.\d{2,4}$'
+                  - Modified property: informedRevenue
+                    - Properties changed
+                      - Modified property: amount
+                        - Type changed from 'number' to 'string'
+                        - MaxLength changed from 20 to null
+                        - Pattern changed from '^-?\d{1,15}(\.\d{1,4})?$' to '^-?\d{1,15}\.\d{2,4}$'
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+GET /personal/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - Deleted required property: relationshipBeginning
+                - Properties changed
+                  - Modified property: productsServices
+                    - Items changed
+                      - Properties changed
+                        - Modified property: contract
+                          - MaxLength changed from 17 to 60
+                        - Modified property: procurators
+                          - Items changed
+                            - Properties changed
+                              - Modified property: nature
+                                - MaxLength changed from 19 to null
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+GET /personal/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: contact
+                    - Properties changed
+                      - Modified property: phones
+                        - Items changed
+                          - Properties changed
+                            - Modified property: areaCode
+                              - MaxLength changed from 2 to null
+                      - Modified property: postalAddresses
+                        - Items changed
+                          - Properties changed
+                            - Modified property: address
+                              - MaxLength changed from 150 to 200
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+GET /personal/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: informedPatrimony
+                    - Properties changed
+                      - Modified property: amount
+                        - Type changed from 'number' to 'string'
+                        - MaxLength changed from 20 to null
+                        - Pattern changed from '^-?\d{1,15}(\.\d{1,4})?$' to '^-?\d{1,15}\.\d{2,4}$'
+                  - Modified property: informedRevenue
+                    - Properties changed
+                      - Modified property: amount
+                        - Type changed from 'number' to 'string'
+                        - MaxLength changed from 20 to null
+                        - Pattern changed from '^-?\d{1,15}(\.\d{1,4})?$' to '^-?\d{1,15}\.\d{2,4}$'
+                  - Modified property: occupation
+                    - Items changed
+                      - Properties changed
+                        - Modified property: occupationCodeType
+                          - MaxLength changed from 100 to null
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime

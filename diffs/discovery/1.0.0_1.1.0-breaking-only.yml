@@ -1,0 +1,49 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+GET /outages
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: duration
+                    - Pattern changed from '' to '^P(?!$)(\d+(?:\.\d+)?Y)?(\d+(?:\.\d+)?M)?(\d+(?:\.\d+)?W)?(\d+(?:\.\d+)?D)?(T(?=\d)(\d+(?:\.\d+)?H)?(\d+(?:\.\d+)?M)?(\d+(?:\.\d+)?S)?)?$'
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: last
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: next
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: self
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+GET /status
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: last
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: next
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: prev
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'
+                - Modified property: self
+                  - Pattern changed from '' to '^(https:\/\/)(.*?)(\/open-insurance\/discovery\/v\d+)(\/status.*)?$'

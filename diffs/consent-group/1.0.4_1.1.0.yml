@@ -1,0 +1,504 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+POST /group
+- Responses changed
+  - New response: 204
+  - Deleted response: 415
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.seguro.com.br/open-insurance/consents/v1/group' to 'https://api.organizacao.com.br/open-insurance/consents/v1/group'
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/consents\/v\d+)(\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.seguro.com.br/open-insurance/consents/v1/group' to 'https://api.organizacao.com.br/open-insurance/consents/v1/group'
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/consents\/v\d+)(\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.seguro.com.br/open-insurance/consents/v1/group' to 'https://api.organizacao.com.br/open-insurance/consents/v1/group'
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/consents\/v\d+)(\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.seguro.com.br/open-insurance/consents/v1/group' to 'https://api.organizacao.com.br/open-insurance/consents/v1/group'
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/consents\/v\d+)(\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.seguro.com.br/open-insurance/consents/v1/group' to 'https://api.organizacao.com.br/open-insurance/consents/v1/group'
+                  - Pattern changed from '^(https?:\/\/)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)$' to '^(https:\/\/)(.*?)(\/open-insurance\/consents\/v\d+)(\/.*)?$'
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Description changed from 'A sintaxe da requisição esta correta, mas não foi possível processar as instruções presentes.' to 'O servidor entende o tipo de conteúdo da entidade da requisição, e a sintaxe da requisição esta correta, mas não foi possível processar as instruções presente.'
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Description changed from 'Erro inesperado.' to 'Consentimento criado com sucesso.'
+    - Content changed
+      - New media type: application/json
+      - Deleted media type: application/json; charset=utf-8
+    - Headers changed
+      - New header: x-fapi-interaction-id
+DELETE /group/{consentId}
+- Responses changed
+  - Modified response: 204
+    - Description changed from 'Consentimento revogado com sucesso.' to 'O recurso solicitado não existe ou não foi localizado.'
+    - Content changed
+      - New media type: application/json; charset=utf-8
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Description changed from 'A sintaxe da requisição esta correta, mas não foi possível processar as instruções presentes.' to 'O servidor entende o tipo de conteúdo da entidade da requisição, e a sintaxe da requisição esta correta, mas não foi possível processar as instruções presente.'
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Description changed from 'Erro inesperado.' to 'Consentimento revogado com sucesso.'
+    - Content changed
+      - Deleted media type: application/json; charset=utf-8
+    - Headers changed
+      - New header: x-fapi-interaction-id
+GET /group/{consentId}
+- Responses changed
+  - New response: 204
+  - Deleted response: 200
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 422
+    - Description changed from 'A sintaxe da requisição esta correta, mas não foi possível processar as instruções presentes.' to 'O servidor entende o tipo de conteúdo da entidade da requisição, e a sintaxe da requisição esta correta, mas não foi possível processar as instruções presente.'
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Required changed
+                  - New required property: requestDateTime
+                - Properties changed
+                  - New property: requestDateTime
+            - Modified property: meta
+              - Required changed
+                - Deleted required property: requestDateTime
+              - Properties changed
+                - Deleted property: requestDateTime
+  - Modified response: default
+    - Description changed from 'Erro inesperado.' to 'Consentimento consultado com sucesso.'
+    - Content changed
+      - New media type: application/json
+      - Deleted media type: application/json; charset=utf-8
+    - Headers changed
+      - New header: x-fapi-interaction-id
