@@ -14,6 +14,7 @@
 |  | [1.2.0](swagger-apis/auto-insurance/1.2.0.yml) | [1.3.0](swagger-apis/auto-insurance/1.3.0.yml) | [YAML](diffs/auto-insurance/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/auto-insurance/1.2.0_1.3.0.yml) |
 | business | [1.0.0](swagger-apis/business/1.0.0.yml) | [1.1.0](swagger-apis/business/1.1.0.yml) | [YAML](diffs/business/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/business/1.0.0_1.1.0.yml) |
 | capitalization-title | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [1.1.0](swagger-apis/capitalization-title/1.1.0.yml) | [YAML](diffs/capitalization-title/1.0.2_1.1.0-breaking-only.yml) | [YAML](diffs/capitalization-title/1.0.2_1.1.0.yml) |
+| claim-notification | [1.1.0](swagger-apis/claim-notification/1.1.0.yml) |  |  |  |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0-breaking-only.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
@@ -27,6 +28,7 @@
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) | [1.1.0](swagger-apis/discovery/1.1.0.yml) | [YAML](diffs/discovery/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/discovery/1.0.0_1.1.0.yml) |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) | [1.1.0](swagger-apis/domestic-credit/1.1.0.yml) | [YAML](diffs/domestic-credit/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/domestic-credit/1.0.0_1.1.0.yml) |
 | embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) | [1.1.0](swagger-apis/embedded-data/1.1.0.yml) | [YAML](diffs/embedded-data/1.0.1_1.1.0-breaking-only.yml) | [YAML](diffs/embedded-data/1.0.1_1.1.0.yml) |
+| endorsement | [1.1.0](swagger-apis/endorsement/1.1.0.yml) |  |  |  |
 | engineering | [1.0.1](swagger-apis/engineering/1.0.1.yml) | [1.1.0](swagger-apis/engineering/1.1.0.yml) | [YAML](diffs/engineering/1.0.1_1.1.0-breaking-only.yml) | [YAML](diffs/engineering/1.0.1_1.1.0.yml) |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) | [1.1.0](swagger-apis/environmental-liability/1.1.0.yml) | [YAML](diffs/environmental-liability/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/environmental-liability/1.0.0_1.1.0.yml) |
 | equipment-breakdown | [1.0.0](swagger-apis/equipment-breakdown/1.0.0.yml) | [1.1.0](swagger-apis/equipment-breakdown/1.1.0.yml) | [YAML](diffs/equipment-breakdown/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/equipment-breakdown/1.0.0_1.1.0.yml) |
@@ -102,6 +104,7 @@
 | business | [1.0.0](swagger-apis/business/1.0.0.yml) | [1.1.0](swagger-apis/business/1.1.0.yml) | [YAML](diffs/business/1.0.0_1.1.0.yml) |
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [YAML](diffs/capitalization-title/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [1.1.0](swagger-apis/capitalization-title/1.1.0.yml) | [YAML](diffs/capitalization-title/1.0.2_1.1.0.yml) |
+| claim-notification | [1.1.0](swagger-apis/claim-notification/1.1.0.yml) |  |  |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) | [1.0.5](swagger-apis/consents/1.0.5.yml) | [YAML](diffs/consents/1.0.4_1.0.5.yml) |
@@ -118,6 +121,7 @@
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) | [1.1.0](swagger-apis/discovery/1.1.0.yml) | [YAML](diffs/discovery/1.0.0_1.1.0.yml) |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) | [1.1.0](swagger-apis/domestic-credit/1.1.0.yml) | [YAML](diffs/domestic-credit/1.0.0_1.1.0.yml) |
 | embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) | [1.1.0](swagger-apis/embedded-data/1.1.0.yml) | [YAML](diffs/embedded-data/1.0.1_1.1.0.yml) |
+| endorsement | [1.1.0](swagger-apis/endorsement/1.1.0.yml) |  |  |
 | engineering | [1.0.0](swagger-apis/engineering/1.0.0.yml) | [1.0.1](swagger-apis/engineering/1.0.1.yml) | [YAML](diffs/engineering/1.0.0_1.0.1.yml) |
 |  | [1.0.1](swagger-apis/engineering/1.0.1.yml) | [1.1.0](swagger-apis/engineering/1.1.0.yml) | [YAML](diffs/engineering/1.0.1_1.1.0.yml) |
 | environmental-liability | [1.0.0](swagger-apis/environmental-liability/1.0.0.yml) | [1.1.0](swagger-apis/environmental-liability/1.1.0.yml) | [YAML](diffs/environmental-liability/1.0.0_1.1.0.yml) |
@@ -196,13 +200,11 @@
 | canais-atendimento | [1.0.0](swagger-apis/canais-atendimento/1.0.0.yml) |  |  |  |
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |  |
-| claim-notification | [1.1.0](swagger-apis/claim-notification/1.1.0.yml) |  |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |  |
 | EmpresarialSwagger | [1.0.0](swagger-apis/EmpresarialSwagger/1.0.0.yml) |  |  |  |
-| endorsement | [1.1.0](swagger-apis/endorsement/1.1.0.yml) |  |  |  |
 | EngenhariaSwagger | [1.0.0](swagger-apis/EngenhariaSwagger/1.0.0.yml) |  |  |  |
 | EnvironmentalSwagger | [1.0.0](swagger-apis/EnvironmentalSwagger/1.0.0.yml) |  |  |  |
 | FiancaLocaticiaSwagger | [1.0.0](swagger-apis/FiancaLocaticiaSwagger/1.0.0.yml) |  |  |  |
@@ -235,13 +237,11 @@
 | canais-atendimento | [1.0.0](swagger-apis/canais-atendimento/1.0.0.yml) |  |  |
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |
-| claim-notification | [1.1.0](swagger-apis/claim-notification/1.1.0.yml) |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |
 | EmpresarialSwagger | [1.0.0](swagger-apis/EmpresarialSwagger/1.0.0.yml) |  |  |
-| endorsement | [1.1.0](swagger-apis/endorsement/1.1.0.yml) |  |  |
 | EngenhariaSwagger | [1.0.0](swagger-apis/EngenhariaSwagger/1.0.0.yml) |  |  |
 | EnvironmentalSwagger | [1.0.0](swagger-apis/EnvironmentalSwagger/1.0.0.yml) |  |  |
 | FiancaLocaticiaSwagger | [1.0.0](swagger-apis/FiancaLocaticiaSwagger/1.0.0.yml) |  |  |
