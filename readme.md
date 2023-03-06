@@ -79,6 +79,7 @@
 |  | [1.2.0](swagger-apis/person/1.2.0.yml) | [1.3.0](swagger-apis/person/1.3.0.yml) | [YAML](diffs/person/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/person/1.2.0_1.3.0.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/private-guarantee/1.1.0.yml) | [YAML](diffs/private-guarantee/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/private-guarantee/1.0.0_1.1.0.yml) |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/public-guarantee/1.1.0.yml) | [YAML](diffs/public-guarantee/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/public-guarantee/1.0.0_1.1.0.yml) |
+| quote-patrimonial | [1.4.0](swagger-apis/quote-patrimonial/1.4.0.yml) |  |  |  |
 | quotes | [1.0.2](swagger-apis/quotes/1.0.2.yml) |  |  |  |
 | referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [1.2.0](swagger-apis/referenced-network/1.2.0.yml) | [YAML](diffs/referenced-network/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/referenced-network/1.1.0_1.2.0.yml) |
@@ -180,6 +181,7 @@
 |  | [1.2.0](swagger-apis/person/1.2.0.yml) | [1.3.0](swagger-apis/person/1.3.0.yml) | [YAML](diffs/person/1.2.0_1.3.0.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/private-guarantee/1.1.0.yml) | [YAML](diffs/private-guarantee/1.0.0_1.1.0.yml) |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/public-guarantee/1.1.0.yml) | [YAML](diffs/public-guarantee/1.0.0_1.1.0.yml) |
+| quote-patrimonial | [1.4.0](swagger-apis/quote-patrimonial/1.4.0.yml) |  |  |
 | quotes | [1.0.1](swagger-apis/quotes/1.0.1.yml) | [1.0.2](swagger-apis/quotes/1.0.2.yml) | [YAML](diffs/quotes/1.0.1_1.0.2.yml) |
 | referenced-network | [1.0.0](swagger-apis/referenced-network/1.0.0.yml) | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [YAML](diffs/referenced-network/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/referenced-network/1.1.0.yml) | [1.2.0](swagger-apis/referenced-network/1.2.0.yml) | [YAML](diffs/referenced-network/1.1.0_1.2.0.yml) |
