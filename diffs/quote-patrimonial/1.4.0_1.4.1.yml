@@ -1,0 +1,65 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 14
+--------------------------
+POST /business/request
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+PATCH /business/request/{consentId}
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+GET /business/request/{consentId}/quote-status
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+POST /condominium/request
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+PATCH /condominium/request/{consentId}
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+GET /condominium/request/{consentId}/quote-status
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+POST /diverse-risks/request
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+PATCH /diverse-risks/request/{consentId}
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+GET /diverse-risks/request/{consentId}/quote-status
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+POST /home/request
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+PATCH /home/request/{consentId}
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+GET /home/request/{consentId}/quote-status
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+POST /lead/request
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+PATCH /lead/request/{consentId}
+- Security changed
+  - New security requirements: OAuth2Security
+  - Deleted security requirements: OAuth2Security AND OpenId
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/quote-patrimonial/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
