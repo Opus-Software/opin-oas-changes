@@ -18,7 +18,6 @@
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0-breaking-only.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
-| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |  |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.1](swagger-apis/customers/1.1.1.yml) | [YAML](diffs/customers/1.0.5_1.1.1-breaking-only.yml) | [YAML](diffs/customers/1.0.5_1.1.1.yml) |
 |  | [1.1.1](swagger-apis/customers/1.1.1.yml) | [1.2.0](swagger-apis/customers/1.2.0.yml) | [YAML](diffs/customers/1.1.1_1.2.0-breaking-only.yml) | [YAML](diffs/customers/1.1.1_1.2.0.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) | [1.1.0](swagger-apis/cyber-risk/1.1.0.yml) | [YAML](diffs/cyber-risk/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/cyber-risk/1.0.0_1.1.0.yml) |
@@ -74,7 +73,6 @@
 |  | [1.2.0](swagger-apis/life-pension/1.2.0.yml) | [1.3.0](swagger-apis/life-pension/1.3.0.yml) | [YAML](diffs/life-pension/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/life-pension/1.2.0_1.3.0.yml) |
 | lost-profit | [1.0.0](swagger-apis/lost-profit/1.0.0.yml) | [1.1.0](swagger-apis/lost-profit/1.1.0.yml) | [YAML](diffs/lost-profit/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/lost-profit/1.0.0_1.1.0.yml) |
 | named-operational-risks | [1.0.0](swagger-apis/named-operational-risks/1.0.0.yml) | [1.1.0](swagger-apis/named-operational-risks/1.1.0.yml) | [YAML](diffs/named-operational-risks/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/named-operational-risks/1.0.0_1.1.0.yml) |
-| notifications | [1.0.0](swagger-apis/notifications/1.0.0.yml) |  |  |  |
 | others-scopes | [1.0.0](swagger-apis/others-scopes/1.0.0.yml) | [1.1.0](swagger-apis/others-scopes/1.1.0.yml) | [YAML](diffs/others-scopes/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/others-scopes/1.0.0_1.1.0.yml) |
 | pension-plan | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [1.1.0](swagger-apis/pension-plan/1.1.0.yml) | [YAML](diffs/pension-plan/1.0.2_1.1.0-breaking-only.yml) | [YAML](diffs/pension-plan/1.0.2_1.1.0.yml) |
 | person | [1.0.3](swagger-apis/person/1.0.3.yml) | [1.2.0](swagger-apis/person/1.2.0.yml) | [YAML](diffs/person/1.0.3_1.2.0-breaking-only.yml) | [YAML](diffs/person/1.0.3_1.2.0.yml) |
@@ -88,7 +86,6 @@
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/rent-guarantee/1.1.0.yml) | [YAML](diffs/rent-guarantee/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/rent-guarantee/1.0.0_1.1.0.yml) |
 | resources | [1.0.4](swagger-apis/resources/1.0.4.yml) | [1.1.0](swagger-apis/resources/1.1.0.yml) | [YAML](diffs/resources/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/resources/1.0.4_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/resources/1.1.0.yml) | [1.2.0](swagger-apis/resources/1.2.0.yml) | [YAML](diffs/resources/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/resources/1.1.0_1.2.0.yml) |
-| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) |  |  |  |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) | [1.1.0](swagger-apis/rural/1.1.0.yml) | [YAML](diffs/rural/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/rural/1.0.0_1.1.0.yml) |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) | [1.1.0](swagger-apis/stop-loss/1.1.0.yml) | [YAML](diffs/stop-loss/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/stop-loss/1.0.0_1.1.0.yml) |
 | transport | [1.0.0](swagger-apis/transport/1.0.0.yml) | [1.1.0](swagger-apis/transport/1.1.0.yml) | [YAML](diffs/transport/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/transport/1.0.0_1.1.0.yml) |
@@ -115,7 +112,6 @@
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) | [1.0.5](swagger-apis/consents/1.0.5.yml) | [YAML](diffs/consents/1.0.4_1.0.5.yml) |
 |  | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
-| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.0](swagger-apis/customers/1.1.0.yml) | [YAML](diffs/customers/1.0.5_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/customers/1.1.0.yml) | [1.1.1](swagger-apis/customers/1.1.1.yml) | [YAML](diffs/customers/1.1.0_1.1.1.yml) |
 |  | [1.1.1](swagger-apis/customers/1.1.1.yml) | [1.2.0](swagger-apis/customers/1.2.0.yml) | [YAML](diffs/customers/1.1.1_1.2.0.yml) |
@@ -179,7 +175,6 @@
 |  | [1.2.0](swagger-apis/life-pension/1.2.0.yml) | [1.3.0](swagger-apis/life-pension/1.3.0.yml) | [YAML](diffs/life-pension/1.2.0_1.3.0.yml) |
 | lost-profit | [1.0.0](swagger-apis/lost-profit/1.0.0.yml) | [1.1.0](swagger-apis/lost-profit/1.1.0.yml) | [YAML](diffs/lost-profit/1.0.0_1.1.0.yml) |
 | named-operational-risks | [1.0.0](swagger-apis/named-operational-risks/1.0.0.yml) | [1.1.0](swagger-apis/named-operational-risks/1.1.0.yml) | [YAML](diffs/named-operational-risks/1.0.0_1.1.0.yml) |
-| notifications | [1.0.0](swagger-apis/notifications/1.0.0.yml) |  |  |
 | others-scopes | [1.0.0](swagger-apis/others-scopes/1.0.0.yml) | [1.1.0](swagger-apis/others-scopes/1.1.0.yml) | [YAML](diffs/others-scopes/1.0.0_1.1.0.yml) |
 | pension-plan | [1.0.0](swagger-apis/pension-plan/1.0.0.yml) | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [YAML](diffs/pension-plan/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [1.1.0](swagger-apis/pension-plan/1.1.0.yml) | [YAML](diffs/pension-plan/1.0.2_1.1.0.yml) |
@@ -196,7 +191,6 @@
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/rent-guarantee/1.1.0.yml) | [YAML](diffs/rent-guarantee/1.0.0_1.1.0.yml) |
 | resources | [1.0.4](swagger-apis/resources/1.0.4.yml) | [1.1.0](swagger-apis/resources/1.1.0.yml) | [YAML](diffs/resources/1.0.4_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/resources/1.1.0.yml) | [1.2.0](swagger-apis/resources/1.2.0.yml) | [YAML](diffs/resources/1.1.0_1.2.0.yml) |
-| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) |  |  |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) | [1.1.0](swagger-apis/rural/1.1.0.yml) | [YAML](diffs/rural/1.0.0_1.1.0.yml) |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) | [1.1.0](swagger-apis/stop-loss/1.1.0.yml) | [YAML](diffs/stop-loss/1.0.0_1.1.0.yml) |
 | transport | [1.0.0](swagger-apis/transport/1.0.0.yml) | [1.1.0](swagger-apis/transport/1.1.0.yml) | [YAML](diffs/transport/1.0.0_1.1.0.yml) |
@@ -212,6 +206,7 @@
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
+| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |  |
@@ -230,12 +225,14 @@
 | GlobalDeBancosSwagger | [1.0.0](swagger-apis/GlobalDeBancosSwagger/1.0.0.yml) |  |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |  |
+| notifications | [1.0.0](swagger-apis/notifications/1.0.0.yml) |  |  |  |
 | open-data-channels | [1.0.0](swagger-apis/open-data-channels/1.0.0.yml) |  |  |  |
 | open-data-products-services | [1.0.0](swagger-apis/open-data-products-services/1.0.0.yml) |  |  |  |
 | openapi (3) | [1.0.0](swagger-apis/openapi (3)/1.0.0.yml) |  |  |  |
 | RCGeralSwagger | [1.0.0](swagger-apis/RCGeralSwagger/1.0.0.yml) |  |  |  |
 | RdEquipamentosSwagger | [1.0.0](swagger-apis/RdEquipamentosSwagger/1.0.0.yml) |  |  |  |
 | RdFinanceiroSwagger | [1.0.0](swagger-apis/RdFinanceiroSwagger/1.0.0.yml) |  |  |  |
+| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) |  |  |  |
 | RiscosNomeadosEOperacionaisSwagger | [1.0.0](swagger-apis/RiscosNomeadosEOperacionaisSwagger/1.0.0.yml) |  |  |  |
 | status-outage | [1.0.0](swagger-apis/status-outage/1.0.0.yml) |  |  |  |
 | StopLossSwagger | [1.0.0](swagger-apis/StopLossSwagger/1.0.0.yml) |  |  |  |
@@ -249,6 +246,7 @@
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
+| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |
@@ -267,12 +265,14 @@
 | GlobalDeBancosSwagger | [1.0.0](swagger-apis/GlobalDeBancosSwagger/1.0.0.yml) |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |
+| notifications | [1.0.0](swagger-apis/notifications/1.0.0.yml) |  |  |
 | open-data-channels | [1.0.0](swagger-apis/open-data-channels/1.0.0.yml) |  |  |
 | open-data-products-services | [1.0.0](swagger-apis/open-data-products-services/1.0.0.yml) |  |  |
 | openapi (3) | [1.0.0](swagger-apis/openapi (3)/1.0.0.yml) |  |  |
 | RCGeralSwagger | [1.0.0](swagger-apis/RCGeralSwagger/1.0.0.yml) |  |  |
 | RdEquipamentosSwagger | [1.0.0](swagger-apis/RdEquipamentosSwagger/1.0.0.yml) |  |  |
 | RdFinanceiroSwagger | [1.0.0](swagger-apis/RdFinanceiroSwagger/1.0.0.yml) |  |  |
+| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) |  |  |
 | RiscosNomeadosEOperacionaisSwagger | [1.0.0](swagger-apis/RiscosNomeadosEOperacionaisSwagger/1.0.0.yml) |  |  |
 | status-outage | [1.0.0](swagger-apis/status-outage/1.0.0.yml) |  |  |
 | StopLossSwagger | [1.0.0](swagger-apis/StopLossSwagger/1.0.0.yml) |  |  |
