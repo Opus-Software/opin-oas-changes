@@ -27,6 +27,7 @@
 | dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) | [1.1.0](swagger-apis/dcr-dcm-swagger/1.1.0.yml) | [YAML](diffs/dcr-dcm-swagger/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/dcr-dcm-swagger/1.0.0_1.1.0.yml) |
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) | [1.1.0](swagger-apis/directors-officers-liability/1.1.0.yml) | [YAML](diffs/directors-officers-liability/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/directors-officers-liability/1.0.0_1.1.0.yml) |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) | [1.1.0](swagger-apis/discovery/1.1.0.yml) | [YAML](diffs/discovery/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/discovery/1.0.0_1.1.0.yml) |
+|  | [1.1.0](swagger-apis/discovery/1.1.0.yml) | [1.2.0](swagger-apis/discovery/1.2.0.yml) | [YAML](diffs/discovery/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/discovery/1.1.0_1.2.0.yml) |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) | [1.1.0](swagger-apis/domestic-credit/1.1.0.yml) | [YAML](diffs/domestic-credit/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/domestic-credit/1.0.0_1.1.0.yml) |
 | embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) | [1.1.0](swagger-apis/embedded-data/1.1.0.yml) | [YAML](diffs/embedded-data/1.0.1_1.1.0-breaking-only.yml) | [YAML](diffs/embedded-data/1.0.1_1.1.0.yml) |
 | endorsement | [1.1.2](swagger-apis/endorsement/1.1.2.yml) |  |  |  |
@@ -126,6 +127,7 @@
 | dcr-dcm-swagger | [1.0.0](swagger-apis/dcr-dcm-swagger/1.0.0.yml) | [1.1.0](swagger-apis/dcr-dcm-swagger/1.1.0.yml) | [YAML](diffs/dcr-dcm-swagger/1.0.0_1.1.0.yml) |
 | directors-officers-liability | [1.0.0](swagger-apis/directors-officers-liability/1.0.0.yml) | [1.1.0](swagger-apis/directors-officers-liability/1.1.0.yml) | [YAML](diffs/directors-officers-liability/1.0.0_1.1.0.yml) |
 | discovery | [1.0.0](swagger-apis/discovery/1.0.0.yml) | [1.1.0](swagger-apis/discovery/1.1.0.yml) | [YAML](diffs/discovery/1.0.0_1.1.0.yml) |
+|  | [1.1.0](swagger-apis/discovery/1.1.0.yml) | [1.2.0](swagger-apis/discovery/1.2.0.yml) | [YAML](diffs/discovery/1.1.0_1.2.0.yml) |
 | domestic-credit | [1.0.0](swagger-apis/domestic-credit/1.0.0.yml) | [1.1.0](swagger-apis/domestic-credit/1.1.0.yml) | [YAML](diffs/domestic-credit/1.0.0_1.1.0.yml) |
 | embedded-data | [1.0.1](swagger-apis/embedded-data/1.0.1.yml) | [1.1.0](swagger-apis/embedded-data/1.1.0.yml) | [YAML](diffs/embedded-data/1.0.1_1.1.0.yml) |
 | endorsement | [1.1.0](swagger-apis/endorsement/1.1.0.yml) | [1.1.1](swagger-apis/endorsement/1.1.1.yml) | [YAML](diffs/endorsement/1.1.0_1.1.1.yml) |
