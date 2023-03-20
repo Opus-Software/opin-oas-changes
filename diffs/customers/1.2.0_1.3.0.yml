@@ -1,0 +1,150 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /business/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+GET /business/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+GET /business/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+GET /personal/complimentary-information
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+GET /personal/identifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+GET /personal/qualifications
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: links
+              - Properties changed
+                - Modified property: first
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: last
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: next
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: prev
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
+                - Modified property: self
+                  - Example changed from 'https://api.organizacao.com.br/open-insurance/customer/v1/personal/identifications' to 'https://api.organizacao.com.br/open-insurance/customers/v1/personal/identifications'
+                  - Pattern changed from '^(https:\/\/)(.*?)(\/open-insurance\/customer\/v\d+)(\/.*)?$' to '^(https:\/\/)(.*?)(\/open-insurance\/customers\/v\d+)(\/(personal|business)\/.*)?$'
