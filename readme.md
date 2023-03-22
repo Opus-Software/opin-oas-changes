@@ -208,6 +208,7 @@
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
+| consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |  |
 | consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
@@ -250,6 +251,7 @@
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
+| consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |
 | consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
