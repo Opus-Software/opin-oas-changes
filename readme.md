@@ -44,7 +44,6 @@
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [1.2.0](swagger-apis/home-insurance/1.2.0.yml) | [YAML](diffs/home-insurance/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/home-insurance/1.1.0_1.2.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) | [1.1.0](swagger-apis/housing/1.1.0.yml) | [YAML](diffs/housing/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/housing/1.0.0_1.1.0.yml) |
-| ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [1.2.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.1.0_1.2.0.yml) |
 | insurance-auto | [1.0.0](swagger-apis/insurance-auto/1.0.0.yml) | [1.1.0](swagger-apis/insurance-auto/1.1.0.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0.yml) |
@@ -148,7 +147,6 @@
 | home-insurance | [1.0.0](swagger-apis/home-insurance/1.0.0.yml) | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [YAML](diffs/home-insurance/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/home-insurance/1.1.0.yml) | [1.2.0](swagger-apis/home-insurance/1.2.0.yml) | [YAML](diffs/home-insurance/1.1.0_1.2.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) | [1.1.0](swagger-apis/housing/1.1.0.yml) | [YAML](diffs/housing/1.0.0_1.1.0.yml) |
-| ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [1.2.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.1.0_1.2.0.yml) |
 | insurance-auto | [1.0.0](swagger-apis/insurance-auto/1.0.0.yml) | [1.1.0](swagger-apis/insurance-auto/1.1.0.yml) | [YAML](diffs/insurance-auto/1.0.0_1.1.0.yml) |
@@ -233,6 +231,7 @@
 | GarantiaPublicaSwagger | [1.0.0](swagger-apis/GarantiaPublicaSwagger/1.0.0.yml) |  |  |  |
 | generalRc | [1.0.0](swagger-apis/generalRc/1.0.0.yml) |  |  |  |
 | GlobalDeBancosSwagger | [1.0.0](swagger-apis/GlobalDeBancosSwagger/1.0.0.yml) |  |  |  |
+| ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |  |
 | ingestion-v1.0.2 | [1.0.2](swagger-apis/ingestion-v1.0.2/1.0.2.yml) |  |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |  |
@@ -272,6 +271,7 @@
 | GarantiaPublicaSwagger | [1.0.0](swagger-apis/GarantiaPublicaSwagger/1.0.0.yml) |  |  |
 | generalRc | [1.0.0](swagger-apis/generalRc/1.0.0.yml) |  |  |
 | GlobalDeBancosSwagger | [1.0.0](swagger-apis/GlobalDeBancosSwagger/1.0.0.yml) |  |  |
+| ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |
 | ingestion-v1.0.2 | [1.0.2](swagger-apis/ingestion-v1.0.2/1.0.2.yml) |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |
