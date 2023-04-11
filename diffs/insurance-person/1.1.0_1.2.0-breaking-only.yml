@@ -1,0 +1,87 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: 1
+------------------------
+GET /insurance-person/{policyId}/premium  
+### Modified Endpoints: 3
+-------------------------
+GET /insurance-person
+- Responses changed
+  - Deleted response: default
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'array' to 'object'
+GET /insurance-person/{policyId}/claim
+- Responses changed
+  - Deleted response: default
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - Deleted required property: amount
+                  - Deleted required property: documentationDeliveryDate
+                  - Deleted required property: identification
+                  - Deleted required property: occurrenceDate
+                  - Deleted required property: statusAlterationDate
+                - Properties changed
+                  - Deleted property: amount
+                  - Deleted property: documentationDeliveryDate
+                  - Deleted property: identification
+                  - Deleted property: occurrenceDate
+                  - Deleted property: statusAlterationDate
+GET /insurance-person/{policyId}/policy-info
+- Responses changed
+  - Deleted response: default
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - Deleted required property: documentType
+                - Deleted required property: insuredObjects
+                - Deleted required property: issuanceDate
+                - Deleted required property: issuanceType
+                - Deleted required property: maxLMG
+              - Properties changed
+                - Deleted property: documentType
+                - Deleted property: insuredObjects
+                - Deleted property: issuanceDate
+                - Deleted property: issuanceType
+                - Deleted property: maxLMG
+                - Modified property: beneficiaries
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: address
+                      - Deleted required property: city
+                      - Deleted required property: country
+                      - Deleted required property: postCode
+                      - Deleted required property: state
+                    - Properties changed
+                      - Deleted property: address
+                      - Deleted property: city
+                      - Deleted property: country
+                      - Deleted property: postCode
+                      - Deleted property: state
+                - Modified property: coverages
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: code
+                    - MinProps changed from 3 to 2
+                    - Properties changed
+                      - Deleted property: code
+                - Modified property: intermediaries
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: identification
+                      - Deleted required property: identificationType
+                      - Deleted required property: name

@@ -1,0 +1,251 @@
+﻿### New Endpoints: 1
+--------------------
+GET /insurance-person/{policyId}/movements  
+### Deleted Endpoints: 1
+------------------------
+GET /insurance-person/{policyId}/premium  
+### Modified Endpoints: 3
+-------------------------
+GET /insurance-person
+- Responses changed
+  - Deleted response: default
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'array' to 'object'
+              - Items changed
+                - Schema deleted
+              - Required changed
+                - New required property: brand
+              - Properties changed
+                - New property: brand
+GET /insurance-person/{policyId}/claim
+- Responses changed
+  - Deleted response: default
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: warningRegisterDate
+                  - Deleted required property: amount
+                  - Deleted required property: documentationDeliveryDate
+                  - Deleted required property: identification
+                  - Deleted required property: occurrenceDate
+                  - Deleted required property: statusAlterationDate
+                - Properties changed
+                  - New property: concessionStartDate
+                  - New property: defermentDueDate
+                  - New property: incomeModality
+                  - New property: incomeModalityOthers
+                  - New property: incomeReversed
+                  - New property: incomeTerm
+                  - New property: incomeValueUniquePayment
+                  - New property: lastUpdateDate
+                  - New property: monetaryUpdateIndex
+                  - New property: monetaryUpdateIndexOthers
+                  - New property: recipientBirthDate
+                  - New property: recipientClassification
+                  - New property: recipientIdentification
+                  - New property: recipientIdentificationType
+                  - New property: recipientName
+                  - New property: recipientNumber
+                  - New property: warningRegisterDate
+                  - Deleted property: amount
+                  - Deleted property: coverages
+                  - Deleted property: denialJustification
+                  - Deleted property: denialJustificationDescription
+                  - Deleted property: documentationDeliveryDate
+                  - Deleted property: identification
+                  - Deleted property: occurrenceDate
+                  - Deleted property: statusAlterationDate
+                  - Deleted property: thirdPartyClaimDate
+                  - Modified property: status
+                    - Description changed from 'Status do sinistro' to 'Status do sinistro / evento gerador'
+                    - New enum values: [ENCERRADO_COM_PAGAMENTO_UNICO_BENEFICIO ENCERRADO_COM_CONCESSAO_DE_RENDA_BENEFICIO ENCERRADO_INDEFERIDO_BENEFICIO]
+GET /insurance-person/{policyId}/policy-info
+- Responses changed
+  - Deleted response: default
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - New required property: PMBaC
+                - New required property: conjugatedPlan
+                - New required property: contractingType
+                - Deleted required property: documentType
+                - Deleted required property: insuredObjects
+                - Deleted required property: issuanceDate
+                - Deleted required property: issuanceType
+                - Deleted required property: maxLMG
+              - Properties changed
+                - New property: PMBaC
+                - New property: certificateId
+                - New property: conjugatedPlan
+                - New property: contractingType
+                - New property: portabilities
+                - New property: withdrawals
+                - Deleted property: branchInfo
+                - Deleted property: coinsuranceRetainedPercentage
+                - Deleted property: coinsurers
+                - Deleted property: documentType
+                - Deleted property: groupCertificateId
+                - Deleted property: insuredObjects
+                - Deleted property: issuanceDate
+                - Deleted property: issuanceType
+                - Deleted property: leadInsurerCode
+                - Deleted property: leadInsurerPolicyId
+                - Deleted property: maxLMG
+                - Deleted property: principals
+                - Deleted property: susepProcessNumber
+                - Modified property: beneficiaries
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: address
+                      - Deleted required property: city
+                      - Deleted required property: country
+                      - Deleted required property: postCode
+                      - Deleted required property: state
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                      - New property: participationPercentage
+                      - Deleted property: address
+                      - Deleted property: city
+                      - Deleted property: country
+                      - Deleted property: email
+                      - Deleted property: postCode
+                      - Deleted property: state
+                      - Modified property: identification
+                        - Description changed from 'Documento de Identificação da Pessoa' to 'Documento de Identificação do beneficiário.'
+                      - Modified property: identificationType
+                        - Description changed from 'Tipo de Documento da Pessoa' to 'Tipo de Documento do beneficiário.'
+                      - Modified property: name
+                        - Description changed from 'Nome ou Razão Social da Pessoa' to 'Nome ou Razão Social do beneficiário.'
+                - Modified property: coverages
+                  - Items changed
+                    - Required changed
+                      - New required property: benefitPaymentModality
+                      - New required property: calculationBasis
+                      - New required property: chargedAmount
+                      - New required property: financialResultReversal
+                      - New required property: financialtype
+                      - New required property: paymentPeriod
+                      - New required property: plan
+                      - New required property: planBlock
+                      - New required property: planType
+                      - New required property: qualifiedProposer
+                      - New required property: structureModality
+                      - New required property: susepProcessNumber
+                      - New required property: taxRegime
+                      - New required property: triggerEvent
+                      - Deleted required property: code
+                    - MinProps changed from 3 to 2
+                    - Properties changed
+                      - New property: IndexLag
+                      - New property: benefitAmount
+                      - New property: benefitPaymentModality
+                      - New property: biometricTable
+                      - New property: calculationBasis
+                      - New property: chargedAmount
+                      - New property: coverageCode
+                      - New property: coverageUpdateIndex
+                      - New property: coverageUpdateIndexOthers
+                      - New property: creditor
+                      - New property: dependents
+                      - New property: educationalInstitution
+                      - New property: feesTax
+                      - New property: financialResultReversal
+                      - New property: financialResultReversalPercentage
+                      - New property: financialtype
+                      - New property: grace
+                      - New property: incomeInterestRate
+                      - New property: insuredCapitalPercentage
+                      - New property: insuredCapitalType
+                      - New property: insuredDependentsInclusionClause
+                      - New property: internalCode
+                      - New property: minimumWarrantyIndex
+                      - New property: minimumWarrantyPercentage
+                      - New property: moneylenderType
+                      - New property: obligations
+                      - New property: paymentPeriod
+                      - New property: periodicity
+                      - New property: periodicityValue
+                      - New property: personIdentification
+                      - New property: plan
+                      - New property: planBlock
+                      - New property: planOthers
+                      - New property: planType
+                      - New property: pmbacIndexLag
+                      - New property: pmbacInterestRate
+                      - New property: pmbacMonetaryUpdateIndex
+                      - New property: pmbacMonetaryUpdateIndexOthers
+                      - New property: pricingForm
+                      - New property: pricingFormOthers
+                      - New property: qualifiedProposer
+                      - New property: structureModality
+                      - New property: susepProcessNumber
+                      - New property: taxRegime
+                      - New property: triggerEvent
+                      - New property: triggerEventOthers
+                      - New property: tripScope
+                      - Deleted property: POS
+                      - Deleted property: code
+                      - Deleted property: deductible
+                      - Deleted property: description
+                      - Modified property: branch
+                        - Description changed from 'Grupo e ramo da cobertura' to 'Grupo e Ramo da Cobertura (Conforme regulamentação Susep vigente)'
+                - Modified property: insureds
+                  - Items changed
+                    - Properties changed
+                      - New property: addressAdditionalInfo
+                      - New property: birthDate
+                      - New property: gender
+                      - New property: identificationTypeOthers
+                      - Modified property: address
+                        - Description changed from 'Endereço da Pessoa (restante do endereço, excluindo cidade, estado e país)' to 'Endereço do Segurado/Participante (restante do endereço, excluindo cidade, estado e país)'
+                      - Modified property: city
+                        - Description changed from 'Cidade da Pessoa (por extenso)' to 'Cidade do Segurado/Participante (por extenso)'
+                      - Modified property: country
+                        - Description changed from 'País da Pessoa (de acordo com o código "alpha3" do ISO-3166)' to 'País do Segurado/Participante (de acordo com o código "alpha3" do ISO-3166)'
+                      - Modified property: email
+                        - Description changed from 'E-mail da Pessoa (caso possua)' to 'E-mail do Segurado/Participante (caso possua)'
+                      - Modified property: identification
+                        - Description changed from 'Documento de Identificação da Pessoa' to 'Documento de Identificação do Segurado/Participante'
+                      - Modified property: identificationType
+                        - Description changed from 'Tipo de Documento da Pessoa' to 'Tipo de Documento do Segurado/Participante'
+                      - Modified property: name
+                        - Description changed from 'Nome ou Razão Social da Pessoa' to 'Nome ou Razão Social do Segurado/Participante'
+                      - Modified property: postCode
+                        - Description changed from 'Código Postal da Pessoa' to 'Código Postal do Segurado/Participante'
+                      - Modified property: state
+                        - Description changed from 'Estado da Pessoa (por extenso)' to 'Estado do Segurado/Participante (por extenso)'
+                - Modified property: intermediaries
+                  - Items changed
+                    - Required changed
+                      - New required property: type
+                      - Deleted required property: identification
+                      - Deleted required property: identificationType
+                      - Deleted required property: name
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                      - New property: typeOthers
+                      - Modified property: brokerId
+                        - Description changed from 'Identificador do Intermediador (Caso Tipo de Intermediador for CORRETOR)' to 'Identificador do Intermediador (Caso Tipo de Intermediador for CORRETOR) código SUSEP do corretor(a)'
+                      - Modified property: identification
+                        - Description changed from 'Documento de Identificação da Intermediador' to 'Documento de Identificação da Intermediador (Caso Tipo de Intermediador não seja Corretor ou quando for Corretor, porém o identificador do intermediador não seja informado)'
+                - Modified property: policyId
+                  - Description changed from 'Identificador da apólice ou bilhete' to 'identificação do contrato/apólice, em caso de contratação coletiva, obrigatório caso Tipo de contratação seja COLETIVO'
+                - Modified property: proposalId
+                  - Example changed from null to 'ABC123'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-person/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
