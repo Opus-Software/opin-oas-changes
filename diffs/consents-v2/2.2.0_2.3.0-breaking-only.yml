@@ -1,0 +1,67 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+POST /consents
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: permissions
+                - Items changed
+                  - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO_READ CUSTOMERS_BUSINESS_ADITTIONALINFO_READ CAPITALIZATION_TITLES_READ CAPITALIZATION_TITLES_POLICYINFO_READ CAPITALIZATION_TITLES_PREMIUM_READ CAPITALIZATION_TITLES_CLAIM_READ DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+- Responses changed
+  - Deleted response: 204
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO_READ CUSTOMERS_BUSINESS_ADITTIONALINFO_READ CAPITALIZATION_TITLES_READ CAPITALIZATION_TITLES_POLICYINFO_READ CAPITALIZATION_TITLES_PREMIUM_READ CAPITALIZATION_TITLES_CLAIM_READ DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO_READ CUSTOMERS_BUSINESS_ADITTIONALINFO_READ CAPITALIZATION_TITLES_READ CAPITALIZATION_TITLES_POLICYINFO_READ CAPITALIZATION_TITLES_PREMIUM_READ CAPITALIZATION_TITLES_CLAIM_READ DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+DELETE /consents/{consentId}
+- Responses changed
+  - Modified response: 204
+    - Content changed
+      - Deleted media type: application/json; charset=utf-8
+GET /consents/{consentId}
+- Responses changed
+  - Deleted response: 204
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO_READ CUSTOMERS_BUSINESS_ADITTIONALINFO_READ CAPITALIZATION_TITLES_READ CAPITALIZATION_TITLES_POLICYINFO_READ CAPITALIZATION_TITLES_PREMIUM_READ CAPITALIZATION_TITLES_CLAIM_READ DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO_READ CUSTOMERS_BUSINESS_ADITTIONALINFO_READ CAPITALIZATION_TITLES_READ CAPITALIZATION_TITLES_POLICYINFO_READ CAPITALIZATION_TITLES_PREMIUM_READ CAPITALIZATION_TITLES_CLAIM_READ DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]

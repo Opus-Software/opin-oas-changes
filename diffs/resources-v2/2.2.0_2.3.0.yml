@@ -1,0 +1,170 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /resources
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: type
+                    - Description changed from 'Tipo de recurso (vide Enum):
+- CUSTOMERS_PERSONAL_IDENTIFICATIONS: Informações de identificação PF
+- CUSTOMERS_PERSONAL_QUALIFICATION: Informações de qualificação PF                    
+- CUSTOMERS_PERSONAL_ADITTIONALINFO: Informações complementares PF
+- CUSTOMERS_BUSINESS_IDENTIFICATIONS: Informações de identificação PJ
+- CUSTOMERS_BUSINESS_QUALIFICATION: Informações de qualificação PJ
+- CUSTOMERS_BUSINESS_ADITTIONALINFO: Informações complementares PJ
+- CAPITALIZATION_TITLES: Produtos de Titulos de Capitalização
+- PENSION_PLAN: Produtos de Previdência Risco
+- LIFE_PENSION: Produtos de Previdência Sobrevivência                    
+- DAMAGES_AND_PEOPLE_PATRIMONIAL: Produtos de Patrimonial
+- DAMAGES_AND_PEOPLE_RESPONSIBILITY: Produtos de Responsabilidade
+- DAMAGES_AND_PEOPLE_TRANSPORT: Produtos de Transportes
+- DAMAGES_AND_PEOPLE_FINANCIAL_RISKS: Produtos de Riscos Financeiros
+- DAMAGES_AND_PEOPLE_RURAL: Produtos de Rural
+- DAMAGES_AND_PEOPLE_AUTO: Produtos de Automóveis
+- DAMAGES_AND_PEOPLE_HOUSING: Produtos de Habitacional
+- DAMAGES_AND_PEOPLE_PERSON: Produtos de Pessoas (Repartição simples)
+- DAMAGES_AND_PEOPLE_ACCEPTANCE_AND_BRANCHES_ABROAD: Aceitação e Sucursal no exterior
+- CLAIM_NOTIFICATION: Solicitação de Aviso de Sinistro
+- ENDORSEMENT: Solicitação de Endosso
+- QUOTE_PATRIMONIAL: Cotação do Seguro Patrimonial
+- QUOTE_ACCEPTANCE_AND_BRANCHES_ABROAD: Cotação do Seguro Aceitação e Sucursal no exterior
+- QUOTE_AUTO: Cotação do Seguro Automóvel
+- QUOTE_FINANCIAL_RISK: Cotação do Seguro Riscos Financeiros
+- QUOTE_HOUSING: Cotação do Seguro Habitacional
+- QUOTE_RESPONSIBILITY: Cotação do Seguro Responsabilidade
+- QUOTE_RURAL: Cotação do Seguro Rural
+- QUOTE_TRANSPORT: Cotação do Seguro Transportes
+- QUOTE_PERSON: Cotação do Seguro Pessoas
+- CONTRACT_LIFE_PENSION: Contratação/Portabilidade de Previdência Sobrevivência
+- CONTRACT_PENSION_PLAN: Contratação/Portabilidade de Previdência Risco
+- PENSION_WITHDRAWAL: Resgate de Previdência
+' to 'Tipo de recurso (vide Enum):
+- CUSTOMERS_PERSONAL_IDENTIFICATIONS: Informações de identificação PF
+- CUSTOMERS_PERSONAL_QUALIFICATION: Informações de qualificação PF                    
+- CUSTOMERS_PERSONAL_ADDITIONALINFO: Informações complementares PF
+- CUSTOMERS_BUSINESS_IDENTIFICATIONS: Informações de identificação PJ
+- CUSTOMERS_BUSINESS_QUALIFICATION: Informações de qualificação PJ
+- CUSTOMERS_BUSINESS_ADDITIONALINFO: Informações complementares PJ
+- CAPITALIZATION_TITLES: Produtos de Titulos de Capitalização
+- PENSION_PLAN: Produtos de Previdência Risco
+- LIFE_PENSION: Produtos de Previdência Sobrevivência
+- FINANCIAL_ASSISTANCE: Produtos de Assistência Financeira                   
+- DAMAGES_AND_PEOPLE_PATRIMONIAL: Produtos de Patrimonial
+- DAMAGES_AND_PEOPLE_RESPONSIBILITY: Produtos de Responsabilidade
+- DAMAGES_AND_PEOPLE_TRANSPORT: Produtos de Transportes
+- DAMAGES_AND_PEOPLE_FINANCIAL_RISKS: Produtos de Riscos Financeiros
+- DAMAGES_AND_PEOPLE_RURAL: Produtos de Rural
+- DAMAGES_AND_PEOPLE_AUTO: Produtos de Automóveis
+- DAMAGES_AND_PEOPLE_HOUSING: Produtos de Habitacional
+- DAMAGES_AND_PEOPLE_PERSON: Produtos de Pessoas (Repartição simples)
+- DAMAGES_AND_PEOPLE_ACCEPTANCE_AND_BRANCHES_ABROAD: Aceitação e Sucursal no exterior
+- CLAIM_NOTIFICATION: Solicitação de Aviso de Sinistro
+- ENDORSEMENT: Solicitação de Endosso
+- QUOTE_PATRIMONIAL: Cotação do Seguro Patrimonial
+- QUOTE_ACCEPTANCE_AND_BRANCHES_ABROAD: Cotação do Seguro Aceitação e Sucursal no exterior
+- QUOTE_AUTO: Cotação do Seguro Automóvel
+- QUOTE_FINANCIAL_RISK: Cotação do Seguro Riscos Financeiros
+- QUOTE_HOUSING: Cotação do Seguro Habitacional
+- QUOTE_RESPONSIBILITY: Cotação do Seguro Responsabilidade
+- QUOTE_RURAL: Cotação do Seguro Rural
+- QUOTE_TRANSPORT: Cotação do Seguro Transportes
+- QUOTE_PERSON: Cotação do Seguro Pessoas
+- QUOTE_CAPITALIZATION_TITLE: Cotação de Títulos de Capitalização
+- CONTRACT_LIFE_PENSION: Contratação/Portabilidade de Previdência Sobrevivência
+- CONTRACT_PENSION_PLAN: Contratação/Portabilidade de Previdência Risco
+- PENSION_WITHDRAWAL: Resgate de Previdência
+- CAPITALIZATION_TITLE_WITHDRAWAL: Resgate de Títulos de Capitalização
+'
+                    - New enum values: [CUSTOMERS_PERSONAL_ADDITIONALINFO CUSTOMERS_BUSINESS_ADDITIONALINFO FINANCIAL_ASSISTANCE QUOTE_CAPITALIZATION_TITLE CAPITALIZATION_TITLE_WITHDRAWAL]
+                    - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO CUSTOMERS_BUSINESS_ADITTIONALINFO]
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: type
+                    - Description changed from 'Tipo de recurso (vide Enum):
+- CUSTOMERS_PERSONAL_IDENTIFICATIONS: Informações de identificação PF
+- CUSTOMERS_PERSONAL_QUALIFICATION: Informações de qualificação PF                    
+- CUSTOMERS_PERSONAL_ADITTIONALINFO: Informações complementares PF
+- CUSTOMERS_BUSINESS_IDENTIFICATIONS: Informações de identificação PJ
+- CUSTOMERS_BUSINESS_QUALIFICATION: Informações de qualificação PJ
+- CUSTOMERS_BUSINESS_ADITTIONALINFO: Informações complementares PJ
+- CAPITALIZATION_TITLES: Produtos de Titulos de Capitalização
+- PENSION_PLAN: Produtos de Previdência Risco
+- LIFE_PENSION: Produtos de Previdência Sobrevivência                    
+- DAMAGES_AND_PEOPLE_PATRIMONIAL: Produtos de Patrimonial
+- DAMAGES_AND_PEOPLE_RESPONSIBILITY: Produtos de Responsabilidade
+- DAMAGES_AND_PEOPLE_TRANSPORT: Produtos de Transportes
+- DAMAGES_AND_PEOPLE_FINANCIAL_RISKS: Produtos de Riscos Financeiros
+- DAMAGES_AND_PEOPLE_RURAL: Produtos de Rural
+- DAMAGES_AND_PEOPLE_AUTO: Produtos de Automóveis
+- DAMAGES_AND_PEOPLE_HOUSING: Produtos de Habitacional
+- DAMAGES_AND_PEOPLE_PERSON: Produtos de Pessoas (Repartição simples)
+- DAMAGES_AND_PEOPLE_ACCEPTANCE_AND_BRANCHES_ABROAD: Aceitação e Sucursal no exterior
+- CLAIM_NOTIFICATION: Solicitação de Aviso de Sinistro
+- ENDORSEMENT: Solicitação de Endosso
+- QUOTE_PATRIMONIAL: Cotação do Seguro Patrimonial
+- QUOTE_ACCEPTANCE_AND_BRANCHES_ABROAD: Cotação do Seguro Aceitação e Sucursal no exterior
+- QUOTE_AUTO: Cotação do Seguro Automóvel
+- QUOTE_FINANCIAL_RISK: Cotação do Seguro Riscos Financeiros
+- QUOTE_HOUSING: Cotação do Seguro Habitacional
+- QUOTE_RESPONSIBILITY: Cotação do Seguro Responsabilidade
+- QUOTE_RURAL: Cotação do Seguro Rural
+- QUOTE_TRANSPORT: Cotação do Seguro Transportes
+- QUOTE_PERSON: Cotação do Seguro Pessoas
+- CONTRACT_LIFE_PENSION: Contratação/Portabilidade de Previdência Sobrevivência
+- CONTRACT_PENSION_PLAN: Contratação/Portabilidade de Previdência Risco
+- PENSION_WITHDRAWAL: Resgate de Previdência
+' to 'Tipo de recurso (vide Enum):
+- CUSTOMERS_PERSONAL_IDENTIFICATIONS: Informações de identificação PF
+- CUSTOMERS_PERSONAL_QUALIFICATION: Informações de qualificação PF                    
+- CUSTOMERS_PERSONAL_ADDITIONALINFO: Informações complementares PF
+- CUSTOMERS_BUSINESS_IDENTIFICATIONS: Informações de identificação PJ
+- CUSTOMERS_BUSINESS_QUALIFICATION: Informações de qualificação PJ
+- CUSTOMERS_BUSINESS_ADDITIONALINFO: Informações complementares PJ
+- CAPITALIZATION_TITLES: Produtos de Titulos de Capitalização
+- PENSION_PLAN: Produtos de Previdência Risco
+- LIFE_PENSION: Produtos de Previdência Sobrevivência
+- FINANCIAL_ASSISTANCE: Produtos de Assistência Financeira                   
+- DAMAGES_AND_PEOPLE_PATRIMONIAL: Produtos de Patrimonial
+- DAMAGES_AND_PEOPLE_RESPONSIBILITY: Produtos de Responsabilidade
+- DAMAGES_AND_PEOPLE_TRANSPORT: Produtos de Transportes
+- DAMAGES_AND_PEOPLE_FINANCIAL_RISKS: Produtos de Riscos Financeiros
+- DAMAGES_AND_PEOPLE_RURAL: Produtos de Rural
+- DAMAGES_AND_PEOPLE_AUTO: Produtos de Automóveis
+- DAMAGES_AND_PEOPLE_HOUSING: Produtos de Habitacional
+- DAMAGES_AND_PEOPLE_PERSON: Produtos de Pessoas (Repartição simples)
+- DAMAGES_AND_PEOPLE_ACCEPTANCE_AND_BRANCHES_ABROAD: Aceitação e Sucursal no exterior
+- CLAIM_NOTIFICATION: Solicitação de Aviso de Sinistro
+- ENDORSEMENT: Solicitação de Endosso
+- QUOTE_PATRIMONIAL: Cotação do Seguro Patrimonial
+- QUOTE_ACCEPTANCE_AND_BRANCHES_ABROAD: Cotação do Seguro Aceitação e Sucursal no exterior
+- QUOTE_AUTO: Cotação do Seguro Automóvel
+- QUOTE_FINANCIAL_RISK: Cotação do Seguro Riscos Financeiros
+- QUOTE_HOUSING: Cotação do Seguro Habitacional
+- QUOTE_RESPONSIBILITY: Cotação do Seguro Responsabilidade
+- QUOTE_RURAL: Cotação do Seguro Rural
+- QUOTE_TRANSPORT: Cotação do Seguro Transportes
+- QUOTE_PERSON: Cotação do Seguro Pessoas
+- QUOTE_CAPITALIZATION_TITLE: Cotação de Títulos de Capitalização
+- CONTRACT_LIFE_PENSION: Contratação/Portabilidade de Previdência Sobrevivência
+- CONTRACT_PENSION_PLAN: Contratação/Portabilidade de Previdência Risco
+- PENSION_WITHDRAWAL: Resgate de Previdência
+- CAPITALIZATION_TITLE_WITHDRAWAL: Resgate de Títulos de Capitalização
+'
+                    - New enum values: [CUSTOMERS_PERSONAL_ADDITIONALINFO CUSTOMERS_BUSINESS_ADDITIONALINFO FINANCIAL_ASSISTANCE QUOTE_CAPITALIZATION_TITLE CAPITALIZATION_TITLE_WITHDRAWAL]
+                    - Deleted enum values: [CUSTOMERS_PERSONAL_ADITTIONALINFO CUSTOMERS_BUSINESS_ADITTIONALINFO]

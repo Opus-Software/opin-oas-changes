@@ -18,10 +18,11 @@
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0-breaking-only.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
-| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |  |
+| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) | [2.3.0](swagger-apis/consents-v2/2.3.0.yml) | [YAML](diffs/consents-v2/2.2.0_2.3.0-breaking-only.yml) | [YAML](diffs/consents-v2/2.2.0_2.3.0.yml) |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.1](swagger-apis/customers/1.1.1.yml) | [YAML](diffs/customers/1.0.5_1.1.1-breaking-only.yml) | [YAML](diffs/customers/1.0.5_1.1.1.yml) |
 |  | [1.1.1](swagger-apis/customers/1.1.1.yml) | [1.2.0](swagger-apis/customers/1.2.0.yml) | [YAML](diffs/customers/1.1.1_1.2.0-breaking-only.yml) | [YAML](diffs/customers/1.1.1_1.2.0.yml) |
 |  | [1.2.0](swagger-apis/customers/1.2.0.yml) | [1.3.0](swagger-apis/customers/1.3.0.yml) | [YAML](diffs/customers/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/customers/1.2.0_1.3.0.yml) |
+|  | [1.3.0](swagger-apis/customers/1.3.0.yml) | [1.4.0](swagger-apis/customers/1.4.0.yml) | [YAML](diffs/customers/1.3.0_1.4.0-breaking-only.yml) | [YAML](diffs/customers/1.3.0_1.4.0.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) | [1.1.0](swagger-apis/cyber-risk/1.1.0.yml) | [YAML](diffs/cyber-risk/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/cyber-risk/1.0.0_1.1.0.yml) |
 | data-channels | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0-breaking-only.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0.yml) |
 |  | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [1.3.0](swagger-apis/data-channels/1.3.0.yml) | [YAML](diffs/data-channels/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/data-channels/1.2.0_1.3.0.yml) |
@@ -94,7 +95,7 @@
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/rent-guarantee/1.1.0.yml) | [YAML](diffs/rent-guarantee/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/rent-guarantee/1.0.0_1.1.0.yml) |
 | resources | [1.0.4](swagger-apis/resources/1.0.4.yml) | [1.1.0](swagger-apis/resources/1.1.0.yml) | [YAML](diffs/resources/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/resources/1.0.4_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/resources/1.1.0.yml) | [1.2.0](swagger-apis/resources/1.2.0.yml) | [YAML](diffs/resources/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/resources/1.1.0_1.2.0.yml) |
-| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) |  |  |  |
+| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) | [2.3.0](swagger-apis/resources-v2/2.3.0.yml) | [YAML](diffs/resources-v2/2.2.0_2.3.0-breaking-only.yml) | [YAML](diffs/resources-v2/2.2.0_2.3.0.yml) |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) | [1.1.0](swagger-apis/rural/1.1.0.yml) | [YAML](diffs/rural/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/rural/1.0.0_1.1.0.yml) |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) | [1.1.0](swagger-apis/stop-loss/1.1.0.yml) | [YAML](diffs/stop-loss/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/stop-loss/1.0.0_1.1.0.yml) |
 | transport | [1.0.0](swagger-apis/transport/1.0.0.yml) | [1.1.0](swagger-apis/transport/1.1.0.yml) | [YAML](diffs/transport/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/transport/1.0.0_1.1.0.yml) |
@@ -121,11 +122,12 @@
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) | [1.0.5](swagger-apis/consents/1.0.5.yml) | [YAML](diffs/consents/1.0.4_1.0.5.yml) |
 |  | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
-| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) |  |  |
+| consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) | [2.3.0](swagger-apis/consents-v2/2.3.0.yml) | [YAML](diffs/consents-v2/2.2.0_2.3.0.yml) |
 | customers | [1.0.5](swagger-apis/customers/1.0.5.yml) | [1.1.0](swagger-apis/customers/1.1.0.yml) | [YAML](diffs/customers/1.0.5_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/customers/1.1.0.yml) | [1.1.1](swagger-apis/customers/1.1.1.yml) | [YAML](diffs/customers/1.1.0_1.1.1.yml) |
 |  | [1.1.1](swagger-apis/customers/1.1.1.yml) | [1.2.0](swagger-apis/customers/1.2.0.yml) | [YAML](diffs/customers/1.1.1_1.2.0.yml) |
 |  | [1.2.0](swagger-apis/customers/1.2.0.yml) | [1.3.0](swagger-apis/customers/1.3.0.yml) | [YAML](diffs/customers/1.2.0_1.3.0.yml) |
+|  | [1.3.0](swagger-apis/customers/1.3.0.yml) | [1.4.0](swagger-apis/customers/1.4.0.yml) | [YAML](diffs/customers/1.3.0_1.4.0.yml) |
 | cyber-risk | [1.0.0](swagger-apis/cyber-risk/1.0.0.yml) | [1.1.0](swagger-apis/cyber-risk/1.1.0.yml) | [YAML](diffs/cyber-risk/1.0.0_1.1.0.yml) |
 | data-channels | [1.0.0](swagger-apis/data-channels/1.0.0.yml) | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [YAML](diffs/data-channels/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/data-channels/1.0.2.yml) | [1.2.0](swagger-apis/data-channels/1.2.0.yml) | [YAML](diffs/data-channels/1.0.2_1.2.0.yml) |
@@ -208,7 +210,7 @@
 | rent-guarantee | [1.0.0](swagger-apis/rent-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/rent-guarantee/1.1.0.yml) | [YAML](diffs/rent-guarantee/1.0.0_1.1.0.yml) |
 | resources | [1.0.4](swagger-apis/resources/1.0.4.yml) | [1.1.0](swagger-apis/resources/1.1.0.yml) | [YAML](diffs/resources/1.0.4_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/resources/1.1.0.yml) | [1.2.0](swagger-apis/resources/1.2.0.yml) | [YAML](diffs/resources/1.1.0_1.2.0.yml) |
-| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) |  |  |
+| resources-v2 | [2.2.0](swagger-apis/resources-v2/2.2.0.yml) | [2.3.0](swagger-apis/resources-v2/2.3.0.yml) | [YAML](diffs/resources-v2/2.2.0_2.3.0.yml) |
 | rural | [1.0.0](swagger-apis/rural/1.0.0.yml) | [1.1.0](swagger-apis/rural/1.1.0.yml) | [YAML](diffs/rural/1.0.0_1.1.0.yml) |
 | stop-loss | [1.0.0](swagger-apis/stop-loss/1.0.0.yml) | [1.1.0](swagger-apis/stop-loss/1.1.0.yml) | [YAML](diffs/stop-loss/1.0.0_1.1.0.yml) |
 | transport | [1.0.0](swagger-apis/transport/1.0.0.yml) | [1.1.0](swagger-apis/transport/1.1.0.yml) | [YAML](diffs/transport/1.0.0_1.1.0.yml) |
