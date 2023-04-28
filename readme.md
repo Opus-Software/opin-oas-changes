@@ -247,6 +247,7 @@
 | ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |  |
 | ingestion-v1.0.2 | [1.0.2](swagger-apis/ingestion-v1.0.2/1.0.2.yml) |  |  |  |
 | ingestion-v1.0.3 | [1.0.3](swagger-apis/ingestion-v1.0.3/1.0.3.yml) |  |  |  |
+| ingestion-v1.0.5 | [1.0.5](swagger-apis/ingestion-v1.0.5/1.0.5.yml) |  |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |  |
 | open-data-channels | [1.0.0](swagger-apis/open-data-channels/1.0.0.yml) |  |  |  |
@@ -289,6 +290,7 @@
 | ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |
 | ingestion-v1.0.2 | [1.0.2](swagger-apis/ingestion-v1.0.2/1.0.2.yml) |  |  |
 | ingestion-v1.0.3 | [1.0.3](swagger-apis/ingestion-v1.0.3/1.0.3.yml) |  |  |
+| ingestion-v1.0.5 | [1.0.5](swagger-apis/ingestion-v1.0.5/1.0.5.yml) |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |
 | open-data-channels | [1.0.0](swagger-apis/open-data-channels/1.0.0.yml) |  |  |
