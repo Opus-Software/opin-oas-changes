@@ -1,0 +1,23 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /insurance-acceptance-and-branches-abroad/{policyId}/claim
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - Deleted required property: documentationDeliveryDate
+                - Properties changed
+                  - Modified property: documentationDeliveryDate
+                    - Description changed from 'Data de entrega da documentação completa' to 'Data de entrega da documentação completa (Caso tenha ocorrido toda a entrega)'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-acceptance-and-branches-abroad/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
