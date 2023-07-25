@@ -1,0 +1,159 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /auto-insurance/{commercializationArea}/{fipeCode}/{year}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from null to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Properties changed
+                                - New property: termsOthers
+                                - Modified property: assistanceServices
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: chargeTypeSignaling
+                                - Modified property: coverages
+                                  - Description changed from 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.5 do Anexo II' to 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas.'
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - New required property: newCarContractBase
+                                          - Deleted required property: deductiblePercentage
+                                        - Properties changed
+                                          - Modified property: contractBase
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: contractBaseType
+                                                  - Description changed from 'Incidência ao capital segurado da cobertura de casco.' to 'Incidência ao capital segurado da cobertura de casco.
+No caso de valor de mercado, as tabelas de referência devem ser padronizadas
+na proposta técnica submetida pela Estrutura Inicial de Governança para observância
+comum por todas as sociedades participantes.
+Quando a base de contratação for “valor determinado” deve ser informado o valor mínimo e máximo comercializado.
+Quando a base de contratação for “valor de mercado” deve ser informado o percentual mínimo e máximo
+da referência da tabela comercializada.
+'
+                                                  - Deleted enum values: [AMBOS]
+                                          - Modified property: deductiblePaymentByCoverage
+                                            - Description changed from 'Sinalização para cada cobertura se a seguradora exige pagamento de franquia.' to 'Sinalizacao para cada cobertura se a seguradora exige pagamento de franquia. (Indicacao de existencia de franquia para cada cobertura).'
+                                          - Modified property: geographicScopeCoverageOthers
+                                            - Description changed from 'Âmbito geográficoda cobertura - Outros' to 'Âmbito geográfico da cobertura - Outros'
+                                          - Modified property: mandatoryParticipation
+                                            - Description changed from 'Participação Obrigatória do Segurado.' to 'Participação Obrigatória do Segurado (em valor)'
+                                            - Example changed from 'Casco - RCF-V Danos' to '80.00'
+                                          - Modified property: newCarContractBase
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: contractBaseType
+                                                  - Description changed from 'Incidência ao capital segurado da cobertura de casco.' to 'Incidência ao capital segurado da cobertura de casco.
+No caso de valor de mercado, as tabelas de referência devem ser padronizadas
+na proposta técnica submetida pela Estrutura Inicial de Governança para observância
+comum por todas as sociedades participantes.
+Quando a base de contratação for “valor determinado” deve ser informado o valor mínimo e máximo comercializado.
+Quando a base de contratação for “valor de mercado” deve ser informado o percentual mínimo e máximo
+da referência da tabela comercializada.
+'
+                                                  - Deleted enum values: [AMBOS]
+                                - Modified property: minimumRequirements
+                                  - Properties changed
+                                    - Modified property: contractingMinRequirement
+                                      - Example changed from 'https://example.com/mobile-banking' to 'https://www.seguradora.com.br/produto/pdf/min_contrato.pdf'
+                                - Modified property: targetAudiences
+                                  - Items changed
+                                    - MaxLength changed from 30 to null
+                                - Modified property: vehicleOvernightZipCode
+                                  - Description changed from 'Área de comercialização do seguro do automóvel.' to 'CEP do pernoite do veiculo'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from null to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Properties changed
+                                - New property: termsOthers
+                                - Modified property: assistanceServices
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: chargeTypeSignaling
+                                - Modified property: coverages
+                                  - Description changed from 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.5 do Anexo II' to 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas.'
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - New required property: newCarContractBase
+                                          - Deleted required property: deductiblePercentage
+                                        - Properties changed
+                                          - Modified property: contractBase
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: contractBaseType
+                                                  - Description changed from 'Incidência ao capital segurado da cobertura de casco.' to 'Incidência ao capital segurado da cobertura de casco.
+No caso de valor de mercado, as tabelas de referência devem ser padronizadas
+na proposta técnica submetida pela Estrutura Inicial de Governança para observância
+comum por todas as sociedades participantes.
+Quando a base de contratação for “valor determinado” deve ser informado o valor mínimo e máximo comercializado.
+Quando a base de contratação for “valor de mercado” deve ser informado o percentual mínimo e máximo
+da referência da tabela comercializada.
+'
+                                                  - Deleted enum values: [AMBOS]
+                                          - Modified property: deductiblePaymentByCoverage
+                                            - Description changed from 'Sinalização para cada cobertura se a seguradora exige pagamento de franquia.' to 'Sinalizacao para cada cobertura se a seguradora exige pagamento de franquia. (Indicacao de existencia de franquia para cada cobertura).'
+                                          - Modified property: geographicScopeCoverageOthers
+                                            - Description changed from 'Âmbito geográficoda cobertura - Outros' to 'Âmbito geográfico da cobertura - Outros'
+                                          - Modified property: mandatoryParticipation
+                                            - Description changed from 'Participação Obrigatória do Segurado.' to 'Participação Obrigatória do Segurado (em valor)'
+                                            - Example changed from 'Casco - RCF-V Danos' to '80.00'
+                                          - Modified property: newCarContractBase
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: contractBaseType
+                                                  - Description changed from 'Incidência ao capital segurado da cobertura de casco.' to 'Incidência ao capital segurado da cobertura de casco.
+No caso de valor de mercado, as tabelas de referência devem ser padronizadas
+na proposta técnica submetida pela Estrutura Inicial de Governança para observância
+comum por todas as sociedades participantes.
+Quando a base de contratação for “valor determinado” deve ser informado o valor mínimo e máximo comercializado.
+Quando a base de contratação for “valor de mercado” deve ser informado o percentual mínimo e máximo
+da referência da tabela comercializada.
+'
+                                                  - Deleted enum values: [AMBOS]
+                                - Modified property: minimumRequirements
+                                  - Properties changed
+                                    - Modified property: contractingMinRequirement
+                                      - Example changed from 'https://example.com/mobile-banking' to 'https://www.seguradora.com.br/produto/pdf/min_contrato.pdf'
+                                - Modified property: targetAudiences
+                                  - Items changed
+                                    - MaxLength changed from 30 to null
+                                - Modified property: vehicleOvernightZipCode
+                                  - Description changed from 'Área de comercialização do seguro do automóvel.' to 'CEP do pernoite do veiculo'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

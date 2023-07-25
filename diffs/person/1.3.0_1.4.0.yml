@@ -1,0 +1,221 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /person
+- New header param: x-min-v
+- New header param: x-v
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: assistanceType
+                                - New required property: benefitRecalculation
+                                - New required property: minimumRequirements
+                                - New required property: premiumPayment
+                                - Deleted required property: contractType
+                                - Deleted required property: indemnityPaymentMethod
+                              - Properties changed
+                                - New property: additionalOthers
+                                - New property: minimumRequirements
+                                - Deleted property: ageAdjustment
+                                - Deleted property: contractType
+                                - Deleted property: indemnityPaymentIncome
+                                - Deleted property: indemnityPaymentMethod
+                                - Deleted property: minimunRequirements
+                                - Modified property: benefitRecalculation
+                                  - Properties changed
+                                    - New property: benefitIndexOthers
+                                    - Modified property: benefitUpdateIndex
+                                      - New enum values: [IPC-FGV IGP-DI-FGV IPCA-IBGE IGPM-FGV INPC-IBGE TR OUTROS]
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                      - Example changed from null to 'IPC-FGV'
+                                - Modified property: category
+                                  - New enum values: [MICROSSEGURO]
+                                  - Deleted enum values: [MICROSEGURO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: contractType
+                                      - New required property: coverage
+                                      - New required property: coverageAttributes
+                                    - Properties changed
+                                      - New property: contractType
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - New required property: ageAdjustment
+                                          - New required property: excludedRisksURL
+                                          - New required property: indemnityPaymentMode
+                                          - Deleted required property: indemnifiablePeriod
+                                        - Properties changed
+                                          - New property: ageAdjustment
+                                          - New property: indemnityPaymentIncome
+                                          - New property: indemnityPaymentMode
+                                          - Modified property: differentiatedGracePeriod
+                                            - Description changed from '' to 'Descricao do periodo de carencia de cobertura para cada combinacao modalidade/cobertura do produto caso haja alguma especificidade (de acordo com o dado "criterio de prazo de carencia diferenciada")'
+                                          - Modified property: gracePeriod
+                                            - Items changed
+                                              - Required changed
+                                                - New required property: amount
+                                                - New required property: unit
+                                          - Modified property: indemnifiablePeriod
+                                            - Description changed from 'Listagem de período indenizável para cada combinação de modalidade/cobertura do produto' to 'Listagem de período indenizável para cada combinação de modalidade/cobertura do produto. Deve ser preenchido somente se a frequência do pagamento de indenização for igual a DIARIA_OU_PARCELA'
+                                            - Items changed
+                                              - New enum values: [QUANTIDADE_DETERMINADA_DE_PARCELAS ATE_FIM_CICLO_DETERMINADO]
+                                - Modified property: pmbacRemuneration
+                                  - Required changed
+                                    - New required property: interestRate
+                                    - New required property: pmbacUpdateIndex
+                                  - Properties changed
+                                    - New property: pmbacIndexOthers
+                                    - Modified property: pmbacUpdateIndex
+                                      - New enum values: [IPC-FGV IGP-DI-FGV IPCA-IBGE IGPM-FGV INPC-IBGE TR OUTROS]
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                      - Example changed from 'IPCA' to 'IPC-FGV'
+                                - Modified property: portabilityGraceTime
+                                  - Type changed from 'integer' to 'object'
+                                  - Description changed from 'Prazo de carência em dias para Portabilidade' to 'Período de carência'
+                                  - Required changed
+                                    - New required property: amount
+                                    - New required property: unit
+                                  - Properties changed
+                                    - New property: amount
+                                    - New property: unit
+                                - Modified property: premiumPayment
+                                  - Properties changed
+                                    - New property: paymentDetail
+                                    - Modified property: paymentMethod
+                                      - Items changed
+                                        - New enum values: [TED_DOC OUTROS]
+                                - Modified property: reclaim
+                                  - Required changed
+                                    - New required property: reclaimTable
+                                  - Properties changed
+                                    - Modified property: gracePeriod
+                                      - Required changed
+                                        - New required property: amount
+                                        - New required property: unit
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: assistanceType
+                                - New required property: benefitRecalculation
+                                - New required property: minimumRequirements
+                                - New required property: premiumPayment
+                                - Deleted required property: contractType
+                                - Deleted required property: indemnityPaymentMethod
+                              - Properties changed
+                                - New property: additionalOthers
+                                - New property: minimumRequirements
+                                - Deleted property: ageAdjustment
+                                - Deleted property: contractType
+                                - Deleted property: indemnityPaymentIncome
+                                - Deleted property: indemnityPaymentMethod
+                                - Deleted property: minimunRequirements
+                                - Modified property: benefitRecalculation
+                                  - Properties changed
+                                    - New property: benefitIndexOthers
+                                    - Modified property: benefitUpdateIndex
+                                      - New enum values: [IPC-FGV IGP-DI-FGV IPCA-IBGE IGPM-FGV INPC-IBGE TR OUTROS]
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                      - Example changed from null to 'IPC-FGV'
+                                - Modified property: category
+                                  - New enum values: [MICROSSEGURO]
+                                  - Deleted enum values: [MICROSEGURO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: contractType
+                                      - New required property: coverage
+                                      - New required property: coverageAttributes
+                                    - Properties changed
+                                      - New property: contractType
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - New required property: ageAdjustment
+                                          - New required property: excludedRisksURL
+                                          - New required property: indemnityPaymentMode
+                                          - Deleted required property: indemnifiablePeriod
+                                        - Properties changed
+                                          - New property: ageAdjustment
+                                          - New property: indemnityPaymentIncome
+                                          - New property: indemnityPaymentMode
+                                          - Modified property: differentiatedGracePeriod
+                                            - Description changed from '' to 'Descricao do periodo de carencia de cobertura para cada combinacao modalidade/cobertura do produto caso haja alguma especificidade (de acordo com o dado "criterio de prazo de carencia diferenciada")'
+                                          - Modified property: gracePeriod
+                                            - Items changed
+                                              - Required changed
+                                                - New required property: amount
+                                                - New required property: unit
+                                          - Modified property: indemnifiablePeriod
+                                            - Description changed from 'Listagem de período indenizável para cada combinação de modalidade/cobertura do produto' to 'Listagem de período indenizável para cada combinação de modalidade/cobertura do produto. Deve ser preenchido somente se a frequência do pagamento de indenização for igual a DIARIA_OU_PARCELA'
+                                            - Items changed
+                                              - New enum values: [QUANTIDADE_DETERMINADA_DE_PARCELAS ATE_FIM_CICLO_DETERMINADO]
+                                - Modified property: pmbacRemuneration
+                                  - Required changed
+                                    - New required property: interestRate
+                                    - New required property: pmbacUpdateIndex
+                                  - Properties changed
+                                    - New property: pmbacIndexOthers
+                                    - Modified property: pmbacUpdateIndex
+                                      - New enum values: [IPC-FGV IGP-DI-FGV IPCA-IBGE IGPM-FGV INPC-IBGE TR OUTROS]
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                      - Example changed from 'IPCA' to 'IPC-FGV'
+                                - Modified property: portabilityGraceTime
+                                  - Type changed from 'integer' to 'object'
+                                  - Description changed from 'Prazo de carência em dias para Portabilidade' to 'Período de carência'
+                                  - Required changed
+                                    - New required property: amount
+                                    - New required property: unit
+                                  - Properties changed
+                                    - New property: amount
+                                    - New property: unit
+                                - Modified property: premiumPayment
+                                  - Properties changed
+                                    - New property: paymentDetail
+                                    - Modified property: paymentMethod
+                                      - Items changed
+                                        - New enum values: [TED_DOC OUTROS]
+                                - Modified property: reclaim
+                                  - Required changed
+                                    - New required property: reclaimTable
+                                  - Properties changed
+                                    - Modified property: gracePeriod
+                                      - Required changed
+                                        - New required property: amount
+                                        - New required property: unit
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

@@ -1,0 +1,310 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /pension-plan
+- New header param: x-min-v
+- New header param: x-v
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: ageReframing
+                                - New required property: otherGuaranteedValues
+                                - Deleted required property: financialRegimeContractType
+                                - Deleted required property: otherGuarateedValues
+                              - Properties changed
+                                - New property: otherGuaranteedValues
+                                - Deleted property: financialRegimeContractType
+                                - Deleted property: otherGuarateedValues
+                                - Modified property: ageReframing
+                                  - Required changed
+                                    - Deleted required property: reframingPeriodicity
+                                - Modified property: contributionPayment
+                                  - Properties changed
+                                    - New property: contributionDetail
+                                    - New property: contributionPaymentDetail
+                                    - Modified property: contributionPaymentMethod
+                                      - Items changed
+                                        - New enum values: [CARTAO_DEBITO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: coverage
+                                      - New required property: coveragePeriod
+                                      - New required property: coveragesAttributes
+                                      - New required property: financialRegimeContractType
+                                      - Deleted required property: modality
+                                    - Properties changed
+                                      - New property: financialRegimeContractType
+                                      - Deleted property: modality
+                                      - Modified property: coveragesAttributes
+                                        - Required changed
+                                          - New required property: modality
+                                          - Deleted required property: excludedRiskURL
+                                          - Deleted required property: indemnifiableDeadline
+                                          - Deleted required property: profitModality
+                                        - Properties changed
+                                          - New property: modality
+                                          - Deleted property: profitModality
+                                          - Modified property: excludedRisk
+                                            - Items changed
+                                              - New enum values: [NAO_SE_APLICA]
+                                          - Modified property: gracePeriod
+                                            - Required changed
+                                              - New required property: amount
+                                              - New required property: unit
+                                          - Modified property: indenizationPaymentMethod
+                                            - Type changed from 'string' to 'array'
+                                            - Deleted enum values: [PAGAMENTO_UNICO FORMA_RENDA]
+                                            - Example changed from 'PAGAMENTO_UNICO' to null
+                                            - Items changed
+                                              - Schema added
+                                - Modified property: reclaim
+                                  - Properties changed
+                                    - Deleted property: differentiatedPercentage
+                                    - Modified property: gracePeriod
+                                      - Type changed from 'string' to 'object'
+                                      - Description changed from 'Prazo de carência em dias para resgate.' to 'Período de carência.'
+                                      - Example changed from '20/Não se aplica' to null
+                                      - Required changed
+                                        - New required property: amount
+                                        - New required property: unit
+                                      - Properties changed
+                                        - New property: amount
+                                        - New property: unit
+                                    - Modified property: reclaimTable
+                                      - Items changed
+                                        - Properties changed
+                                          - New property: differentiatedPercentage
+                                          - Modified property: percentage
+                                            - Description changed from 'Percentual da faixa de resgate' to 'Percentual da faixa de resgate da PMBaC para cada conjunto de prazo aplicável.'
+                                - Modified property: termsAndConditions
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: definition
+                                        - Example changed from 'wwww.seguradora.com.br/termos' to 'https://www.seguradora.com.br/produto/tradicional/pdf/condicoes_gerais.pdf'
+                                - Modified property: updatePMBaC
+                                  - Required changed
+                                    - New required property: updateIndex
+                                  - Properties changed
+                                    - Modified property: interestRate
+                                      - Description changed from 'Taxa de juros para capitalização da PMBaC PMBC.' to 'Taxa de juros para capitalização da PMBaC.'
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: ageReframing
+                                - New required property: otherGuaranteedValues
+                                - Deleted required property: financialRegimeContractType
+                                - Deleted required property: otherGuarateedValues
+                              - Properties changed
+                                - New property: otherGuaranteedValues
+                                - Deleted property: financialRegimeContractType
+                                - Deleted property: otherGuarateedValues
+                                - Modified property: ageReframing
+                                  - Required changed
+                                    - Deleted required property: reframingPeriodicity
+                                - Modified property: contributionPayment
+                                  - Properties changed
+                                    - New property: contributionDetail
+                                    - New property: contributionPaymentDetail
+                                    - Modified property: contributionPaymentMethod
+                                      - Items changed
+                                        - New enum values: [CARTAO_DEBITO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: coverage
+                                      - New required property: coveragePeriod
+                                      - New required property: coveragesAttributes
+                                      - New required property: financialRegimeContractType
+                                      - Deleted required property: modality
+                                    - Properties changed
+                                      - New property: financialRegimeContractType
+                                      - Deleted property: modality
+                                      - Modified property: coveragesAttributes
+                                        - Required changed
+                                          - New required property: modality
+                                          - Deleted required property: excludedRiskURL
+                                          - Deleted required property: indemnifiableDeadline
+                                          - Deleted required property: profitModality
+                                        - Properties changed
+                                          - New property: modality
+                                          - Deleted property: profitModality
+                                          - Modified property: excludedRisk
+                                            - Items changed
+                                              - New enum values: [NAO_SE_APLICA]
+                                          - Modified property: gracePeriod
+                                            - Required changed
+                                              - New required property: amount
+                                              - New required property: unit
+                                          - Modified property: indenizationPaymentMethod
+                                            - Type changed from 'string' to 'array'
+                                            - Deleted enum values: [PAGAMENTO_UNICO FORMA_RENDA]
+                                            - Example changed from 'PAGAMENTO_UNICO' to null
+                                            - Items changed
+                                              - Schema added
+                                - Modified property: reclaim
+                                  - Properties changed
+                                    - Deleted property: differentiatedPercentage
+                                    - Modified property: gracePeriod
+                                      - Type changed from 'string' to 'object'
+                                      - Description changed from 'Prazo de carência em dias para resgate.' to 'Período de carência.'
+                                      - Example changed from '20/Não se aplica' to null
+                                      - Required changed
+                                        - New required property: amount
+                                        - New required property: unit
+                                      - Properties changed
+                                        - New property: amount
+                                        - New property: unit
+                                    - Modified property: reclaimTable
+                                      - Items changed
+                                        - Properties changed
+                                          - New property: differentiatedPercentage
+                                          - Modified property: percentage
+                                            - Description changed from 'Percentual da faixa de resgate' to 'Percentual da faixa de resgate da PMBaC para cada conjunto de prazo aplicável.'
+                                - Modified property: termsAndConditions
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: definition
+                                        - Example changed from 'wwww.seguradora.com.br/termos' to 'https://www.seguradora.com.br/produto/tradicional/pdf/condicoes_gerais.pdf'
+                                - Modified property: updatePMBaC
+                                  - Required changed
+                                    - New required property: updateIndex
+                                  - Properties changed
+                                    - Modified property: interestRate
+                                      - Description changed from 'Taxa de juros para capitalização da PMBaC PMBC.' to 'Taxa de juros para capitalização da PMBaC.'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: ageReframing
+                                - New required property: otherGuaranteedValues
+                                - Deleted required property: financialRegimeContractType
+                                - Deleted required property: otherGuarateedValues
+                              - Properties changed
+                                - New property: otherGuaranteedValues
+                                - Deleted property: financialRegimeContractType
+                                - Deleted property: otherGuarateedValues
+                                - Modified property: ageReframing
+                                  - Required changed
+                                    - Deleted required property: reframingPeriodicity
+                                - Modified property: contributionPayment
+                                  - Properties changed
+                                    - New property: contributionDetail
+                                    - New property: contributionPaymentDetail
+                                    - Modified property: contributionPaymentMethod
+                                      - Items changed
+                                        - New enum values: [CARTAO_DEBITO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - New required property: coverage
+                                      - New required property: coveragePeriod
+                                      - New required property: coveragesAttributes
+                                      - New required property: financialRegimeContractType
+                                      - Deleted required property: modality
+                                    - Properties changed
+                                      - New property: financialRegimeContractType
+                                      - Deleted property: modality
+                                      - Modified property: coveragesAttributes
+                                        - Required changed
+                                          - New required property: modality
+                                          - Deleted required property: excludedRiskURL
+                                          - Deleted required property: indemnifiableDeadline
+                                          - Deleted required property: profitModality
+                                        - Properties changed
+                                          - New property: modality
+                                          - Deleted property: profitModality
+                                          - Modified property: excludedRisk
+                                            - Items changed
+                                              - New enum values: [NAO_SE_APLICA]
+                                          - Modified property: gracePeriod
+                                            - Required changed
+                                              - New required property: amount
+                                              - New required property: unit
+                                          - Modified property: indenizationPaymentMethod
+                                            - Type changed from 'string' to 'array'
+                                            - Deleted enum values: [PAGAMENTO_UNICO FORMA_RENDA]
+                                            - Example changed from 'PAGAMENTO_UNICO' to null
+                                            - Items changed
+                                              - Schema added
+                                - Modified property: reclaim
+                                  - Properties changed
+                                    - Deleted property: differentiatedPercentage
+                                    - Modified property: gracePeriod
+                                      - Type changed from 'string' to 'object'
+                                      - Description changed from 'Prazo de carência em dias para resgate.' to 'Período de carência.'
+                                      - Example changed from '20/Não se aplica' to null
+                                      - Required changed
+                                        - New required property: amount
+                                        - New required property: unit
+                                      - Properties changed
+                                        - New property: amount
+                                        - New property: unit
+                                    - Modified property: reclaimTable
+                                      - Items changed
+                                        - Properties changed
+                                          - New property: differentiatedPercentage
+                                          - Modified property: percentage
+                                            - Description changed from 'Percentual da faixa de resgate' to 'Percentual da faixa de resgate da PMBaC para cada conjunto de prazo aplicável.'
+                                - Modified property: termsAndConditions
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: definition
+                                        - Example changed from 'wwww.seguradora.com.br/termos' to 'https://www.seguradora.com.br/produto/tradicional/pdf/condicoes_gerais.pdf'
+                                - Modified property: updatePMBaC
+                                  - Required changed
+                                    - New required property: updateIndex
+                                  - Properties changed
+                                    - Modified property: interestRate
+                                      - Description changed from 'Taxa de juros para capitalização da PMBaC PMBC.' to 'Taxa de juros para capitalização da PMBaC.'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

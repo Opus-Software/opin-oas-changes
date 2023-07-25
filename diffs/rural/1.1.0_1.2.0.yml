@@ -1,0 +1,89 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /rural
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: targetAudiences
+                              - Properties changed
+                                - New property: targetAudiences
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverage
+                                        - Description changed from 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.17 do Anexo II.' to 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas.'
+                                - Modified property: minimumRequirements
+                                  - Required changed
+                                    - Deleted required property: targetAudiences
+                                  - Properties changed
+                                    - Deleted property: targetAudiences
+                                    - Modified property: minimumRequirementDetails
+                                      - Example changed from 'https://openinsurance.com.br/aaa' to 'https://www.seguradora.com.br/produto/requisitos.pdf'
+                                - Modified property: termsAndConditions
+                                  - Required changed
+                                    - New required property: definition
+                                  - Properties changed
+                                    - Modified property: susepProcessNumber
+                                      - Description changed from 'Número do processo Susep. OBS: Condicional a seleção de 2. Não no campo acima.' to 'Número do processo Susep. Caso não seja um produto para Grandes Riscos'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: targetAudiences
+                              - Properties changed
+                                - New property: targetAudiences
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverage
+                                        - Description changed from 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas, conforme Tabela II.17 do Anexo II.' to 'Listagem de coberturas incluídas no produto que deve observar a relação discriminada de coberturas.'
+                                - Modified property: minimumRequirements
+                                  - Required changed
+                                    - Deleted required property: targetAudiences
+                                  - Properties changed
+                                    - Deleted property: targetAudiences
+                                    - Modified property: minimumRequirementDetails
+                                      - Example changed from 'https://openinsurance.com.br/aaa' to 'https://www.seguradora.com.br/produto/requisitos.pdf'
+                                - Modified property: termsAndConditions
+                                  - Required changed
+                                    - New required property: definition
+                                  - Properties changed
+                                    - Modified property: susepProcessNumber
+                                      - Description changed from 'Número do processo Susep. OBS: Condicional a seleção de 2. Não no campo acima.' to 'Número do processo Susep. Caso não seja um produto para Grandes Riscos'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologacao' to 'Servidor de Producao'

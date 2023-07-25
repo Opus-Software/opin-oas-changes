@@ -1,0 +1,69 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /referenced-network/{countrySubDivision}/{serviceType}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: identification
+                            - Items changed
+                              - Properties changed
+                                - Modified property: cnpjNumber
+                                  - Example changed from '12341234123412' to '12345678901234'
+                                  - MaxLength changed from 14 to null
+                                  - Pattern changed from '' to '^\d{14}$'
+                                - Modified property: services
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: name
+                                        - Description changed from 'Relação dos serviços efetivamente prestados, conforme discriminado na Tabela II.5 do Anexo II' to 'Relação dos serviços efetivamente prestados'
+                                      - Modified property: type
+                                        - Description changed from 'Relação dos tipos de prestação de serviços efetivamente prestados, conforme discriminado na Tabela XXX do Anexo II' to 'Relação dos tipos de prestação de serviços efetivamente prestados'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: identification
+                            - Items changed
+                              - Properties changed
+                                - Modified property: cnpjNumber
+                                  - Example changed from '12341234123412' to '12345678901234'
+                                  - MaxLength changed from 14 to null
+                                  - Pattern changed from '' to '^\d{14}$'
+                                - Modified property: services
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: name
+                                        - Description changed from 'Relação dos serviços efetivamente prestados, conforme discriminado na Tabela II.5 do Anexo II' to 'Relação dos serviços efetivamente prestados'
+                                      - Modified property: type
+                                        - Description changed from 'Relação dos tipos de prestação de serviços efetivamente prestados, conforme discriminado na Tabela XXX do Anexo II' to 'Relação dos tipos de prestação de serviços efetivamente prestados'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/channels/v1
+  - Description changed from 'Servidor de Homologacao' to 'Servidor de Producao'

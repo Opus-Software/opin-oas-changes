@@ -1,0 +1,203 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /life-pension
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: productDetails
+                                - New required property: type
+                              - Properties changed
+                                - Modified property: minimumRequirements
+                                  - Properties changed
+                                    - Modified property: minRequirementsContract
+                                      - Example changed from 'https://example.com/mobile-banking' to 'https://www.seguradora.com.br/produto/pdf/min_contrato.pdf'
+                                - Modified property: optionalCoverage
+                                  - Description changed from 'Campo aberto (possibilidade de incluir URL).' to 'Campo aberto (possibilidade de incluir URL) para a descricao das coberturas de risco (previdencia) comercializadas facultativamente a cobertura de sobrevivencia'
+                                - Modified property: productDetails
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: contractTermsConditions
+                                        - Example changed from 'https://example.com/mobilebanking' to 'https://www.seguradora.com.br/produto/pdf/condicoes_gerais.pdf'
+                                      - Modified property: costs
+                                        - Properties changed
+                                          - Modified property: loadingAntecipated
+                                            - Property 'AllOf' changed
+                                              - 1 schemas added
+                                            - Type changed from 'object' to ''
+                                            - Description changed from '' to 'Percentual de carregamento cobrado quando do pagamento do premio/contribuicao. Para coletivos Valor maximo'
+                                            - Required changed
+                                              - Deleted required property: maxValue
+                                              - Deleted required property: minValue
+                                            - Properties changed
+                                              - Deleted property: maxValue
+                                              - Deleted property: minValue
+                                          - Modified property: loadingLate
+                                            - Property 'AllOf' changed
+                                              - 1 schemas added
+                                            - Type changed from 'object' to ''
+                                            - Description changed from '' to 'Percentual de taxa de carregamento cobrado quando da efetivacao de resgate ou portabilidade. Para coletivos Valor maximo'
+                                            - Required changed
+                                              - Deleted required property: maxValue
+                                              - Deleted required property: minValue
+                                            - Properties changed
+                                              - Deleted property: maxValue
+                                              - Deleted property: minValue
+                                      - Modified property: defferalPeriod
+                                        - Required changed
+                                          - New required property: investmentFunds
+                                          - New required property: permissionExtraordinaryContributions
+                                          - New required property: premiumPaymentMethod
+                                          - Deleted required property: otherMinimumPerformanceGarantees
+                                        - Properties changed
+                                          - New property: otherMinGuaranteesIndex
+                                          - New property: otherMinGuaranteesPercentage
+                                          - New property: paymentDetail
+                                          - Deleted property: otherMinimumPerformanceGarantees
+                                          - Modified property: investmentFunds
+                                            - Description changed from 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação.' to 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação ou de concessão.'
+                                            - Items changed
+                                              - Required changed
+                                                - New required property: eligibilityRule
+                                              - Properties changed
+                                                - Modified property: cnpjNumber
+                                                  - Example changed from '13.456.789/0001-12' to '12345678901234'
+                                                  - MaxLength changed from 18 to null
+                                                  - Pattern changed from '' to '^\d{14}$'
+                                          - Modified property: minimumPremiumAmount
+                                            - Items changed
+                                              - Example changed from map[minimumPremiumAmountDescription: minimumPremiumAmountValue:250] to null
+                                              - MaxLength changed from 100 to null
+                                              - Required changed
+                                                - New required property: minimumPremiumAmountDescription
+                                                - New required property: minimumPremiumAmountValue
+                                      - Modified property: grantPeriodBenefit
+                                        - Properties changed
+                                          - Modified property: investmentFunds
+                                            - Description changed from 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação.' to 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação ou de concessão.'
+                                            - Items changed
+                                              - Required changed
+                                                - New required property: eligibilityRule
+                                              - Properties changed
+                                                - Modified property: cnpjNumber
+                                                  - Example changed from '13.456.789/0001-12' to '12345678901234'
+                                                  - MaxLength changed from 18 to null
+                                                  - Pattern changed from '' to '^\d{14}$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: productDetails
+                                - New required property: type
+                              - Properties changed
+                                - Modified property: minimumRequirements
+                                  - Properties changed
+                                    - Modified property: minRequirementsContract
+                                      - Example changed from 'https://example.com/mobile-banking' to 'https://www.seguradora.com.br/produto/pdf/min_contrato.pdf'
+                                - Modified property: optionalCoverage
+                                  - Description changed from 'Campo aberto (possibilidade de incluir URL).' to 'Campo aberto (possibilidade de incluir URL) para a descricao das coberturas de risco (previdencia) comercializadas facultativamente a cobertura de sobrevivencia'
+                                - Modified property: productDetails
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: contractTermsConditions
+                                        - Example changed from 'https://example.com/mobilebanking' to 'https://www.seguradora.com.br/produto/pdf/condicoes_gerais.pdf'
+                                      - Modified property: costs
+                                        - Properties changed
+                                          - Modified property: loadingAntecipated
+                                            - Property 'AllOf' changed
+                                              - 1 schemas added
+                                            - Type changed from 'object' to ''
+                                            - Description changed from '' to 'Percentual de carregamento cobrado quando do pagamento do premio/contribuicao. Para coletivos Valor maximo'
+                                            - Required changed
+                                              - Deleted required property: maxValue
+                                              - Deleted required property: minValue
+                                            - Properties changed
+                                              - Deleted property: maxValue
+                                              - Deleted property: minValue
+                                          - Modified property: loadingLate
+                                            - Property 'AllOf' changed
+                                              - 1 schemas added
+                                            - Type changed from 'object' to ''
+                                            - Description changed from '' to 'Percentual de taxa de carregamento cobrado quando da efetivacao de resgate ou portabilidade. Para coletivos Valor maximo'
+                                            - Required changed
+                                              - Deleted required property: maxValue
+                                              - Deleted required property: minValue
+                                            - Properties changed
+                                              - Deleted property: maxValue
+                                              - Deleted property: minValue
+                                      - Modified property: defferalPeriod
+                                        - Required changed
+                                          - New required property: investmentFunds
+                                          - New required property: permissionExtraordinaryContributions
+                                          - New required property: premiumPaymentMethod
+                                          - Deleted required property: otherMinimumPerformanceGarantees
+                                        - Properties changed
+                                          - New property: otherMinGuaranteesIndex
+                                          - New property: otherMinGuaranteesPercentage
+                                          - New property: paymentDetail
+                                          - Deleted property: otherMinimumPerformanceGarantees
+                                          - Modified property: investmentFunds
+                                            - Description changed from 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação.' to 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação ou de concessão.'
+                                            - Items changed
+                                              - Required changed
+                                                - New required property: eligibilityRule
+                                              - Properties changed
+                                                - Modified property: cnpjNumber
+                                                  - Example changed from '13.456.789/0001-12' to '12345678901234'
+                                                  - MaxLength changed from 18 to null
+                                                  - Pattern changed from '' to '^\d{14}$'
+                                          - Modified property: minimumPremiumAmount
+                                            - Items changed
+                                              - Example changed from map[minimumPremiumAmountDescription: minimumPremiumAmountValue:250] to null
+                                              - MaxLength changed from 100 to null
+                                              - Required changed
+                                                - New required property: minimumPremiumAmountDescription
+                                                - New required property: minimumPremiumAmountValue
+                                      - Modified property: grantPeriodBenefit
+                                        - Properties changed
+                                          - Modified property: investmentFunds
+                                            - Description changed from 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação.' to 'Lista com as informações do(s) Fundo(s) de Investimento(s) disponíveis para o período de diferimento/acumulação ou de concessão.'
+                                            - Items changed
+                                              - Required changed
+                                                - New required property: eligibilityRule
+                                              - Properties changed
+                                                - Modified property: cnpjNumber
+                                                  - Example changed from '13.456.789/0001-12' to '12345678901234'
+                                                  - MaxLength changed from 18 to null
+                                                  - Pattern changed from '' to '^\d{14}$'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

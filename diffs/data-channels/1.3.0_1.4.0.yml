@@ -1,0 +1,160 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+GET /branches
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Required changed
+                          - New required property: branches
+                        - Properties changed
+                          - Modified property: branches
+                            - Items changed
+                              - Required changed
+                                - New required property: identification
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - MinLength changed from 14 to 0
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '^(\d{14})$|^NA$' to '^\d{14}$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Required changed
+                          - New required property: branches
+                        - Properties changed
+                          - Modified property: branches
+                            - Items changed
+                              - Required changed
+                                - New required property: identification
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - MinLength changed from 14 to 0
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '^(\d{14})$|^NA$' to '^\d{14}$'
+GET /electronic-channels
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Example changed from map[data:map[brand:map[companies:[map[cnpjNumber:45086338000178 electronicChannels:[map[identification:map[type:INTERNET urls:[https://empresa1.com/insurance]] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO]]]] name:Empresa A1 urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels] meta:map[totalPages:1 totalRecords:1]] to map[data:map[brand:map[companies:[map[cnpjNumber:12345678901234 electronicChannels:[map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[accessType:INTERNET type:INTERNET urls:[https://empresa1.com/insurance]] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO]]]] name:Empresa A1 urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels] meta:map[totalPages:1 totalRecords:1]]
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from null to '12345678901234'
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: electronicChannels
+                            - Items changed
+                              - Required changed
+                                - New required property: availability
+                              - Properties changed
+                                - Modified property: identification
+                                  - Required changed
+                                    - New required property: accessType
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Example changed from map[data:map[brand:map[companies:[map[cnpjNumber:45086338000178 electronicChannels:[map[identification:map[type:INTERNET urls:[https://empresa1.com/insurance]] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO]]]] name:Empresa A1 urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels] meta:map[totalPages:1 totalRecords:1]] to map[data:map[brand:map[companies:[map[cnpjNumber:12345678901234 electronicChannels:[map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[accessType:INTERNET type:INTERNET urls:[https://empresa1.com/insurance]] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO]]]] name:Empresa A1 urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/electronic-channels] meta:map[totalPages:1 totalRecords:1]]
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from null to '12345678901234'
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: electronicChannels
+                            - Items changed
+                              - Required changed
+                                - New required property: availability
+                              - Properties changed
+                                - Modified property: identification
+                                  - Required changed
+                                    - New required property: accessType
+GET /phone-channels
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Example changed from map[data:map[brand:map[companies:[map[cnpjNumber:45086338000178 name:Empresa A1 phoneChannels:[map[identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:35721199] map[areaCode:14 countryCallingCode:55 number:997865532]] type:CENTRAL_TELEFONICA] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO] map[code:02 name:AVISO_SINISTRO] map[code:05 name:ENDOSSO]]] map[identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828]] type:SAC] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE] map[code:05 name:ENDOSSO]]] map[identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555]] type:OUVIDORIA] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE]]]] urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels] meta:map[totalPages:1 totalRecords:1]] to map[data:map[brand:map[companies:[map[cnpjNumber:12345678901234 name:Empresa A1 phoneChannels:[map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:35721199] map[areaCode:14 countryCallingCode:55 number:997865532]] type:CENTRAL_TELEFONICA] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO] map[code:02 name:AVISO_SINISTRO] map[code:05 name:ENDOSSO]]] map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828]] type:SAC] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE] map[code:05 name:ENDOSSO]]] map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555]] type:OUVIDORIA] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE]]]] urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels] meta:map[totalPages:1 totalRecords:1]]
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - MinLength changed from 14 to 0
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '^(\d{14})$|^NA$' to '^\d{14}$'
+                          - Modified property: phoneChannels
+                            - Items changed
+                              - Required changed
+                                - New required property: availability
+                              - Properties changed
+                                - Modified property: identification
+                                  - Required changed
+                                    - New required property: phones
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Example changed from map[data:map[brand:map[companies:[map[cnpjNumber:45086338000178 name:Empresa A1 phoneChannels:[map[identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:35721199] map[areaCode:14 countryCallingCode:55 number:997865532]] type:CENTRAL_TELEFONICA] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO] map[code:02 name:AVISO_SINISTRO] map[code:05 name:ENDOSSO]]] map[identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828]] type:SAC] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE] map[code:05 name:ENDOSSO]]] map[identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555]] type:OUVIDORIA] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE]]]] urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels] meta:map[totalPages:1 totalRecords:1]] to map[data:map[brand:map[companies:[map[cnpjNumber:12345678901234 name:Empresa A1 phoneChannels:[map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:35721199] map[areaCode:14 countryCallingCode:55 number:997865532]] type:CENTRAL_TELEFONICA] services:[map[code:01 name:ALTERACOES_FORMA_PAGAMENTO] map[code:02 name:AVISO_SINISTRO] map[code:05 name:ENDOSSO]]] map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828] map[areaCode:14 countryCallingCode:55 number:40044828]] type:SAC] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE] map[code:05 name:ENDOSSO]]] map[availability:map[standards:[map[closingTime:16:00:57Z openingTime:10:00:57Z weekday:DOMINGO]]] identification:map[phones:[map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555] map[areaCode:14 countryCallingCode:55 number:40045555]] type:OUVIDORIA] services:[map[code:16 name:RECLAMACAO] map[code:15 name:PORTABILIDADE]]]] urlComplementaryList:https://empresaa1.com/branches-insurance]] name:Organização A]] links:map[first:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels last:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels next:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels prev:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels self:https://api.organizacao.com.br/open-insurance/channels/v1/phone-channels] meta:map[totalPages:1 totalRecords:1]]
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Example changed from '45086338000178' to '12345678901234'
+                            - MinLength changed from 14 to 0
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '^(\d{14})$|^NA$' to '^\d{14}$'
+                          - Modified property: phoneChannels
+                            - Items changed
+                              - Required changed
+                                - New required property: availability
+                              - Properties changed
+                                - Modified property: identification
+                                  - Required changed
+                                    - New required property: phones

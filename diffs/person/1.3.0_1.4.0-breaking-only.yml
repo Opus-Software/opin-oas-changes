@@ -1,0 +1,88 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /person
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: contractType
+                                - Deleted required property: indemnityPaymentMethod
+                              - Properties changed
+                                - Deleted property: contractType
+                                - Deleted property: indemnityPaymentMethod
+                                - Modified property: benefitRecalculation
+                                  - Properties changed
+                                    - Modified property: benefitUpdateIndex
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                - Modified property: category
+                                  - Deleted enum values: [MICROSEGURO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - Deleted required property: indemnifiablePeriod
+                                - Modified property: pmbacRemuneration
+                                  - Properties changed
+                                    - Modified property: pmbacUpdateIndex
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                - Modified property: portabilityGraceTime
+                                  - Type changed from 'integer' to 'object'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: contractType
+                                - Deleted required property: indemnityPaymentMethod
+                              - Properties changed
+                                - Deleted property: contractType
+                                - Deleted property: indemnityPaymentMethod
+                                - Modified property: benefitRecalculation
+                                  - Properties changed
+                                    - Modified property: benefitUpdateIndex
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                - Modified property: category
+                                  - Deleted enum values: [MICROSEGURO]
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - Deleted required property: indemnifiablePeriod
+                                - Modified property: pmbacRemuneration
+                                  - Properties changed
+                                    - Modified property: pmbacUpdateIndex
+                                      - Deleted enum values: [IPCA IGP-M INPC]
+                                - Modified property: portabilityGraceTime
+                                  - Type changed from 'integer' to 'object'

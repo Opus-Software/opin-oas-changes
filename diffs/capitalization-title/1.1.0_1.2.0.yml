@@ -1,0 +1,235 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /capitalization-title
+- New header param: x-min-v
+- New header param: x-v
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: additionalDetails
+                                - New required property: capitalizationPeriod
+                                - New required property: contributionPayment
+                                - New required property: latePayment
+                                - New required property: minimumRequirements
+                                - New required property: raffle
+                                - New required property: redemption
+                                - New required property: targetAudiences
+                                - New required property: validity
+                              - Properties changed
+                                - New property: targetAudiences
+                                - Modified property: capitalizationPeriod
+                                  - Properties changed
+                                    - Modified property: interestRate
+                                      - Type changed from 'number' to 'string'
+                                      - Description changed from 'Taxa que remunera a parte da mensalidade destinada a formar o Capital, ou seja, a Provisão Matemática de Resgate, também chamada de saldo de capitalização. Em porcentagem ao mês (% a.m)' to 'Taxa de juros que remunera a provisão matemática para capitalização.
+(Taxa que remunera a parte da mensalidade destinada a formar o Capital,
+ou seja, a Provisão Matemática de Resgate, também chamada de saldo de capitalização.
+Em porcentagem ao mês (% a.m)). Exemplo 1.000000 igual a 100 por cento
+'
+                                      - Example changed from 0.25123 to '0.000002'
+                                      - MaxLength changed from 7 to null
+                                      - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                    - Modified property: redemptionPercentageEndTerm
+                                      - Type changed from 'number' to 'string'
+                                      - Description changed from 'Percentual mínimo da soma das contribuições efetuadas que poderá ser resgatado ao final da vigência,  tendo como condição os pagamentos das parcelas nos respectivos vencimentos.' to 'Percentual mínimo da soma das contribuições efetuadas que poderá ser resgatado ao final da vigência, tendo como condição os pagamentos das parcelas nos respectivos vencimentos.'
+                                      - Example changed from 100.002 to '0.000002'
+                                      - MaxLength changed from 7 to null
+                                      - Pattern changed from '' to '^\d{1}\.\d{6}$'
+                                - Modified property: contributionPayment
+                                  - Properties changed
+                                    - New property: paymentDetail
+                                - Modified property: costType
+                                  - Type changed from 'array' to 'string'
+                                  - New enum values: [PAGAMENTO_UNICO PAGAMENTO_MENSAL PAGAMENTO_PERIODICO]
+                                  - Example changed from null to 'PAGAMENTO_UNICO'
+                                  - Items changed
+                                    - Schema deleted
+                                - Modified property: minimumRequirements
+                                  - Required changed
+                                    - Deleted required property: targetAudiences
+                                  - Properties changed
+                                    - Deleted property: targetAudiences
+                                    - Modified property: minimumRequirementDetails
+                                      - Example changed from 'https://ey.exemplo/capitalizacao/tradicional/PU/requisitos_min' to 'https://seguradora.exemplo.com.br/capitalizacao/requisitos_min.pdf'
+                                - Modified property: modality
+                                  - Type changed from 'array' to 'string'
+                                  - New enum values: [TRADICIONAL INSTRUMENTO_GARANTIA COMPRA_PROGRAMADA POPULAR INCENTIVO FILANTROPIA_PREMIAVEL]
+                                  - Example changed from null to 'TRADICIONAL'
+                                  - Items changed
+                                    - Schema deleted
+                                - Modified property: quotas
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: capitalizationQuota
+                                        - Type changed from 'array' to 'string'
+                                        - Example changed from null to '0.000002'
+                                        - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                        - Items changed
+                                          - Schema deleted
+                                      - Modified property: chargingQuota
+                                        - Type changed from 'array' to 'string'
+                                        - Example changed from null to '0.000002'
+                                        - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                        - Items changed
+                                          - Schema deleted
+                                      - Modified property: raffleQuota
+                                        - Type changed from 'array' to 'string'
+                                        - Example changed from null to '0.000002'
+                                        - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                        - Items changed
+                                          - Schema deleted
+                                - Modified property: raffle
+                                  - Items changed
+                                    - Properties changed
+                                      - New property: timeIntervalOthers
+                                      - Modified property: minimumContemplationProbability
+                                        - Type changed from 'number' to 'string'
+                                        - Description changed from 'Número representativo da probabilidade mínima de contemplação nos sorteios, em porcentagem (%).' to 'Número representativo da probabilidade mínima de contemplação nos sorteios, em porcentagem (%). Exemplo 1.000000 igual a 100 por cento'
+                                        - Example changed from 1e-06 to '0.000002'
+                                        - Pattern changed from '' to '^\d{1}\.\d{6}$'
+                                - Modified property: redemption
+                                  - Properties changed
+                                    - Modified property: redemption
+                                      - Type changed from 'number' to 'string'
+                                      - Description changed from 'Valor percentual (%) de resgate final permitido.' to 'Valor percentual (%) de resgate final permitido. Exemplo 1.000000 igual a 100 por cento'
+                                      - Example changed from 151.23 to '0.000002'
+                                      - MaxLength changed from 6 to null
+                                      - Pattern changed from '' to '^\d{1}\.\d{6}$'
+                                - Modified property: termsAndConditions
+                                  - Properties changed
+                                    - Modified property: termsRegulations
+                                      - Example changed from 'https://ey.exemplo/capitalizacao/tradicional/pdf/condicoes_gerais.pdf' to 'https://seguradora.exemplo.com.br/capitalizacao/pdf/condicoes_gerais.pdf'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - New required property: additionalDetails
+                                - New required property: capitalizationPeriod
+                                - New required property: contributionPayment
+                                - New required property: latePayment
+                                - New required property: minimumRequirements
+                                - New required property: raffle
+                                - New required property: redemption
+                                - New required property: targetAudiences
+                                - New required property: validity
+                              - Properties changed
+                                - New property: targetAudiences
+                                - Modified property: capitalizationPeriod
+                                  - Properties changed
+                                    - Modified property: interestRate
+                                      - Type changed from 'number' to 'string'
+                                      - Description changed from 'Taxa que remunera a parte da mensalidade destinada a formar o Capital, ou seja, a Provisão Matemática de Resgate, também chamada de saldo de capitalização. Em porcentagem ao mês (% a.m)' to 'Taxa de juros que remunera a provisão matemática para capitalização.
+(Taxa que remunera a parte da mensalidade destinada a formar o Capital,
+ou seja, a Provisão Matemática de Resgate, também chamada de saldo de capitalização.
+Em porcentagem ao mês (% a.m)). Exemplo 1.000000 igual a 100 por cento
+'
+                                      - Example changed from 0.25123 to '0.000002'
+                                      - MaxLength changed from 7 to null
+                                      - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                    - Modified property: redemptionPercentageEndTerm
+                                      - Type changed from 'number' to 'string'
+                                      - Description changed from 'Percentual mínimo da soma das contribuições efetuadas que poderá ser resgatado ao final da vigência,  tendo como condição os pagamentos das parcelas nos respectivos vencimentos.' to 'Percentual mínimo da soma das contribuições efetuadas que poderá ser resgatado ao final da vigência, tendo como condição os pagamentos das parcelas nos respectivos vencimentos.'
+                                      - Example changed from 100.002 to '0.000002'
+                                      - MaxLength changed from 7 to null
+                                      - Pattern changed from '' to '^\d{1}\.\d{6}$'
+                                - Modified property: contributionPayment
+                                  - Properties changed
+                                    - New property: paymentDetail
+                                - Modified property: costType
+                                  - Type changed from 'array' to 'string'
+                                  - New enum values: [PAGAMENTO_UNICO PAGAMENTO_MENSAL PAGAMENTO_PERIODICO]
+                                  - Example changed from null to 'PAGAMENTO_UNICO'
+                                  - Items changed
+                                    - Schema deleted
+                                - Modified property: minimumRequirements
+                                  - Required changed
+                                    - Deleted required property: targetAudiences
+                                  - Properties changed
+                                    - Deleted property: targetAudiences
+                                    - Modified property: minimumRequirementDetails
+                                      - Example changed from 'https://ey.exemplo/capitalizacao/tradicional/PU/requisitos_min' to 'https://seguradora.exemplo.com.br/capitalizacao/requisitos_min.pdf'
+                                - Modified property: modality
+                                  - Type changed from 'array' to 'string'
+                                  - New enum values: [TRADICIONAL INSTRUMENTO_GARANTIA COMPRA_PROGRAMADA POPULAR INCENTIVO FILANTROPIA_PREMIAVEL]
+                                  - Example changed from null to 'TRADICIONAL'
+                                  - Items changed
+                                    - Schema deleted
+                                - Modified property: quotas
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: capitalizationQuota
+                                        - Type changed from 'array' to 'string'
+                                        - Example changed from null to '0.000002'
+                                        - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                        - Items changed
+                                          - Schema deleted
+                                      - Modified property: chargingQuota
+                                        - Type changed from 'array' to 'string'
+                                        - Example changed from null to '0.000002'
+                                        - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                        - Items changed
+                                          - Schema deleted
+                                      - Modified property: raffleQuota
+                                        - Type changed from 'array' to 'string'
+                                        - Example changed from null to '0.000002'
+                                        - Pattern changed from '' to '^[0-1]\.\d{6}$'
+                                        - Items changed
+                                          - Schema deleted
+                                - Modified property: raffle
+                                  - Items changed
+                                    - Properties changed
+                                      - New property: timeIntervalOthers
+                                      - Modified property: minimumContemplationProbability
+                                        - Type changed from 'number' to 'string'
+                                        - Description changed from 'Número representativo da probabilidade mínima de contemplação nos sorteios, em porcentagem (%).' to 'Número representativo da probabilidade mínima de contemplação nos sorteios, em porcentagem (%). Exemplo 1.000000 igual a 100 por cento'
+                                        - Example changed from 1e-06 to '0.000002'
+                                        - Pattern changed from '' to '^\d{1}\.\d{6}$'
+                                - Modified property: redemption
+                                  - Properties changed
+                                    - Modified property: redemption
+                                      - Type changed from 'number' to 'string'
+                                      - Description changed from 'Valor percentual (%) de resgate final permitido.' to 'Valor percentual (%) de resgate final permitido. Exemplo 1.000000 igual a 100 por cento'
+                                      - Example changed from 151.23 to '0.000002'
+                                      - MaxLength changed from 6 to null
+                                      - Pattern changed from '' to '^\d{1}\.\d{6}$'
+                                - Modified property: termsAndConditions
+                                  - Properties changed
+                                    - Modified property: termsRegulations
+                                      - Example changed from 'https://ey.exemplo/capitalizacao/tradicional/pdf/condicoes_gerais.pdf' to 'https://seguradora.exemplo.com.br/capitalizacao/pdf/condicoes_gerais.pdf'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

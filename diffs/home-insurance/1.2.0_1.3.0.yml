@@ -1,0 +1,95 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /home-insurance/commercializationArea/{commercializationArea}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Properties changed
+                                - Modified property: assistanceServices
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: complementaryAssistanceServicesDetail
+                                        - Example changed from 'reboque pane seca' to 'Encanador'
+                                - Modified property: minimumRequirements
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: contractingMinRequirement
+                                        - Example changed from 'https://openinsurance.com.br/aaa' to 'https://www.seguradora.com.br/produto/requisitos.pdf'
+                                - Modified property: premiumPayments
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: paymentType
+                                        - Type changed from 'string' to 'array'
+                                        - Deleted enum values: [PAGAMENTO_UNICO PARCELADO AMBOS]
+                                        - Example changed from 'PAGAMENTO_UNICO' to null
+                                        - Items changed
+                                          - Schema added
+                                - Modified property: termsAndConditions
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: definition
+                                        - Example changed from 'https://openinsurance.com.br/aaa' to 'https://www.seguradora.com.br/produto/termos.pdf'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - MaxLength changed from 14 to null
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Properties changed
+                                - Modified property: assistanceServices
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: complementaryAssistanceServicesDetail
+                                        - Example changed from 'reboque pane seca' to 'Encanador'
+                                - Modified property: minimumRequirements
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: contractingMinRequirement
+                                        - Example changed from 'https://openinsurance.com.br/aaa' to 'https://www.seguradora.com.br/produto/requisitos.pdf'
+                                - Modified property: premiumPayments
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: paymentType
+                                        - Type changed from 'string' to 'array'
+                                        - Deleted enum values: [PAGAMENTO_UNICO PARCELADO AMBOS]
+                                        - Example changed from 'PAGAMENTO_UNICO' to null
+                                        - Items changed
+                                          - Schema added
+                                - Modified property: termsAndConditions
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: definition
+                                        - Example changed from 'https://openinsurance.com.br/aaa' to 'https://www.seguradora.com.br/produto/termos.pdf'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

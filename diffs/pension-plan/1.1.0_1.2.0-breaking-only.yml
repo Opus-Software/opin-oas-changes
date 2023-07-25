@@ -1,0 +1,149 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /pension-plan
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: financialRegimeContractType
+                                - Deleted required property: otherGuarateedValues
+                              - Properties changed
+                                - Deleted property: financialRegimeContractType
+                                - Deleted property: otherGuarateedValues
+                                - Modified property: ageReframing
+                                  - Required changed
+                                    - Deleted required property: reframingPeriodicity
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - Deleted required property: modality
+                                    - Properties changed
+                                      - Deleted property: modality
+                                      - Modified property: coveragesAttributes
+                                        - Required changed
+                                          - Deleted required property: excludedRiskURL
+                                          - Deleted required property: indemnifiableDeadline
+                                          - Deleted required property: profitModality
+                                        - Properties changed
+                                          - Deleted property: profitModality
+                                          - Modified property: indenizationPaymentMethod
+                                            - Type changed from 'string' to 'array'
+                                            - Deleted enum values: [PAGAMENTO_UNICO FORMA_RENDA]
+                                            - Items changed
+                                              - Schema added
+                                - Modified property: reclaim
+                                  - Properties changed
+                                    - Modified property: gracePeriod
+                                      - Type changed from 'string' to 'object'
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: financialRegimeContractType
+                                - Deleted required property: otherGuarateedValues
+                              - Properties changed
+                                - Deleted property: financialRegimeContractType
+                                - Deleted property: otherGuarateedValues
+                                - Modified property: ageReframing
+                                  - Required changed
+                                    - Deleted required property: reframingPeriodicity
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - Deleted required property: modality
+                                    - Properties changed
+                                      - Deleted property: modality
+                                      - Modified property: coveragesAttributes
+                                        - Required changed
+                                          - Deleted required property: excludedRiskURL
+                                          - Deleted required property: indemnifiableDeadline
+                                          - Deleted required property: profitModality
+                                        - Properties changed
+                                          - Deleted property: profitModality
+                                          - Modified property: indenizationPaymentMethod
+                                            - Type changed from 'string' to 'array'
+                                            - Deleted enum values: [PAGAMENTO_UNICO FORMA_RENDA]
+                                            - Items changed
+                                              - Schema added
+                                - Modified property: reclaim
+                                  - Properties changed
+                                    - Modified property: gracePeriod
+                                      - Type changed from 'string' to 'object'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: cnpjNumber
+                            - Pattern changed from '' to '^\d{14}$'
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: financialRegimeContractType
+                                - Deleted required property: otherGuarateedValues
+                              - Properties changed
+                                - Deleted property: financialRegimeContractType
+                                - Deleted property: otherGuarateedValues
+                                - Modified property: ageReframing
+                                  - Required changed
+                                    - Deleted required property: reframingPeriodicity
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Required changed
+                                      - Deleted required property: modality
+                                    - Properties changed
+                                      - Deleted property: modality
+                                      - Modified property: coveragesAttributes
+                                        - Required changed
+                                          - Deleted required property: excludedRiskURL
+                                          - Deleted required property: indemnifiableDeadline
+                                          - Deleted required property: profitModality
+                                        - Properties changed
+                                          - Deleted property: profitModality
+                                          - Modified property: indenizationPaymentMethod
+                                            - Type changed from 'string' to 'array'
+                                            - Deleted enum values: [PAGAMENTO_UNICO FORMA_RENDA]
+                                            - Items changed
+                                              - Schema added
+                                - Modified property: reclaim
+                                  - Properties changed
+                                    - Modified property: gracePeriod
+                                      - Type changed from 'string' to 'object'
