@@ -1,0 +1,29 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /capitalization-title
+- Responses changed
+  - Modified response: 200
+    - Headers changed
+      - Modified header: x-v
+        - Description changed from 'Versão do endpoint da API com a qual o detentor de dados respondeu.' to 'Caso x-min-v e x-v tenham sido enviados, o titular dos dados deve responder
+com a versao mais alta suportada entre x-min-v e x-v.
+Caso x-min-v e x-v nao tenham sido enviados, o titular dos dados deve responder
+com a versao que esta sendo utilizada naquele momento.
+'
+        - Required changed from false to true
+  - Modified response: default
+    - Headers changed
+      - Modified header: x-v
+        - Description changed from 'Versão do endpoint da API com a qual o detentor de dados respondeu.' to 'Caso x-min-v e x-v tenham sido enviados, o titular dos dados deve responder
+com a versao mais alta suportada entre x-min-v e x-v.
+Caso x-min-v e x-v nao tenham sido enviados, o titular dos dados deve responder
+com a versao que esta sendo utilizada naquele momento.
+'
+        - Required changed from false to true
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

@@ -19,6 +19,7 @@
 |  | [1.1.0](swagger-apis/business/1.1.0.yml) | [1.2.0](swagger-apis/business/1.2.0.yml) | [YAML](diffs/business/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/business/1.1.0_1.2.0.yml) |
 | capitalization-title | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [1.1.0](swagger-apis/capitalization-title/1.1.0.yml) | [YAML](diffs/capitalization-title/1.0.2_1.1.0-breaking-only.yml) | [YAML](diffs/capitalization-title/1.0.2_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/capitalization-title/1.1.0.yml) | [1.2.0](swagger-apis/capitalization-title/1.2.0.yml) | [YAML](diffs/capitalization-title/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/capitalization-title/1.1.0_1.2.0.yml) |
+|  | [1.2.0](swagger-apis/capitalization-title/1.2.0.yml) | [1.3.0](swagger-apis/capitalization-title/1.3.0.yml) | [YAML](diffs/capitalization-title/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/capitalization-title/1.2.0_1.3.0.yml) |
 | claim-notification | [1.1.2](swagger-apis/claim-notification/1.1.2.yml) | [1.2.0](swagger-apis/claim-notification/1.2.0.yml) | [YAML](diffs/claim-notification/1.1.2_1.2.0-breaking-only.yml) | [YAML](diffs/claim-notification/1.1.2_1.2.0.yml) |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [1.2.0](swagger-apis/condominium/1.2.0.yml) | [YAML](diffs/condominium/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/condominium/1.1.0_1.2.0.yml) |
@@ -108,9 +109,11 @@
 | others-scopes | [1.0.0](swagger-apis/others-scopes/1.0.0.yml) | [1.1.0](swagger-apis/others-scopes/1.1.0.yml) | [YAML](diffs/others-scopes/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/others-scopes/1.0.0_1.1.0.yml) |
 | pension-plan | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [1.1.0](swagger-apis/pension-plan/1.1.0.yml) | [YAML](diffs/pension-plan/1.0.2_1.1.0-breaking-only.yml) | [YAML](diffs/pension-plan/1.0.2_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/pension-plan/1.1.0.yml) | [1.2.0](swagger-apis/pension-plan/1.2.0.yml) | [YAML](diffs/pension-plan/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/pension-plan/1.1.0_1.2.0.yml) |
+|  | [1.2.0](swagger-apis/pension-plan/1.2.0.yml) | [1.3.0](swagger-apis/pension-plan/1.3.0.yml) | [YAML](diffs/pension-plan/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/pension-plan/1.2.0_1.3.0.yml) |
 | person | [1.0.3](swagger-apis/person/1.0.3.yml) | [1.2.0](swagger-apis/person/1.2.0.yml) | [YAML](diffs/person/1.0.3_1.2.0-breaking-only.yml) | [YAML](diffs/person/1.0.3_1.2.0.yml) |
 |  | [1.2.0](swagger-apis/person/1.2.0.yml) | [1.3.0](swagger-apis/person/1.3.0.yml) | [YAML](diffs/person/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/person/1.2.0_1.3.0.yml) |
 |  | [1.3.0](swagger-apis/person/1.3.0.yml) | [1.4.0](swagger-apis/person/1.4.0.yml) | [YAML](diffs/person/1.3.0_1.4.0-breaking-only.yml) | [YAML](diffs/person/1.3.0_1.4.0.yml) |
+|  | [1.4.0](swagger-apis/person/1.4.0.yml) | [1.5.0](swagger-apis/person/1.5.0.yml) | [YAML](diffs/person/1.4.0_1.5.0-breaking-only.yml) | [YAML](diffs/person/1.4.0_1.5.0.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/private-guarantee/1.1.0.yml) | [YAML](diffs/private-guarantee/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/private-guarantee/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/private-guarantee/1.1.0.yml) | [1.2.0](swagger-apis/private-guarantee/1.2.0.yml) | [YAML](diffs/private-guarantee/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/private-guarantee/1.1.0_1.2.0.yml) |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/public-guarantee/1.1.0.yml) | [YAML](diffs/public-guarantee/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/public-guarantee/1.0.0_1.1.0.yml) |
@@ -152,6 +155,7 @@
 | capitalization-title | [1.0.0](swagger-apis/capitalization-title/1.0.0.yml) | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [YAML](diffs/capitalization-title/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/capitalization-title/1.0.2.yml) | [1.1.0](swagger-apis/capitalization-title/1.1.0.yml) | [YAML](diffs/capitalization-title/1.0.2_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/capitalization-title/1.1.0.yml) | [1.2.0](swagger-apis/capitalization-title/1.2.0.yml) | [YAML](diffs/capitalization-title/1.1.0_1.2.0.yml) |
+|  | [1.2.0](swagger-apis/capitalization-title/1.2.0.yml) | [1.3.0](swagger-apis/capitalization-title/1.3.0.yml) | [YAML](diffs/capitalization-title/1.2.0_1.3.0.yml) |
 | claim-notification | [1.1.0](swagger-apis/claim-notification/1.1.0.yml) | [1.1.1](swagger-apis/claim-notification/1.1.1.yml) | [YAML](diffs/claim-notification/1.1.0_1.1.1.yml) |
 |  | [1.1.1](swagger-apis/claim-notification/1.1.1.yml) | [1.1.2](swagger-apis/claim-notification/1.1.2.yml) | [YAML](diffs/claim-notification/1.1.1_1.1.2.yml) |
 |  | [1.1.2](swagger-apis/claim-notification/1.1.2.yml) | [1.2.0](swagger-apis/claim-notification/1.2.0.yml) | [YAML](diffs/claim-notification/1.1.2_1.2.0.yml) |
@@ -261,11 +265,13 @@
 | pension-plan | [1.0.0](swagger-apis/pension-plan/1.0.0.yml) | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [YAML](diffs/pension-plan/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/pension-plan/1.0.2.yml) | [1.1.0](swagger-apis/pension-plan/1.1.0.yml) | [YAML](diffs/pension-plan/1.0.2_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/pension-plan/1.1.0.yml) | [1.2.0](swagger-apis/pension-plan/1.2.0.yml) | [YAML](diffs/pension-plan/1.1.0_1.2.0.yml) |
+|  | [1.2.0](swagger-apis/pension-plan/1.2.0.yml) | [1.3.0](swagger-apis/pension-plan/1.3.0.yml) | [YAML](diffs/pension-plan/1.2.0_1.3.0.yml) |
 | person | [1.0.0](swagger-apis/person/1.0.0.yml) | [1.0.2](swagger-apis/person/1.0.2.yml) | [YAML](diffs/person/1.0.0_1.0.2.yml) |
 |  | [1.0.2](swagger-apis/person/1.0.2.yml) | [1.0.3](swagger-apis/person/1.0.3.yml) | [YAML](diffs/person/1.0.2_1.0.3.yml) |
 |  | [1.0.3](swagger-apis/person/1.0.3.yml) | [1.2.0](swagger-apis/person/1.2.0.yml) | [YAML](diffs/person/1.0.3_1.2.0.yml) |
 |  | [1.2.0](swagger-apis/person/1.2.0.yml) | [1.3.0](swagger-apis/person/1.3.0.yml) | [YAML](diffs/person/1.2.0_1.3.0.yml) |
 |  | [1.3.0](swagger-apis/person/1.3.0.yml) | [1.4.0](swagger-apis/person/1.4.0.yml) | [YAML](diffs/person/1.3.0_1.4.0.yml) |
+|  | [1.4.0](swagger-apis/person/1.4.0.yml) | [1.5.0](swagger-apis/person/1.5.0.yml) | [YAML](diffs/person/1.4.0_1.5.0.yml) |
 | private-guarantee | [1.0.0](swagger-apis/private-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/private-guarantee/1.1.0.yml) | [YAML](diffs/private-guarantee/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/private-guarantee/1.1.0.yml) | [1.2.0](swagger-apis/private-guarantee/1.2.0.yml) | [YAML](diffs/private-guarantee/1.1.0_1.2.0.yml) |
 | public-guarantee | [1.0.0](swagger-apis/public-guarantee/1.0.0.yml) | [1.1.0](swagger-apis/public-guarantee/1.1.0.yml) | [YAML](diffs/public-guarantee/1.0.0_1.1.0.yml) |
