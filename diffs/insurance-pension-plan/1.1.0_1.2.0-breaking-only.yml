@@ -1,0 +1,80 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+GET /insurance-pension-plan/contracts
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-pension-plan/{pensionIdentification}/claim
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - Deleted required property: beneficiaryBirthDate
+                  - Deleted required property: beneficiaryCategory
+                  - Deleted required property: beneficiaryDocument
+                  - Deleted required property: beneficiaryDocumentType
+                  - Deleted required property: beneficiaryName
+                  - Deleted required property: benefitAmount
+                  - Deleted required property: grantedDate
+                  - Deleted required property: incomeAmount
+                  - Deleted required property: incomeType
+                  - Deleted required property: lastUpdateDate
+                  - Deleted required property: monetaryUpdateIndex
+                  - Deleted required property: reversedIncome
+                - Properties changed
+                  - Deleted property: beneficiaryBirthDate
+                  - Deleted property: beneficiaryCategory
+                  - Deleted property: beneficiaryDocument
+                  - Deleted property: beneficiaryDocumentType
+                  - Deleted property: beneficiaryName
+                  - Deleted property: benefitAmount
+                  - Deleted property: grantedDate
+                  - Deleted property: incomeAmount
+                  - Deleted property: incomeType
+                  - Deleted property: lastUpdateDate
+                  - Deleted property: monetaryUpdateIndex
+                  - Deleted property: reversedIncome
+GET /insurance-pension-plan/{pensionIdentification}/contract-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: documents
+                  - Items changed
+                    - Properties changed
+                      - Modified property: plans
+                        - Items changed
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: events
+                                    - Items changed
+                                      - Required changed
+                                        - Deleted required property: eventInfo
+                                      - Properties changed
+                                        - Deleted property: eventInfo

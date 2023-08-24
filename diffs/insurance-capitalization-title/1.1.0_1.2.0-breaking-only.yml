@@ -1,0 +1,35 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+GET /insurance-capitalization-title/plans
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-capitalization-title/{planId}/plan-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: series
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: gracePeriodRedemption
+                      - Deleted required property: planId

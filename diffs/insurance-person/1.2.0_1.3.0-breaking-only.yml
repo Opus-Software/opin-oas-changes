@@ -1,0 +1,81 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: 1
+------------------------
+GET /insurance-person/{policyId}/movements  
+### Modified Endpoints: 2
+-------------------------
+GET /insurance-person
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-person/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - Deleted required property: conjugatedPlan
+                - Deleted required property: contractingType
+              - Properties changed
+                - Deleted property: conjugatedPlan
+                - Deleted property: contractingType
+                - Modified property: PMBaC
+                  - Required changed
+                    - Deleted required property: FIE
+                    - Deleted required property: provisionSurplusAmount
+                  - Properties changed
+                    - Deleted property: FIE
+                    - Deleted property: provisionSurplusAmount
+                - Modified property: coverages
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: benefitPaymentModality
+                      - Deleted required property: calculationBasis
+                      - Deleted required property: chargedAmount
+                      - Deleted required property: coverageCode
+                      - Deleted required property: financialResultReversal
+                      - Deleted required property: financialtype
+                      - Deleted required property: paymentPeriod
+                      - Deleted required property: plan
+                      - Deleted required property: planBlock
+                      - Deleted required property: qualifiedProposer
+                      - Deleted required property: structureModality
+                      - Deleted required property: susepProcessNumber
+                      - Deleted required property: taxRegime
+                      - Deleted required property: triggerEvent
+                    - Properties changed
+                      - Deleted property: benefitPaymentModality
+                      - Deleted property: calculationBasis
+                      - Deleted property: chargedAmount
+                      - Deleted property: coverageCode
+                      - Deleted property: financialResultReversal
+                      - Deleted property: financialtype
+                      - Deleted property: paymentPeriod
+                      - Deleted property: plan
+                      - Deleted property: planBlock
+                      - Deleted property: qualifiedProposer
+                      - Deleted property: structureModality
+                      - Deleted property: susepProcessNumber
+                      - Deleted property: taxRegime
+                      - Deleted property: triggerEvent
+                - Modified property: portabilities
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: chargingValue
+                    - Properties changed
+                      - Deleted property: chargingValue

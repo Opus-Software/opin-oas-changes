@@ -1,0 +1,88 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+GET /insurance-housing
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: companies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: cnpjNumber
+                          - MaxLength changed from 14 to null
+GET /insurance-housing/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: branchInfo
+                  - Properties changed
+                    - Modified property: insuredObjects
+                      - Items changed
+                        - Properties changed
+                          - Modified property: lenders
+                            - Items changed
+                              - Properties changed
+                                - Modified property: cnpjNumber
+                                  - MaxLength changed from 14 to null
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: POS
+                        - Required changed
+                          - Deleted required property: description
+                - Modified property: insuredObjects
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: amount
+                      - Deleted required property: identification
+GET /insurance-housing/{policyId}/premium
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: amount
+                  - Property 'AllOf' changed
+                    - 1 schemas added
+                  - Type changed from 'object' to ''
+                  - Required changed
+                    - Deleted required property: amount
+                    - Deleted required property: currency
+                  - Properties changed
+                    - Deleted property: amount
+                    - Deleted property: currency
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: premiumAmount
+                        - Property 'AllOf' changed
+                          - 1 schemas added
+                        - Type changed from 'object' to ''
+                        - Required changed
+                          - Deleted required property: amount
+                          - Deleted required property: currency
+                        - Properties changed
+                          - Deleted property: amount
+                          - Deleted property: currency
+                - Modified property: payments
+                  - Items changed
+                    - Properties changed
+                      - Modified property: movementType
+                        - Deleted enum values: [EMISSAO_DE_PREMIO EMISSAO_DE_RESTITUICAO_DE_PREMIO CANCELAMENTO_DE_PREMIO_E_PARCELA]

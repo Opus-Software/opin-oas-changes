@@ -1,0 +1,65 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+POST /consents
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: permissions
+                - Items changed
+                  - New enum values: [DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+                  - Deleted enum values: [DAMAGES_AND_PEOPLE_PERSON_MOVEMENTS_READ]
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - New enum values: [DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+                    - Deleted enum values: [DAMAGES_AND_PEOPLE_PERSON_MOVEMENTS_READ]
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - New enum values: [DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+                    - Deleted enum values: [DAMAGES_AND_PEOPLE_PERSON_MOVEMENTS_READ]
+GET /consents/{consentId}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - New enum values: [DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+                    - Deleted enum values: [DAMAGES_AND_PEOPLE_PERSON_MOVEMENTS_READ]
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: permissions
+                  - Items changed
+                    - New enum values: [DAMAGES_AND_PEOPLE_PERSON_PREMIUM_READ]
+                    - Deleted enum values: [DAMAGES_AND_PEOPLE_PERSON_MOVEMENTS_READ]

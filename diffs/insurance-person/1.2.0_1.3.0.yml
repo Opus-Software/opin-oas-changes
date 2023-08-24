@@ -1,0 +1,213 @@
+﻿### New Endpoints: 1
+--------------------
+GET /insurance-person/{policyId}/premium  
+### Deleted Endpoints: 1
+------------------------
+GET /insurance-person/{policyId}/movements  
+### Modified Endpoints: 3
+-------------------------
+GET /insurance-person
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-person/{policyId}/claim
+- New query param: page
+- New query param: page-size
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: amount
+                  - New required property: identification
+                  - New required property: occurrenceDate
+                  - New required property: statusAlterationDate
+                - Properties changed
+                  - New property: amount
+                  - New property: coverages
+                  - New property: denialJustification
+                  - New property: denialJustificationDescription
+                  - New property: documentationDeliveryDate
+                  - New property: identification
+                  - New property: occurrenceDate
+                  - New property: recipient
+                  - New property: statusAlterationDate
+                  - New property: thirdPartyClaimDate
+                  - Deleted property: concessionStartDate
+                  - Deleted property: defermentDueDate
+                  - Deleted property: incomeModality
+                  - Deleted property: incomeModalityOthers
+                  - Deleted property: incomeReversed
+                  - Deleted property: incomeTerm
+                  - Deleted property: incomeValueUniquePayment
+                  - Deleted property: lastUpdateDate
+                  - Deleted property: monetaryUpdateIndex
+                  - Deleted property: monetaryUpdateIndexOthers
+                  - Deleted property: recipientBirthDate
+                  - Deleted property: recipientClassification
+                  - Deleted property: recipientIdentification
+                  - Deleted property: recipientIdentificationType
+                  - Deleted property: recipientName
+                  - Deleted property: recipientNumber
+                  - Modified property: warningRegisterDate
+                    - Description changed from 'Data do Registro de Aviso à Seguradora
+Em caso de regime financeiro de Repartição de Capitais de Cobertura e de Capitalização
+' to 'Data do Registro de Aviso a Seguradora'
+GET /insurance-person/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - New required property: documentType
+                - New required property: insuredObjects
+                - New required property: issuanceDate
+                - New required property: issuanceType
+                - New required property: portabilities
+                - New required property: withdrawals
+                - Deleted required property: conjugatedPlan
+                - Deleted required property: contractingType
+              - Properties changed
+                - New property: coinsuranceRetainedPercentage
+                - New property: coinsurers
+                - New property: documentType
+                - New property: groupCertificateId
+                - New property: insuredObjects
+                - New property: issuanceDate
+                - New property: issuanceType
+                - New property: leadInsurerCode
+                - New property: leadInsurerPolicyId
+                - New property: principals
+                - New property: susepProcessNumber
+                - Deleted property: certificateId
+                - Deleted property: conjugatedPlan
+                - Deleted property: contractingType
+                - Modified property: PMBaC
+                  - Required changed
+                    - Deleted required property: FIE
+                    - Deleted required property: provisionSurplusAmount
+                  - Properties changed
+                    - Deleted property: FIE
+                    - Deleted property: provisionSurplusAmount
+                - Modified property: beneficiaries
+                  - Items changed
+                    - Properties changed
+                      - Deleted property: participationPercentage
+                - Modified property: coverages
+                  - Items changed
+                    - Required changed
+                      - New required property: code
+                      - Deleted required property: benefitPaymentModality
+                      - Deleted required property: calculationBasis
+                      - Deleted required property: chargedAmount
+                      - Deleted required property: coverageCode
+                      - Deleted required property: financialResultReversal
+                      - Deleted required property: financialtype
+                      - Deleted required property: paymentPeriod
+                      - Deleted required property: plan
+                      - Deleted required property: planBlock
+                      - Deleted required property: qualifiedProposer
+                      - Deleted required property: structureModality
+                      - Deleted required property: susepProcessNumber
+                      - Deleted required property: taxRegime
+                      - Deleted required property: triggerEvent
+                    - MinProps changed from 2 to 3
+                    - Properties changed
+                      - New property: POS
+                      - New property: code
+                      - New property: deductible
+                      - New property: description
+                      - Deleted property: IndexLag
+                      - Deleted property: benefitAmount
+                      - Deleted property: benefitPaymentModality
+                      - Deleted property: biometricTable
+                      - Deleted property: calculationBasis
+                      - Deleted property: chargedAmount
+                      - Deleted property: coverageCode
+                      - Deleted property: coverageUpdateIndex
+                      - Deleted property: coverageUpdateIndexOthers
+                      - Deleted property: creditor
+                      - Deleted property: dependents
+                      - Deleted property: educationalInstitution
+                      - Deleted property: feesTax
+                      - Deleted property: financialResultReversal
+                      - Deleted property: financialResultReversalPercentage
+                      - Deleted property: financialtype
+                      - Deleted property: grace
+                      - Deleted property: incomeInterestRate
+                      - Deleted property: insuredCapitalPercentage
+                      - Deleted property: insuredCapitalType
+                      - Deleted property: insuredDependentsInclusionClause
+                      - Deleted property: internalCode
+                      - Deleted property: minimumWarrantyIndex
+                      - Deleted property: minimumWarrantyPercentage
+                      - Deleted property: moneylenderType
+                      - Deleted property: obligations
+                      - Deleted property: paymentPeriod
+                      - Deleted property: periodicity
+                      - Deleted property: periodicityValue
+                      - Deleted property: personIdentification
+                      - Deleted property: plan
+                      - Deleted property: planBlock
+                      - Deleted property: planOthers
+                      - Deleted property: planType
+                      - Deleted property: pmbacIndexLag
+                      - Deleted property: pmbacInterestRate
+                      - Deleted property: pmbacMonetaryUpdateIndex
+                      - Deleted property: pmbacMonetaryUpdateIndexOthers
+                      - Deleted property: pricingForm
+                      - Deleted property: pricingFormOthers
+                      - Deleted property: qualifiedProposer
+                      - Deleted property: structureModality
+                      - Deleted property: susepProcessNumber
+                      - Deleted property: taxRegime
+                      - Deleted property: triggerEvent
+                      - Deleted property: triggerEventOthers
+                      - Deleted property: tripScope
+                      - Modified property: branch
+                        - Description changed from 'Grupo e Ramo da Cobertura (Conforme regulamentação Susep vigente)' to 'Grupo e ramo da cobertura'
+                - Modified property: insureds
+                  - Items changed
+                    - Properties changed
+                      - Deleted property: birthDate
+                      - Deleted property: gender
+                - Modified property: intermediaries
+                  - Items changed
+                    - Required changed
+                      - New required property: name
+                - Modified property: portabilities
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: chargingValue
+                    - Properties changed
+                      - Deleted property: FIE
+                      - Deleted property: chargingValue
+                      - Deleted property: taxRegime
+                - Modified property: withdrawals
+                  - Items changed
+                    - Required changed
+                      - New required property: occurrenceWithdrawal
+                    - Properties changed
+                      - Deleted property: FIE
+                      - Deleted property: chargingValue
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-person/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

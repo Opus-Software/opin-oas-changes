@@ -1,0 +1,45 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+GET /insurance-life-pension/contracts
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-life-pension/{pensionIdentification}/contract-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: PMBaC
+                  - Required changed
+                    - Deleted required property: FIE
+                  - Properties changed
+                    - Modified property: FIE
+                      - Items changed
+                        - Properties changed
+                          - Modified property: FIECNPJ
+                            - MaxLength changed from 14 to null
+                - Modified property: plans
+                  - Items changed
+                    - Properties changed
+                      - Modified property: qualifiedProposer
+                        - Type changed from 'string' to 'boolean'
+                        - Deleted enum values: [SIM NAO]

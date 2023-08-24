@@ -1,0 +1,145 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 5
+-------------------------
+GET /insurance-life-pension/contracts
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-life-pension/{pensionIdentification}/claim
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: eventInfo
+                - Properties changed
+                  - New property: eventInfo
+                  - New property: incomeInfo
+                  - Deleted property: beneficiaryBirthDate
+                  - Deleted property: beneficiaryCategory
+                  - Deleted property: beneficiaryDocument
+                  - Deleted property: beneficiaryDocumentType
+                  - Deleted property: beneficiaryName
+                  - Deleted property: benefitAmount
+                  - Deleted property: defermentDueDate
+                  - Deleted property: eventAlertDate
+                  - Deleted property: eventRegisterDate
+                  - Deleted property: eventStatus
+                  - Deleted property: grantedDate
+                  - Deleted property: incomeAmount
+                  - Deleted property: incomeType
+                  - Deleted property: incomeTypeDetails
+                  - Deleted property: lastUpdateDate
+                  - Deleted property: monetaryUpdateIndex
+                  - Deleted property: paymentTerms
+                  - Deleted property: reversedIncome
+GET /insurance-life-pension/{pensionIdentification}/contract-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: PMBaC
+                  - Required changed
+                    - Deleted required property: FIE
+                  - Properties changed
+                    - Modified property: FIE
+                      - Items changed
+                        - Required changed
+                          - New required property: FIECNPJ
+                          - New required property: FIEName
+                          - New required property: FIETradeName
+                        - Properties changed
+                          - Modified property: FIECNPJ
+                            - MaxLength changed from 14 to null
+                - Modified property: beneficiary
+                  - Items changed
+                    - Required changed
+                      - New required property: documentNumber
+                      - New required property: documentType
+                - Modified property: intermediary
+                  - Items changed
+                    - Properties changed
+                      - New property: typeOthers
+                      - Modified property: documentNumber
+                        - Description changed from 'Documento do Intermediador, Campo obrigatório quando o campo “Tipo” for preenchido com “1 - Corretor”.' to 'Documento do intermediador (Caso Tipo de Intermediador nao seja CORRETOR, ou quando for CORRETOR, porem o identificador do intermediador nao seja informado)'
+                - Modified property: plans
+                  - Items changed
+                    - Properties changed
+                      - New property: pdrOrVdrminimalGuaranteeOthers
+                      - New property: periodicityOthers
+                      - New property: pmbacGuaranteePriceOthers
+                      - Modified property: benefitAmount
+                        - Description changed from 'Valor do benefício em reais da cobertura contratada' to 'Valor do beneficio em reais da cobertura contratada (Caso campo Modalidade de estruturacao for beneficio definido)'
+                      - Modified property: coverageCode
+                        - Description changed from 'Código da Cobertura - De acordo com a Tabela 63 do Anexo I do Manual de Escopo de Dados' to 'Codigo da cobertura'
+                      - Modified property: periodicity
+                        - New enum values: [PAGAMENTO_UNICO OUTROS]
+                      - Modified property: qualifiedProposer
+                        - Type changed from 'string' to 'boolean'
+                        - Deleted enum values: [SIM NAO]
+                        - Example changed from 'SIM' to false
+GET /insurance-life-pension/{pensionIdentification}/movements
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: movementBenefits
+                  - Items changed
+                    - Required changed
+                      - New required property: benefitAmount
+                      - New required property: benefitPaymentDate
+                - Modified property: movementContributions
+                  - Items changed
+                    - Required changed
+                      - New required property: chargedInAdvanceAmount
+                      - New required property: contributionAmount
+                      - New required property: contributionExpirationDate
+                      - New required property: contributionPaymentDate
+                      - New required property: periodicity
+                    - Properties changed
+                      - New property: periodicityOthers
+                      - Modified property: periodicity
+                        - New enum values: [PAGAMENTO_UNICO OUTROS]
+GET /insurance-life-pension/{pensionIdentification}/portabilities
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: portabilityInfo
+                  - Items changed
+                    - Properties changed
+                      - Modified property: postedChargedAmount
+                        - Description changed from 'Valor do carregamento cobrado de forma postecipada' to 'Valor do carregamento cobrado de forma postecipada (caso nao haja reportar nulo)'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-life-pension/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

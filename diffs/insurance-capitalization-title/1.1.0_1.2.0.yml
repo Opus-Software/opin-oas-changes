@@ -1,0 +1,88 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-capitalization-title/plans
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Type changed from 'object' to 'array'
+              - Items changed
+                - Schema added
+              - Required changed
+                - Deleted required property: brand
+              - Properties changed
+                - Deleted property: brand
+GET /insurance-capitalization-title/{planId}/events
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: event
+                    - Properties changed
+                      - Modified property: raffle
+                        - Required changed
+                          - New required property: raffleAmount
+                          - New required property: raffleDate
+                          - New required property: raffleSettlementDate
+                      - Modified property: redemption
+                        - Required changed
+                          - New required property: redemptionAmount
+                          - New required property: redemptionBonusAmount
+                          - New required property: redemptionRequestDate
+                          - New required property: redemptionSettlementDate
+                          - New required property: redemptionType
+GET /insurance-capitalization-title/{planId}/plan-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: series
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: gracePeriodRedemption
+                      - Deleted required property: planId
+                    - Properties changed
+                      - Modified property: broker
+                        - Items changed
+                          - Required changed
+                            - New required property: brokerDescription
+                            - New required property: susepBrokerCode
+GET /insurance-capitalization-title/{planId}/settlements
+- New query param: page
+- New query param: page-size
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: settlementDueDate
+                    - Description changed from 'Data de Vencimento da liquidação' to 'Data de Vencimento da Contribuicao'
+                  - Modified property: settlementFinancialAmount
+                    - Description changed from 'Valor da liquidação financeira.' to 'Valor da contribuicao'
+                  - Modified property: settlementId
+                    - Description changed from 'Identificador da Liquidação' to 'Identificador da Contribuicao'
+                  - Modified property: settlementPaymentDate
+                    - Description changed from 'Data de pagamento da liquidação' to 'Data da Contribuicao'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-capitalization-title/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
