@@ -324,6 +324,7 @@
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.2 | [1.0.2](swagger-apis/consent-funnel-ingestion-v1.0.2/1.0.2.yml) |  |  |  |
+| consent-funnel-ingestion-v1.0.4 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.4/1.0.3.yml) |  |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |  |
@@ -345,6 +346,7 @@
 | ingestion-v1.0.3 | [1.0.3](swagger-apis/ingestion-v1.0.3/1.0.3.yml) |  |  |  |
 | ingestion-v1.0.5 | [1.0.5](swagger-apis/ingestion-v1.0.5/1.0.5.yml) |  |  |  |
 | ingestion-v1.0.6 | [1.0.6](swagger-apis/ingestion-v1.0.6/1.0.6.yml) |  |  |  |
+| ingestion-v1.0.7 | [1.0.7](swagger-apis/ingestion-v1.0.7/1.0.7.yml) |  |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |  |
 | open-data-channels | [1.0.0](swagger-apis/open-data-channels/1.0.0.yml) |  |  |  |
@@ -368,6 +370,7 @@
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
 | consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |
 | consent-funnel-ingestion-v1.0.2 | [1.0.2](swagger-apis/consent-funnel-ingestion-v1.0.2/1.0.2.yml) |  |  |
+| consent-funnel-ingestion-v1.0.4 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.4/1.0.3.yml) |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
 | CyberRiskSwagger | [1.0.0](swagger-apis/CyberRiskSwagger/1.0.0.yml) |  |  |
@@ -389,6 +392,7 @@
 | ingestion-v1.0.3 | [1.0.3](swagger-apis/ingestion-v1.0.3/1.0.3.yml) |  |  |
 | ingestion-v1.0.5 | [1.0.5](swagger-apis/ingestion-v1.0.5/1.0.5.yml) |  |  |
 | ingestion-v1.0.6 | [1.0.6](swagger-apis/ingestion-v1.0.6/1.0.6.yml) |  |  |
+| ingestion-v1.0.7 | [1.0.7](swagger-apis/ingestion-v1.0.7/1.0.7.yml) |  |  |
 | LucrosCessantesSwagger | [1.0.0](swagger-apis/LucrosCessantesSwagger/1.0.0.yml) |  |  |
 | metrics | [1.0.0](swagger-apis/metrics/1.0.0.yml) |  |  |
 | open-data-channels | [1.0.0](swagger-apis/open-data-channels/1.0.0.yml) |  |  |
