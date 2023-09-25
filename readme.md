@@ -324,6 +324,7 @@
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.2 | [1.0.2](swagger-apis/consent-funnel-ingestion-v1.0.2/1.0.2.yml) |  |  |  |
+| consent-funnel-ingestion-v1.0.3 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.3/1.0.3.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.4 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.4/1.0.3.yml) |  |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |  |
@@ -370,6 +371,7 @@
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
 | consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |
 | consent-funnel-ingestion-v1.0.2 | [1.0.2](swagger-apis/consent-funnel-ingestion-v1.0.2/1.0.2.yml) |  |  |
+| consent-funnel-ingestion-v1.0.3 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.3/1.0.3.yml) |  |  |
 | consent-funnel-ingestion-v1.0.4 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.4/1.0.3.yml) |  |  |
 | CreditoAExportacaoSwagger | [1.0.0](swagger-apis/CreditoAExportacaoSwagger/1.0.0.yml) |  |  |
 | CreditoInternoSwagger | [1.0.0](swagger-apis/CreditoInternoSwagger/1.0.0.yml) |  |  |
