@@ -1,0 +1,20 @@
+﻿info:
+    version:
+        from: 1.2.0
+        to: 1.2.1
+paths:
+    modified:
+        /request/person/{consentId}:
+            operations:
+                modified:
+                    POST:
+                        operationID:
+                            from: getClaimNotificationPerson
+                            to: postClaimNotificationPerson
+endpoints:
+    modified:
+        ?   method: POST
+            path: /request/person/{consentId}
+        :   operationID:
+                from: getClaimNotificationPerson
+                to: postClaimNotificationPerson

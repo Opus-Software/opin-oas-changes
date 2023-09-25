@@ -1,0 +1,81 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /person
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: allowPortability
+                                - Deleted required property: otherGuaranteedValues
+                                - Deleted required property: portabilityGraceTime
+                              - Properties changed
+                                - Modified property: allowPortability
+                                  - Description changed from 'Permite Portabilidade' to 'Permite Portabilidade (Somente informado se Regime Financeiro for igual a Capitalizacao)'
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - Deleted required property: maximumQtyIndemnifiableInstallments
+                                - Modified property: otherGuaranteedValues
+                                  - Description changed from '' to 'Outros valores garantidos (Somente informado se Regime Financeiro for igual a Capitalizacao)'
+                                - Modified property: pmbacRemuneration
+                                  - Description changed from '' to 'Somente informado se Regime Financeiro for igual a Capitalizacao'
+                                - Modified property: portabilityGraceTime
+                                  - Description changed from 'Período de carência' to 'Periodo de carencia (Somente informado se Regime Financeiro for igual a Capitalizacao)'
+                                - Modified property: reclaim
+                                  - Description changed from '' to 'Somente informado se Regime Financeiro for igual a Capitalizacao'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: brand
+                  - Properties changed
+                    - Modified property: companies
+                      - Items changed
+                        - Properties changed
+                          - Modified property: products
+                            - Items changed
+                              - Required changed
+                                - Deleted required property: allowPortability
+                                - Deleted required property: otherGuaranteedValues
+                                - Deleted required property: portabilityGraceTime
+                              - Properties changed
+                                - Modified property: allowPortability
+                                  - Description changed from 'Permite Portabilidade' to 'Permite Portabilidade (Somente informado se Regime Financeiro for igual a Capitalizacao)'
+                                - Modified property: coverages
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: coverageAttributes
+                                        - Required changed
+                                          - Deleted required property: maximumQtyIndemnifiableInstallments
+                                - Modified property: otherGuaranteedValues
+                                  - Description changed from '' to 'Outros valores garantidos (Somente informado se Regime Financeiro for igual a Capitalizacao)'
+                                - Modified property: pmbacRemuneration
+                                  - Description changed from '' to 'Somente informado se Regime Financeiro for igual a Capitalizacao'
+                                - Modified property: portabilityGraceTime
+                                  - Description changed from 'Período de carência' to 'Periodo de carencia (Somente informado se Regime Financeiro for igual a Capitalizacao)'
+                                - Modified property: reclaim
+                                  - Description changed from '' to 'Somente informado se Regime Financeiro for igual a Capitalizacao'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/products-services/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

@@ -1,0 +1,247 @@
+﻿info:
+    version:
+        from: 1.1.2
+        to: 1.2.1
+paths:
+    modified:
+        /request/damage/{consentId}:
+            operations:
+                modified:
+                    POST:
+                        requestBody:
+                            content:
+                                mediaTypeModified:
+                                    application/json:
+                                        schema:
+                                            properties:
+                                                modified:
+                                                    data:
+                                                        properties:
+                                                            modified:
+                                                                documentType:
+                                                                    enum:
+                                                                        added:
+                                                                            - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                            - APOLICE_FROTA_AUTOMOVEL
+                                                                            - CERTIFICADO_AUTOMOVEL
+                        responses:
+                            modified:
+                                "201":
+                                    content:
+                                        mediaTypeModified:
+                                            application/json:
+                                                schema:
+                                                    properties:
+                                                        modified:
+                                                            data:
+                                                                properties:
+                                                                    modified:
+                                                                        documentType:
+                                                                            enum:
+                                                                                added:
+                                                                                    - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                                    - APOLICE_FROTA_AUTOMOVEL
+                                                                                    - CERTIFICADO_AUTOMOVEL
+        /request/person/{consentId}:
+            operations:
+                modified:
+                    POST:
+                        operationID:
+                            from: getClaimNotificationPerson
+                            to: postClaimNotificationPerson
+                        requestBody:
+                            content:
+                                mediaTypeModified:
+                                    application/json:
+                                        schema:
+                                            properties:
+                                                modified:
+                                                    data:
+                                                        properties:
+                                                            modified:
+                                                                documentType:
+                                                                    enum:
+                                                                        added:
+                                                                            - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                            - APOLICE_FROTA_AUTOMOVEL
+                                                                            - CERTIFICADO_AUTOMOVEL
+                        responses:
+                            modified:
+                                "201":
+                                    content:
+                                        mediaTypeModified:
+                                            application/json:
+                                                schema:
+                                                    properties:
+                                                        modified:
+                                                            data:
+                                                                properties:
+                                                                    modified:
+                                                                        documentType:
+                                                                            enum:
+                                                                                added:
+                                                                                    - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                                    - APOLICE_FROTA_AUTOMOVEL
+                                                                                    - CERTIFICADO_AUTOMOVEL
+endpoints:
+    modified:
+        ?   method: POST
+            path: /request/person/{consentId}
+        :   operationID:
+                from: getClaimNotificationPerson
+                to: postClaimNotificationPerson
+            requestBody:
+                content:
+                    mediaTypeModified:
+                        application/json:
+                            schema:
+                                properties:
+                                    modified:
+                                        data:
+                                            properties:
+                                                modified:
+                                                    documentType:
+                                                        enum:
+                                                            added:
+                                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                - APOLICE_FROTA_AUTOMOVEL
+                                                                - CERTIFICADO_AUTOMOVEL
+            responses:
+                modified:
+                    "201":
+                        content:
+                            mediaTypeModified:
+                                application/json:
+                                    schema:
+                                        properties:
+                                            modified:
+                                                data:
+                                                    properties:
+                                                        modified:
+                                                            documentType:
+                                                                enum:
+                                                                    added:
+                                                                        - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                        - APOLICE_FROTA_AUTOMOVEL
+                                                                        - CERTIFICADO_AUTOMOVEL
+        ?   method: POST
+            path: /request/damage/{consentId}
+        :   requestBody:
+                content:
+                    mediaTypeModified:
+                        application/json:
+                            schema:
+                                properties:
+                                    modified:
+                                        data:
+                                            properties:
+                                                modified:
+                                                    documentType:
+                                                        enum:
+                                                            added:
+                                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                - APOLICE_FROTA_AUTOMOVEL
+                                                                - CERTIFICADO_AUTOMOVEL
+            responses:
+                modified:
+                    "201":
+                        content:
+                            mediaTypeModified:
+                                application/json:
+                                    schema:
+                                        properties:
+                                            modified:
+                                                data:
+                                                    properties:
+                                                        modified:
+                                                            documentType:
+                                                                enum:
+                                                                    added:
+                                                                        - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                        - APOLICE_FROTA_AUTOMOVEL
+                                                                        - CERTIFICADO_AUTOMOVEL
+components:
+    schemas:
+        modified:
+            CreateClaimNotificationDamage:
+                properties:
+                    modified:
+                        data:
+                            properties:
+                                modified:
+                                    documentType:
+                                        enum:
+                                            added:
+                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                - APOLICE_FROTA_AUTOMOVEL
+                                                - CERTIFICADO_AUTOMOVEL
+            CreateClaimNotificationPerson:
+                properties:
+                    modified:
+                        data:
+                            properties:
+                                modified:
+                                    documentType:
+                                        enum:
+                                            added:
+                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                - APOLICE_FROTA_AUTOMOVEL
+                                                - CERTIFICADO_AUTOMOVEL
+            ResponseClaimNotificationDamage:
+                properties:
+                    modified:
+                        data:
+                            properties:
+                                modified:
+                                    documentType:
+                                        enum:
+                                            added:
+                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                - APOLICE_FROTA_AUTOMOVEL
+                                                - CERTIFICADO_AUTOMOVEL
+            ResponseClaimNotificationPerson:
+                properties:
+                    modified:
+                        data:
+                            properties:
+                                modified:
+                                    documentType:
+                                        enum:
+                                            added:
+                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                - APOLICE_FROTA_AUTOMOVEL
+                                                - CERTIFICADO_AUTOMOVEL
+    responses:
+        modified:
+            201ClaimNotificationDamageCreated:
+                content:
+                    mediaTypeModified:
+                        application/json:
+                            schema:
+                                properties:
+                                    modified:
+                                        data:
+                                            properties:
+                                                modified:
+                                                    documentType:
+                                                        enum:
+                                                            added:
+                                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                - APOLICE_FROTA_AUTOMOVEL
+                                                                - CERTIFICADO_AUTOMOVEL
+            201ClaimNotificationPersonCreated:
+                content:
+                    mediaTypeModified:
+                        application/json:
+                            schema:
+                                properties:
+                                    modified:
+                                        data:
+                                            properties:
+                                                modified:
+                                                    documentType:
+                                                        enum:
+                                                            added:
+                                                                - APOLICE_INDIVIDUAL_AUTOMOVEL
+                                                                - APOLICE_FROTA_AUTOMOVEL
+                                                                - CERTIFICADO_AUTOMOVEL

@@ -1,0 +1,1694 @@
+﻿- id: new-required-request-property
+  text: added the new required request property 'data/consentId'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/expirationDateTime'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/maxLMG' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/maxLMG' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '201'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/author/identificationType' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/status' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationNumber' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationType' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-success-status-removed
+  text: removed the success response with the status '204'
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '200'
+  level: 3
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/consentId'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/expirationDateTime'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/maxLMG' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/maxLMG' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '201'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/author/identificationType' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/status' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationNumber' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationType' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-success-status-removed
+  text: removed the success response with the status '204'
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '200'
+  level: 3
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/consentId'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/expirationDateTime'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/maxLMG' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/maxLMG' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '201'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/author/identificationType' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/status' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationNumber' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationType' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-success-status-removed
+  text: removed the success response with the status '204'
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '200'
+  level: 3
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/consentId'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/expirationDateTime'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/maxLMG' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/maxLMG' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '201'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/author/identificationType' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/status' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationNumber' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationType' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-success-status-removed
+  text: removed the success response with the status '204'
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '200'
+  level: 3
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/consentId'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: new-required-request-property
+  text: added the new required request property 'data/expirationDateTime'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/policyInfo/maxLMG' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-all-of-added
+  text: added 'AmountDetails' to the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property 'allOf' list
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/policyInfo/maxLMG' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-type-changed
+  text: the 'data/historicalData/policies/items/premium/coverages/items/premiumAmount' request property type/format changed from 'object'/'' to ''/''
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-max-length-unset
+  text: the 'data/status' response property's maxLength was unset from '4' for the response status '201'
+  level: 3
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-enum
+  text: request property 'data/author/identificationType' was restricted to a list of enum values
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationNumber' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-became-required
+  text: the request property 'data/author/identificationType' became required
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-success-status-removed
+  text: removed the success response with the status '204'
+  level: 3
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteCustomer/customData'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/insuredObjects'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/quoteId'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialBusiness
+  path: /business/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteIdentification'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialBusiness
+  path: /business/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-optional-property-removed
+  text: removed the optional property 'data/quoteData' from the response with the '200' status
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialBusiness
+  path: /business/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteCustomer/customData'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/insuredObjects'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/quoteId'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialCondominium
+  path: /condominium/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteIdentification'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-optional-property-removed
+  text: removed the optional property 'data/quoteData' from the response with the '200' status
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialCondominium
+  path: /condominium/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteCustomer/customData'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/insuredObjects'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/quoteId'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteIdentification'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-optional-property-removed
+  text: removed the optional property 'data/quoteData' from the response with the '200' status
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialDiverseRisks
+  path: /diverse-risks/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteCustomer/customData'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/insuredObjects'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteData/quoteId'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialHome
+  path: /home/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteIdentification'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialHome
+  path: /home/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-optional-property-removed
+  text: removed the optional property 'data/quoteData' from the response with the '200' status
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '200'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: GET
+  operationId: getQuotePatrimonialHome
+  path: /home/request/{consentId}/quote-status
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/insuredObjects/items/coverages/items/LMI/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/policyInfo/maxLMG/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/amount'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/historicalData/policies/items/premium/coverages/items/premiumAmount/unit'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteCustomer/customData'
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACKN' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'ACPT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CANC' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'EVAL' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RCVD' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'RJCT' enum value to the 'data/status' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postQuotePatrimonialLead
+  path: /lead/request
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-parameter-removed
+  text: deleted the 'query' request parameter 'page-size'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/quoteIdentification'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths
+- id: request-property-removed
+  text: removed the request property 'data/status'
+  level: 2
+  operation: PATCH
+  operationId: patchQuotePatrimonialLead
+  path: /lead/request/{consentId}
+  source: /data/1.7.0.yml
+  section: paths

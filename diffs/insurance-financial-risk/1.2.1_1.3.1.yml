@@ -1,0 +1,159 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-financial-risk
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: companies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: cnpjNumber
+                          - MaxLength changed from 14 to null
+GET /insurance-financial-risk/{policyId}/claim
+- New query param: page
+- New query param: page-size
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: coverages
+                - Properties changed
+                  - Modified property: coverages
+                    - Items changed
+                      - Properties changed
+                        - Modified property: code
+                          - Description changed from 'Código da cobertura, conforme Anexo II do Manuel de Escopo de Dados' to 'Codigo da cobertura'
+GET /insurance-financial-risk/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: beneficiaries
+                  - Items changed
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                - Modified property: branchInfo
+                  - Description changed from 'Informações do Anexo Específico' to 'Informações do Anexo Específico obrigatório para coberturas do ramo Stop Loss (0743)
+Validado pelo campo /insurance-financial-risk/{policyId}/policy-info/data/insuredObjects/coverages/branch igual a 0743
+'
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: POS
+                        - Required changed
+                          - Deleted required property: description
+                        - Properties changed
+                          - Modified property: description
+                            - Description changed from 'Descrição do POS' to 'Descricao do POS (caso Forma de aplicacao do POS for Outros)'
+                            - Example changed from 'Descrição de exemplo' to null
+                      - Modified property: code
+                        - Description changed from 'Código da cobertura, conforme Anexo II do Manuel de Escopo de Dados' to 'Codigo da cobertura'
+                - Modified property: insuredObjects
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: identification
+                    - Properties changed
+                      - Modified property: coverages
+                        - Items changed
+                          - Required changed
+                            - New required property: premiumPeriodicity
+                          - Properties changed
+                            - New property: premiumPeriodicity
+                            - New property: premiumPeriodicityOthers
+                            - Modified property: code
+                              - Description changed from 'Código da cobertura, conforme Anexo II do Manuel de Escopo de Dados' to 'Codigo da cobertura'
+                      - Modified property: identification
+                        - Description changed from 'Identificador do objeto segurado. Obs.: Para Fiança Locatícia, é a identificação do Contrato de Locação.' to 'Identificador do objeto segurado (Quando o Tipo de Objeto Segurado for diferente de PESSOA). Para Fianca Locaticia, colocar a identificacao do Contrato de Locacao'
+                - Modified property: insureds
+                  - Items changed
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                - Modified property: intermediaries
+                  - Items changed
+                    - Required changed
+                      - New required property: type
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                      - New property: typeOthers
+                - Modified property: principals
+                  - Items changed
+                    - Properties changed
+                      - New property: identificationTypeOthers
+GET /insurance-financial-risk/{policyId}/premium
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: amount
+                  - Property 'AllOf' changed
+                    - 1 schemas added
+                  - Type changed from 'object' to ''
+                  - Description changed from 'Detalhes de valores/limites' to 'Valor total do premio do contrato'
+                  - Required changed
+                    - Deleted required property: amount
+                    - Deleted required property: unit
+                  - Properties changed
+                    - Deleted property: amount
+                    - Deleted property: unit
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: code
+                        - Description changed from 'Código da cobertura, conforme Anexo II do Manuel de Escopo de Dados' to 'Codigo da cobertura'
+                      - Modified property: premiumAmount
+                        - Property 'AllOf' changed
+                          - 1 schemas added
+                        - Type changed from 'object' to ''
+                        - Description changed from 'Detalhes de valores/limites' to 'Valor de premio da cobertura'
+                        - Required changed
+                          - Deleted required property: amount
+                          - Deleted required property: unit
+                        - Properties changed
+                          - Deleted property: amount
+                          - Deleted property: unit
+                - Modified property: payments
+                  - Items changed
+                    - Properties changed
+                      - New property: paymentTypeOthers
+                      - New property: tellerIdOthers
+                      - Modified property: financialInstitutionCode
+                        - Description changed from 'Código da Instituição Financeiro do Pagamento Obs: Obrigatório caso Tipo de Movimento for  LIQUIDACAO_DE_PREMIO e LIQUIDACAO_DE_CUSTO_DE_AQUISICAO' to 'Codigo da Instituicao Financeiro do Pagamento. Obrigatorio caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO ou LIQUIDACAO_DE_CUSTO_DE_AQUISICAO'
+                      - Modified property: movementOrigin
+                        - Description changed from 'Origem do Movimento. Obs: Obrigatório caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO e ESTORNO_DE_PREMIO' to 'Origem do Movimento. Obrigatorio caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO ou ESTORNO_DE_PREMIO'
+                      - Modified property: movementType
+                        - New enum values: [LIQUIDACAO_DE_CUSTO_DE_AQUISICAO LIQUIDACAO_DE_RESTITUICAO_DE_CUSTO_DE_AQUISICAO ESTORNO_DE_CUSTO_DE_AQUISICAO EMISSAO_DE_PREMIO_SEM_ENDOSSO EMISSAO_DE_RESTITUICAO_DE_PREMIO_SEM_ENDOSSO CANCELAMENTO_DE_PREMIO_E_PARCELA_SEM_ENDOSSO COMPENSACAO_FINANCEIRA]
+                        - Deleted enum values: [EMISSAO_DE_PREMIO EMISSAO_DE_RESTITUICAO_DE_PREMIO CANCELAMENTO_DE_PREMIO_E_PARCELA]
+                      - Modified property: paymentType
+                        - Description changed from 'Meio de Pagamento Obs: Obrigatório caso Tipo de Movimento for  LIQUIDACAO_DE_PREMIO e LIQUIDACAO_DE_CUSTO_DE_AQUISICAO' to 'Meio de Pagamento. Obrigatorio caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO ou LIQUIDACAO_DE_CUSTO_DE_AQUISICAO'
+                      - Modified property: tellerId
+                        - Description changed from 'Documento do Pagador/Recebedor Obs: Obrigatório caso Tipo de Movimento for  LIQUIDACAO_DE_PREMIO e LIQUIDACAO_DE_CUSTO_DE_AQUISICAO' to 'Documento do Pagador/Recebedor. Obrigatorio caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO ou LIQUIDACAO_DE_CUSTO_DE_AQUISICAO'
+                      - Modified property: tellerIdType
+                        - Description changed from 'Tipo do Documento do Pagador/Recebedor Obs: Obrigatório caso Tipo de Movimento for  LIQUIDACAO_DE_PREMIO e LIQUIDACAO_DE_CUSTO_DE_AQUISICAO' to 'Tipo do Documento do Pagador/Recebedor. Obrigatorio caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO ou LIQUIDACAO_DE_CUSTO_DE_AQUISICAO'
+                      - Modified property: tellerName
+                        - Description changed from 'Nome ou Razão Social do Pagador/Recebedor Obs: Obrigatório caso Tipo de Movimento for  LIQUIDACAO_DE_PREMIO e LIQUIDACAO_DE_CUSTO_DE_AQUISICAO' to 'Nome ou Razao Social do Pagador/Recebedor. Obrigatorio caso Tipo de Movimento for LIQUIDACAO_DE_PREMIO ou LIQUIDACAO_DE_CUSTO_DE_AQUISICAO'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-financial-risk/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

@@ -1,0 +1,54 @@
+﻿- id: response-property-enum-value-added
+  text: added the new 'APOLICE_FROTA_AUTOMOVEL' enum value to the 'data/documentType' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postClaimNotificationDamage
+  path: /request/damage/{consentId}
+  source: /data/1.2.1.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'APOLICE_INDIVIDUAL_AUTOMOVEL' enum value to the 'data/documentType' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postClaimNotificationDamage
+  path: /request/damage/{consentId}
+  source: /data/1.2.1.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CERTIFICADO_AUTOMOVEL' enum value to the 'data/documentType' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postClaimNotificationDamage
+  path: /request/damage/{consentId}
+  source: /data/1.2.1.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'APOLICE_FROTA_AUTOMOVEL' enum value to the 'data/documentType' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postClaimNotificationPerson
+  path: /request/person/{consentId}
+  source: /data/1.2.1.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'APOLICE_INDIVIDUAL_AUTOMOVEL' enum value to the 'data/documentType' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postClaimNotificationPerson
+  path: /request/person/{consentId}
+  source: /data/1.2.1.yml
+  section: paths
+- id: response-property-enum-value-added
+  text: added the new 'CERTIFICADO_AUTOMOVEL' enum value to the 'data/documentType' response property for the response status '201'
+  comment: Adding new enum values to response could be unexpected for clients, use x-extensible-enum instead.
+  level: 2
+  operation: POST
+  operationId: postClaimNotificationPerson
+  path: /request/person/{consentId}
+  source: /data/1.2.1.yml
+  section: paths

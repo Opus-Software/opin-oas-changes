@@ -1,0 +1,24 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /insurance-financial-risk/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - Deleted required property: branchInfo
+              - Properties changed
+                - Modified property: branchInfo
+                  - Description changed from 'Informações do Anexo Específico' to 'Informações do Anexo Específico obrigatório para coberturas do ramo Stop Loss (0743)
+Validado pelo campo /insurance-financial-risk/{policyId}/policy-info/data/insuredObjects/coverages/branch igual a 0743
+'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-financial-risk/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
