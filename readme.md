@@ -23,6 +23,7 @@
 | claim-notification | [1.1.2](swagger-apis/claim-notification/1.1.2.yml) | [1.2.1](swagger-apis/claim-notification/1.2.1.yml) | [YAML](diffs/claim-notification/1.1.2_1.2.1-breaking-only.yml) | [YAML](diffs/claim-notification/1.1.2_1.2.1.yml) |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [1.2.0](swagger-apis/condominium/1.2.0.yml) | [YAML](diffs/condominium/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/condominium/1.1.0_1.2.0.yml) |
+| consent-funnel-ingestion | [1.0.4](swagger-apis/consent-funnel-ingestion/1.0.4.yml) |  |  |  |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0-breaking-only.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0-breaking-only.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
 | consents-v2 | [2.2.0](swagger-apis/consents-v2/2.2.0.yml) | [2.3.0](swagger-apis/consents-v2/2.3.0.yml) | [YAML](diffs/consents-v2/2.2.0_2.3.0-breaking-only.yml) | [YAML](diffs/consents-v2/2.2.0_2.3.0.yml) |
@@ -67,6 +68,7 @@
 |  | [1.2.0](swagger-apis/home-insurance/1.2.0.yml) | [1.3.0](swagger-apis/home-insurance/1.3.0.yml) | [YAML](diffs/home-insurance/1.2.0_1.3.0-breaking-only.yml) | [YAML](diffs/home-insurance/1.2.0_1.3.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) | [1.1.0](swagger-apis/housing/1.1.0.yml) | [YAML](diffs/housing/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/housing/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/housing/1.1.0.yml) | [1.2.0](swagger-apis/housing/1.2.0.yml) | [YAML](diffs/housing/1.1.0_1.2.0-breaking-only.yml) | [YAML](diffs/housing/1.1.0_1.2.0.yml) |
+| ingestion | [1.0.10](swagger-apis/ingestion/1.0.10.yml) |  |  |  |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [1.2.1](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.1.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.1.0_1.2.1-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.1.0_1.2.1.yml) |
 |  | [1.2.1](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.1.yml) | [1.3.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.3.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.2.1_1.3.0-breaking-only.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.2.1_1.3.0.yml) |
@@ -171,6 +173,7 @@
 |  | [1.2.0](swagger-apis/claim-notification/1.2.0.yml) | [1.2.1](swagger-apis/claim-notification/1.2.1.yml) | [YAML](diffs/claim-notification/1.2.0_1.2.1.yml) |
 | condominium | [1.0.0](swagger-apis/condominium/1.0.0.yml) | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [YAML](diffs/condominium/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/condominium/1.1.0.yml) | [1.2.0](swagger-apis/condominium/1.2.0.yml) | [YAML](diffs/condominium/1.1.0_1.2.0.yml) |
+| consent-funnel-ingestion | [1.0.3](swagger-apis/consent-funnel-ingestion/1.0.3.yml) | [1.0.4](swagger-apis/consent-funnel-ingestion/1.0.4.yml) | [YAML](diffs/consent-funnel-ingestion/1.0.3_1.0.4.yml) |
 | consent-group | [1.0.4](swagger-apis/consent-group/1.0.4.yml) | [1.1.0](swagger-apis/consent-group/1.1.0.yml) | [YAML](diffs/consent-group/1.0.4_1.1.0.yml) |
 | consents | [1.0.4](swagger-apis/consents/1.0.4.yml) | [1.0.5](swagger-apis/consents/1.0.5.yml) | [YAML](diffs/consents/1.0.4_1.0.5.yml) |
 |  | [1.0.5](swagger-apis/consents/1.0.5.yml) | [1.1.0](swagger-apis/consents/1.1.0.yml) | [YAML](diffs/consents/1.0.5_1.1.0.yml) |
@@ -221,6 +224,8 @@
 |  | [1.2.0](swagger-apis/home-insurance/1.2.0.yml) | [1.3.0](swagger-apis/home-insurance/1.3.0.yml) | [YAML](diffs/home-insurance/1.2.0_1.3.0.yml) |
 | housing | [1.0.0](swagger-apis/housing/1.0.0.yml) | [1.1.0](swagger-apis/housing/1.1.0.yml) | [YAML](diffs/housing/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/housing/1.1.0.yml) | [1.2.0](swagger-apis/housing/1.2.0.yml) | [YAML](diffs/housing/1.1.0_1.2.0.yml) |
+| ingestion | [1.0.8](swagger-apis/ingestion/1.0.8.yml) | [1.0.9](swagger-apis/ingestion/1.0.9.yml) | [YAML](diffs/ingestion/1.0.8_1.0.9.yml) |
+|  | [1.0.9](swagger-apis/ingestion/1.0.9.yml) | [1.0.10](swagger-apis/ingestion/1.0.10.yml) | [YAML](diffs/ingestion/1.0.9_1.0.10.yml) |
 | insurance-acceptance-and-branches-abroad | [1.0.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.0.0.yml) | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.0.0_1.1.0.yml) |
 |  | [1.1.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.1.0.yml) | [1.2.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.0.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.1.0_1.2.0.yml) |
 |  | [1.2.0](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.0.yml) | [1.2.1](swagger-apis/insurance-acceptance-and-branches-abroad/1.2.1.yml) | [YAML](diffs/insurance-acceptance-and-branches-abroad/1.2.0_1.2.1.yml) |
@@ -326,7 +331,6 @@
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |  |
-| consent-funnel-ingestion | [1.0.4](swagger-apis/consent-funnel-ingestion/1.0.4.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.2 | [1.0.2](swagger-apis/consent-funnel-ingestion-v1.0.2/1.0.2.yml) |  |  |  |
 | consent-funnel-ingestion-v1.0.3 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.3/1.0.3.yml) |  |  |  |
@@ -348,7 +352,6 @@
 | GarantiaPublicaSwagger | [1.0.0](swagger-apis/GarantiaPublicaSwagger/1.0.0.yml) |  |  |  |
 | generalRc | [1.0.0](swagger-apis/generalRc/1.0.0.yml) |  |  |  |
 | GlobalDeBancosSwagger | [1.0.0](swagger-apis/GlobalDeBancosSwagger/1.0.0.yml) |  |  |  |
-| ingestion | [1.0.10](swagger-apis/ingestion/1.0.10.yml) |  |  |  |
 | ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |  |
 | ingestion-v1.0.2 | [1.0.2](swagger-apis/ingestion-v1.0.2/1.0.2.yml) |  |  |  |
 | ingestion-v1.0.3 | [1.0.3](swagger-apis/ingestion-v1.0.3/1.0.3.yml) |  |  |  |
@@ -377,7 +380,6 @@
 | CasualtySwagger | [1.0.0](swagger-apis/CasualtySwagger/1.0.0.yml) |  |  |
 | chanels | [1.0.0](swagger-apis/chanels/1.0.0.yml) |  |  |
 | CondominioSwagger | [1.0.0](swagger-apis/CondominioSwagger/1.0.0.yml) |  |  |
-| consent-funnel-ingestion | [1.0.3](swagger-apis/consent-funnel-ingestion/1.0.3.yml) | [1.0.4](swagger-apis/consent-funnel-ingestion/1.0.4.yml) | [YAML](diffs/consent-funnel-ingestion/1.0.3_1.0.4.yml) |
 | consent-funnel-ingestion-v1.0.1 | [1.0.1](swagger-apis/consent-funnel-ingestion-v1.0.1/1.0.1.yml) |  |  |
 | consent-funnel-ingestion-v1.0.2 | [1.0.2](swagger-apis/consent-funnel-ingestion-v1.0.2/1.0.2.yml) |  |  |
 | consent-funnel-ingestion-v1.0.3 | [1.0.3](swagger-apis/consent-funnel-ingestion-v1.0.3/1.0.3.yml) |  |  |
@@ -399,8 +401,6 @@
 | GarantiaPublicaSwagger | [1.0.0](swagger-apis/GarantiaPublicaSwagger/1.0.0.yml) |  |  |
 | generalRc | [1.0.0](swagger-apis/generalRc/1.0.0.yml) |  |  |
 | GlobalDeBancosSwagger | [1.0.0](swagger-apis/GlobalDeBancosSwagger/1.0.0.yml) |  |  |
-| ingestion | [1.0.8](swagger-apis/ingestion/1.0.8.yml) | [1.0.9](swagger-apis/ingestion/1.0.9.yml) | [YAML](diffs/ingestion/1.0.8_1.0.9.yml) |
-|  | [1.0.9](swagger-apis/ingestion/1.0.9.yml) | [1.0.10](swagger-apis/ingestion/1.0.10.yml) | [YAML](diffs/ingestion/1.0.9_1.0.10.yml) |
 | ingestion-metric | [1.0.1](swagger-apis/ingestion-metric/1.0.1.yml) |  |  |
 | ingestion-v1.0.2 | [1.0.2](swagger-apis/ingestion-v1.0.2/1.0.2.yml) |  |  |
 | ingestion-v1.0.3 | [1.0.3](swagger-apis/ingestion-v1.0.3/1.0.3.yml) |  |  |
