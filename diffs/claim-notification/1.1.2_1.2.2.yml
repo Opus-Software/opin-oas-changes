@@ -1,0 +1,46 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+POST /request/damage/{consentId}
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: documentType
+                - New enum values: [APOLICE_INDIVIDUAL_AUTOMOVEL APOLICE_FROTA_AUTOMOVEL CERTIFICADO_AUTOMOVEL]
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: documentType
+                  - New enum values: [APOLICE_INDIVIDUAL_AUTOMOVEL APOLICE_FROTA_AUTOMOVEL CERTIFICADO_AUTOMOVEL]
+POST /request/person/{consentId}
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: documentType
+                - New enum values: [APOLICE_INDIVIDUAL_AUTOMOVEL APOLICE_FROTA_AUTOMOVEL CERTIFICADO_AUTOMOVEL]
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: documentType
+                  - New enum values: [APOLICE_INDIVIDUAL_AUTOMOVEL APOLICE_FROTA_AUTOMOVEL CERTIFICADO_AUTOMOVEL]

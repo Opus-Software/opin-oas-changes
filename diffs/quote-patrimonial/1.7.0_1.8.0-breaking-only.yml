@@ -1,0 +1,2578 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 14
+--------------------------
+POST /business/request
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: expirationDateTime
+                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: historicalData
+                - Properties changed
+                  - Modified property: customer
+                    - Properties changed
+                      - Modified property: complimentaryInformationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalComplimentaryInformationData modified
+                            - Properties changed
+                              - Modified property: productsServices
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: procurators
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: cpfNumber
+                                            - Pattern changed from '' to '^\d{11}$'
+                      - Modified property: identificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalBusinessIdentificationData modified
+                            - Properties changed
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                      - Modified property: qualificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalQualificationData modified
+                            - Properties changed
+                              - Modified property: informedPatrimony
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                          - Schema #/components/schemas/HistoricalBusinessQualificationData modified
+                            - Properties changed
+                              - Modified property: informedRevenue
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: policies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: claim
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: thirdPartyClaimDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                  - Modified property: warningDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: documentationDeliveryDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: occurrenceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: statusAlterationDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: thirdPartyClaimDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: warningDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: policyInfo
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: deductible
+                                    - Properties changed
+                                      - Modified property: periodEndDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                      - Modified property: periodStartDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: insuredObjects
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: coverages
+                                    - Items changed
+                                      - Properties changed
+                                        - Modified property: gracePeriodEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: gracePeriodStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: issuanceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: premium
+                          - Properties changed
+                            - Modified property: payments
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: movementDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+              - Modified property: quoteCustomer
+                - Properties changed
+                  - Modified property: complimentaryInformationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalComplimentaryInformationData modified
+                        - Properties changed
+                          - Modified property: productsServices
+                            - Items changed
+                              - Properties changed
+                                - Modified property: procurators
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: cpfNumber
+                                        - Pattern changed from '' to '^\d{11}$'
+                  - Modified property: identificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/BusinessIdentificationData modified
+                        - Properties changed
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: qualificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalQualificationData modified
+                        - Properties changed
+                          - Modified property: informedPatrimony
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                      - Schema #/components/schemas/BusinessQualificationData modified
+                        - Properties changed
+                          - Modified property: informedRevenue
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: quoteData
+                - Properties changed
+                  - Modified property: termEndDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: termStartDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+PATCH /business/request/{consentId}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: protocolDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /business/request/{consentId}/quote-status
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: quoteInfo
+                  - Property 'AllOf' changed
+                    - Schema #/components/schemas/QuoteStatusPatrimonialBusiness modified
+                      - Properties changed
+                        - Modified property: quoteCustomer
+                          - Property 'OneOf' changed
+                            - Schema #/components/schemas/PersonalQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: complimentaryInfo
+                                  - Properties changed
+                                    - Modified property: productsServices
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: procurators
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: cpfNumber
+                                                  - Pattern changed from '' to '^\d{11}$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedPatrimony
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                            - Schema #/components/schemas/BusinessQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: identification
+                                  - Properties changed
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedRevenue
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                        - Modified property: quoteData
+                          - Properties changed
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: quotes
+                          - Items changed
+                            - Properties changed
+                              - Modified property: coverages
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: deductible
+                                      - Property 'AllOf' changed
+                                        - Schema #/components/schemas/Deductible modified
+                                          - Properties changed
+                                            - Modified property: periodEndDate
+                                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                            - Modified property: periodStartDate
+                                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodEndDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodStartDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                              - Modified property: quoteDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+POST /condominium/request
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: expirationDateTime
+                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: historicalData
+                - Properties changed
+                  - Modified property: customer
+                    - Properties changed
+                      - Modified property: complimentaryInformationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalComplimentaryInformationData modified
+                            - Properties changed
+                              - Modified property: productsServices
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: procurators
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: cpfNumber
+                                            - Pattern changed from '' to '^\d{11}$'
+                      - Modified property: identificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalBusinessIdentificationData modified
+                            - Properties changed
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                      - Modified property: qualificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalQualificationData modified
+                            - Properties changed
+                              - Modified property: informedPatrimony
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                          - Schema #/components/schemas/HistoricalBusinessQualificationData modified
+                            - Properties changed
+                              - Modified property: informedRevenue
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: policies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: claim
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: thirdPartyClaimDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                  - Modified property: warningDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: documentationDeliveryDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: occurrenceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: statusAlterationDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: thirdPartyClaimDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: warningDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: policyInfo
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: deductible
+                                    - Properties changed
+                                      - Modified property: periodEndDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                      - Modified property: periodStartDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: insuredObjects
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: coverages
+                                    - Items changed
+                                      - Properties changed
+                                        - Modified property: gracePeriodEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: gracePeriodStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: issuanceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: premium
+                          - Properties changed
+                            - Modified property: payments
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: movementDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+              - Modified property: quoteCustomer
+                - Properties changed
+                  - Modified property: complimentaryInformationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalComplimentaryInformationData modified
+                        - Properties changed
+                          - Modified property: productsServices
+                            - Items changed
+                              - Properties changed
+                                - Modified property: procurators
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: cpfNumber
+                                        - Pattern changed from '' to '^\d{11}$'
+                  - Modified property: identificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/BusinessIdentificationData modified
+                        - Properties changed
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: qualificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalQualificationData modified
+                        - Properties changed
+                          - Modified property: informedPatrimony
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                      - Schema #/components/schemas/BusinessQualificationData modified
+                        - Properties changed
+                          - Modified property: informedRevenue
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: quoteData
+                - Properties changed
+                  - Modified property: insuranceTermStartDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: termEndDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: termStartDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+PATCH /condominium/request/{consentId}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: protocolDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /condominium/request/{consentId}/quote-status
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: quoteInfo
+                  - Property 'AllOf' changed
+                    - Schema #/components/schemas/QuoteStatusPatrimonialCondominium modified
+                      - Properties changed
+                        - Modified property: quoteCustomer
+                          - Property 'OneOf' changed
+                            - Schema #/components/schemas/PersonalQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: complimentaryInfo
+                                  - Properties changed
+                                    - Modified property: productsServices
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: procurators
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: cpfNumber
+                                                  - Pattern changed from '' to '^\d{11}$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedPatrimony
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                            - Schema #/components/schemas/BusinessQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: identification
+                                  - Properties changed
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedRevenue
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                        - Modified property: quoteData
+                          - Properties changed
+                            - Modified property: insuranceTermStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: quotes
+                          - Items changed
+                            - Properties changed
+                              - Modified property: coverages
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: deductible
+                                      - Property 'AllOf' changed
+                                        - Schema #/components/schemas/Deductible modified
+                                          - Properties changed
+                                            - Modified property: periodEndDate
+                                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                            - Modified property: periodStartDate
+                                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodEndDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodStartDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                              - Modified property: quoteDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+POST /diverse-risks/request
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: expirationDateTime
+                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: historicalData
+                - Properties changed
+                  - Modified property: customer
+                    - Properties changed
+                      - Modified property: complimentaryInformationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalComplimentaryInformationData modified
+                            - Properties changed
+                              - Modified property: productsServices
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: procurators
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: cpfNumber
+                                            - Pattern changed from '' to '^\d{11}$'
+                      - Modified property: identificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalBusinessIdentificationData modified
+                            - Properties changed
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                      - Modified property: qualificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalBusinessQualificationData modified
+                            - Properties changed
+                              - Modified property: informedRevenue
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                          - Schema #/components/schemas/HistoricalPersonalQualificationData modified
+                            - Properties changed
+                              - Modified property: informedPatrimony
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                  - Modified property: policies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: claim
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: thirdPartyClaimDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                  - Modified property: warningDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: documentationDeliveryDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: occurrenceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: statusAlterationDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: thirdPartyClaimDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: warningDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: policyInfo
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: deductible
+                                    - Properties changed
+                                      - Modified property: periodEndDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                      - Modified property: periodStartDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: insuredObjects
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: coverages
+                                    - Items changed
+                                      - Properties changed
+                                        - Modified property: gracePeriodEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: gracePeriodStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: issuanceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: premium
+                          - Properties changed
+                            - Modified property: payments
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: movementDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+              - Modified property: quoteCustomer
+                - Properties changed
+                  - Modified property: complimentaryInformationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalComplimentaryInformationData modified
+                        - Properties changed
+                          - Modified property: productsServices
+                            - Items changed
+                              - Properties changed
+                                - Modified property: procurators
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: cpfNumber
+                                        - Pattern changed from '' to '^\d{11}$'
+                  - Modified property: identificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/BusinessIdentificationData modified
+                        - Properties changed
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: qualificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalQualificationData modified
+                        - Properties changed
+                          - Modified property: informedPatrimony
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                      - Schema #/components/schemas/BusinessQualificationData modified
+                        - Properties changed
+                          - Modified property: informedRevenue
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: quoteData
+                - Properties changed
+                  - Modified property: insuranceTermStartDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: insuredObject
+                    - Properties changed
+                      - Modified property: equipmentData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/PortableEquipment modified
+                            - Properties changed
+                              - Modified property: invoiceIssuedDate
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                          - Schema #/components/schemas/FixedMachinery modified
+                            - Properties changed
+                              - Modified property: invoiceIssuedDate
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                          - Schema #/components/schemas/SelfPropelledMachinery modified
+                            - Properties changed
+                              - Modified property: invoiceIssuedDate
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: termEndDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: termStartDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+PATCH /diverse-risks/request/{consentId}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: protocolDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /diverse-risks/request/{consentId}/quote-status
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: quoteInfo
+                  - Property 'AllOf' changed
+                    - Schema #/components/schemas/QuoteStatusPatrimonialDiverseRisks modified
+                      - Properties changed
+                        - Modified property: quoteCustomer
+                          - Property 'OneOf' changed
+                            - Schema #/components/schemas/PersonalQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: complimentaryInfo
+                                  - Properties changed
+                                    - Modified property: productsServices
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: procurators
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: cpfNumber
+                                                  - Pattern changed from '' to '^\d{11}$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedPatrimony
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                            - Schema #/components/schemas/BusinessQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: identification
+                                  - Properties changed
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedRevenue
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                        - Modified property: quoteData
+                          - Properties changed
+                            - Modified property: insuranceTermStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: insuredObject
+                              - Properties changed
+                                - Modified property: equipmentData
+                                  - Property 'OneOf' changed
+                                    - Schema #/components/schemas/FixedMachinery modified
+                                      - Properties changed
+                                        - Modified property: invoiceIssuedDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Schema #/components/schemas/SelfPropelledMachinery modified
+                                      - Properties changed
+                                        - Modified property: invoiceIssuedDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Schema #/components/schemas/PortableEquipment modified
+                                      - Properties changed
+                                        - Modified property: invoiceIssuedDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: quotes
+                          - Items changed
+                            - Properties changed
+                              - Modified property: coverages
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: deductible
+                                      - Property 'AllOf' changed
+                                        - Schema #/components/schemas/Deductible modified
+                                          - Properties changed
+                                            - Modified property: periodEndDate
+                                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                            - Modified property: periodStartDate
+                                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodEndDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodStartDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                              - Modified property: quoteDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+POST /home/request
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: expirationDateTime
+                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: historicalData
+                - Properties changed
+                  - Modified property: customer
+                    - Properties changed
+                      - Modified property: complimentaryInformationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalComplimentaryInformationData modified
+                            - Properties changed
+                              - Modified property: productsServices
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: procurators
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: cpfNumber
+                                            - Pattern changed from '' to '^\d{11}$'
+                      - Modified property: identificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalBusinessIdentificationData modified
+                            - Properties changed
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                      - Modified property: qualificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalQualificationData modified
+                            - Properties changed
+                              - Modified property: informedPatrimony
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                          - Schema #/components/schemas/HistoricalBusinessQualificationData modified
+                            - Properties changed
+                              - Modified property: informedRevenue
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: policies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: claim
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: thirdPartyClaimDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                  - Modified property: warningDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: documentationDeliveryDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: occurrenceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: statusAlterationDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: thirdPartyClaimDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: warningDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: policyInfo
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: deductible
+                                    - Properties changed
+                                      - Modified property: periodEndDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                      - Modified property: periodStartDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: insuredObjects
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: coverages
+                                    - Items changed
+                                      - Properties changed
+                                        - Modified property: gracePeriodEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: gracePeriodStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: issuanceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: premium
+                          - Properties changed
+                            - Modified property: payments
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: movementDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+              - Modified property: quoteCustomer
+                - Properties changed
+                  - Modified property: complimentaryInformationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalComplimentaryInformationData modified
+                        - Properties changed
+                          - Modified property: productsServices
+                            - Items changed
+                              - Properties changed
+                                - Modified property: procurators
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: cpfNumber
+                                        - Pattern changed from '' to '^\d{11}$'
+                  - Modified property: identificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/BusinessIdentificationData modified
+                        - Properties changed
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: qualificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalQualificationData modified
+                        - Properties changed
+                          - Modified property: informedPatrimony
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                      - Schema #/components/schemas/BusinessQualificationData modified
+                        - Properties changed
+                          - Modified property: informedRevenue
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: quoteData
+                - Properties changed
+                  - Modified property: termEndDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: termStartDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+PATCH /home/request/{consentId}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: protocolDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /home/request/{consentId}/quote-status
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: quoteInfo
+                  - Property 'AllOf' changed
+                    - Schema #/components/schemas/QuoteStatusPatrimonialHome modified
+                      - Properties changed
+                        - Modified property: quoteCustomer
+                          - Property 'OneOf' changed
+                            - Schema #/components/schemas/PersonalQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: complimentaryInfo
+                                  - Properties changed
+                                    - Modified property: productsServices
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: procurators
+                                            - Items changed
+                                              - Properties changed
+                                                - Modified property: cpfNumber
+                                                  - Pattern changed from '' to '^\d{11}$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedPatrimony
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                            - Schema #/components/schemas/BusinessQuoteCustomer modified
+                              - Properties changed
+                                - Modified property: identification
+                                  - Properties changed
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                                - Modified property: qualification
+                                  - Properties changed
+                                    - Modified property: informedRevenue
+                                      - Properties changed
+                                        - Modified property: year
+                                          - Pattern changed from '' to '^\d{4}$'
+                                    - Modified property: updateDateTime
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                        - Modified property: quoteData
+                          - Properties changed
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: quotes
+                          - Items changed
+                            - Properties changed
+                              - Modified property: coverages
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: gracePeriodEndDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                    - Modified property: gracePeriodStartDate
+                                      - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                              - Modified property: quoteDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+POST /lead/request
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - Modified property: expirationDateTime
+                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+              - Modified property: historicalData
+                - Properties changed
+                  - Modified property: customer
+                    - Properties changed
+                      - Modified property: complimentaryInformationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalComplimentaryInformationData modified
+                            - Properties changed
+                              - Modified property: productsServices
+                                - Items changed
+                                  - Properties changed
+                                    - Modified property: procurators
+                                      - Items changed
+                                        - Properties changed
+                                          - Modified property: cpfNumber
+                                            - Pattern changed from '' to '^\d{11}$'
+                      - Modified property: identificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalBusinessIdentificationData modified
+                            - Properties changed
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                      - Modified property: qualificationData
+                        - Property 'OneOf' changed
+                          - Schema #/components/schemas/HistoricalPersonalQualificationData modified
+                            - Properties changed
+                              - Modified property: informedPatrimony
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                          - Schema #/components/schemas/HistoricalBusinessQualificationData modified
+                            - Properties changed
+                              - Modified property: informedRevenue
+                                - Properties changed
+                                  - Modified property: year
+                                    - Pattern changed from '' to '^\d{4}$'
+                              - Modified property: updateDateTime
+                                - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: policies
+                    - Items changed
+                      - Properties changed
+                        - Modified property: claim
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: thirdPartyClaimDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                  - Modified property: warningDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: documentationDeliveryDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: occurrenceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: statusAlterationDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: thirdPartyClaimDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: warningDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: policyInfo
+                          - Properties changed
+                            - Modified property: coverages
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: deductible
+                                    - Properties changed
+                                      - Modified property: periodEndDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                      - Modified property: periodStartDate
+                                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: insuredObjects
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: coverages
+                                    - Items changed
+                                      - Properties changed
+                                        - Modified property: gracePeriodEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: gracePeriodStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termEndDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                                        - Modified property: termStartDate
+                                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: issuanceDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: premium
+                          - Properties changed
+                            - Modified property: payments
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: movementDate
+                                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+              - Modified property: quoteCustomer
+                - Properties changed
+                  - Modified property: complimentaryInformationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalComplimentaryInformationData modified
+                        - Properties changed
+                          - Modified property: productsServices
+                            - Items changed
+                              - Properties changed
+                                - Modified property: procurators
+                                  - Items changed
+                                    - Properties changed
+                                      - Modified property: cpfNumber
+                                        - Pattern changed from '' to '^\d{11}$'
+                  - Modified property: identificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/BusinessIdentificationData modified
+                        - Properties changed
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+                  - Modified property: qualificationData
+                    - Property 'OneOf' changed
+                      - Schema #/components/schemas/PersonalQualificationData modified
+                        - Properties changed
+                          - Modified property: informedPatrimony
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                      - Schema #/components/schemas/BusinessQualificationData modified
+                        - Properties changed
+                          - Modified property: informedRevenue
+                            - Properties changed
+                              - Modified property: year
+                                - Pattern changed from '' to '^\d{4}$'
+                          - Modified property: updateDateTime
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: statusUpdateDateTime
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+PATCH /lead/request/{consentId}
+- Responses changed
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'

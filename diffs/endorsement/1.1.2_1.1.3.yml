@@ -1,0 +1,4 @@
+﻿No endpoint changes
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/endorsement/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
