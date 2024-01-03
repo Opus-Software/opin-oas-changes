@@ -1,0 +1,727 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-patrimonial
+- Responses changed
+  - Modified response: 204
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /insurance-patrimonial/{policyId}/claim
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: coverages
+                - Properties changed
+                  - Modified property: amount
+                    - Required changed
+                      - New required property: currency
+                      - Deleted required property: unit
+                    - Properties changed
+                      - New property: currency
+                      - Deleted property: unit
+                  - Modified property: coverages
+                    - Items changed
+                      - Properties changed
+                        - Modified property: code
+                          - Description changed from 'Código da cobertura, conforme Anexo II do Manual de Escopo de Dados' to 'Código da cobertura'
+                        - Modified property: thirdPartyClaimDate
+                          - MaxLength changed from null to 10
+                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                        - Modified property: warningDate
+                          - MaxLength changed from null to 10
+                          - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: documentationDeliveryDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: occurrenceDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: statusAlterationDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: thirdPartyClaimDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                  - Modified property: warningDate
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+  - Modified response: 204
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /insurance-patrimonial/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: beneficiaries
+                  - Items changed
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: POS
+                        - Required changed
+                          - Deleted required property: description
+                        - Properties changed
+                          - New property: applicationTypeOthers
+                          - Deleted property: description
+                          - Modified property: maxValue
+                            - Property 'AllOf' changed
+                              - 1 schemas added
+                            - Type changed from 'object' to ''
+                            - Description changed from 'Detalhes de valores/limites' to 'Valor maximo do POS (caso aplicavel)'
+                            - Required changed
+                              - Deleted required property: amount
+                              - Deleted required property: unit
+                            - Properties changed
+                              - Deleted property: amount
+                              - Deleted property: unit
+                          - Modified property: minValue
+                            - Property 'AllOf' changed
+                              - 1 schemas added
+                            - Type changed from 'object' to ''
+                            - Description changed from 'Detalhes de valores/limites' to 'Valor minimo do POS (caso aplicavel)'
+                            - Required changed
+                              - Deleted required property: amount
+                              - Deleted required property: unit
+                            - Properties changed
+                              - Deleted property: amount
+                              - Deleted property: unit
+                      - Modified property: code
+                        - Description changed from 'Código da cobertura, conforme Anexo II do Manual de Escopo de Dados' to 'Código da cobertura'
+                      - Modified property: deductible
+                        - Properties changed
+                          - Modified property: amount
+                            - Property 'AllOf' changed
+                              - 1 schemas added
+                            - Type changed from 'object' to ''
+                            - Description changed from 'Detalhes de valores/limites' to 'Valor da franquia'
+                            - Required changed
+                              - Deleted required property: amount
+                              - Deleted required property: unit
+                            - Properties changed
+                              - Deleted property: amount
+                              - Deleted property: unit
+                          - Modified property: periodEndDate
+                            - MaxLength changed from null to 10
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                          - Modified property: periodStartDate
+                            - MaxLength changed from null to 10
+                            - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                - Modified property: insuredObjects
+                  - Items changed
+                    - Required changed
+                      - Deleted required property: identification
+                    - Properties changed
+                      - Modified property: amount
+                        - Required changed
+                          - New required property: currency
+                          - Deleted required property: unit
+                        - Properties changed
+                          - New property: currency
+                          - Deleted property: unit
+                      - Modified property: coverages
+                        - Items changed
+                          - Required changed
+                            - New required property: premiumPeriodicity
+                          - Properties changed
+                            - New property: premiumPeriodicity
+                            - New property: premiumPeriodicityOthers
+                            - Modified property: LMI
+                              - Required changed
+                                - New required property: currency
+                                - Deleted required property: unit
+                              - Properties changed
+                                - New property: currency
+                                - Deleted property: unit
+                            - Modified property: code
+                              - Description changed from 'Código da cobertura, conforme Anexo II do Manual de Escopo de Dados' to 'Código da cobertura'
+                            - Modified property: gracePeriodEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: gracePeriodStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termEndDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                            - Modified property: termStartDate
+                              - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                      - Modified property: identification
+                        - Description changed from 'Identificador do objeto segurado. Obs.: Para Fiança Locatícia, é a identificação do Contrato de Locação.' to 'Identificador do objeto segurado (Quando o Tipo de Objeto Segurado for diferente de PESSOA). Obs.: Para Fiança Locatícia, é a identificação do Contrato de Locação.'
+                - Modified property: insureds
+                  - Items changed
+                    - Properties changed
+                      - New property: birthDate
+                      - New property: identificationTypeOthers
+                - Modified property: intermediaries
+                  - Items changed
+                    - Required changed
+                      - New required property: type
+                    - Properties changed
+                      - New property: identificationTypeOthers
+                      - New property: typeOthers
+                      - Modified property: identification
+                        - Pattern changed from '^\d{1,60}$' to '^[a-zA-Z0-9]{1,60}$'
+                - Modified property: issuanceDate
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                - Modified property: maxLMG
+                  - Property 'AllOf' changed
+                    - 1 schemas added
+                  - Type changed from 'object' to ''
+                  - Description changed from 'Detalhes de valores/limites' to 'Limite maximo de garantia (LMG)'
+                  - Required changed
+                    - Deleted required property: amount
+                    - Deleted required property: unit
+                  - Properties changed
+                    - Deleted property: amount
+                    - Deleted property: unit
+                - Modified property: principals
+                  - Items changed
+                    - Properties changed
+                      - New property: birthDate
+                      - New property: identificationTypeOthers
+                - Modified property: termEndDate
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                - Modified property: termStartDate
+                  - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+  - Modified response: 204
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+GET /insurance-patrimonial/{policyId}/premium
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: amount
+                  - Property 'AllOf' changed
+                    - 1 schemas added
+                  - Type changed from 'object' to ''
+                  - Description changed from 'Detalhes de valores/limites' to 'Valor total do premio do contrato'
+                  - Required changed
+                    - Deleted required property: amount
+                    - Deleted required property: unit
+                  - Properties changed
+                    - Deleted property: amount
+                    - Deleted property: unit
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: code
+                        - Description changed from 'Código da cobertura, conforme Anexo II do Manual de Escopo de Dados' to 'Código da cobertura'
+                      - Modified property: premiumAmount
+                        - Required changed
+                          - New required property: currency
+                          - Deleted required property: unit
+                        - Properties changed
+                          - New property: currency
+                          - Deleted property: unit
+                - Modified property: payments
+                  - Items changed
+                    - Properties changed
+                      - New property: paymentTypeOthers
+                      - Modified property: amount
+                        - Required changed
+                          - New required property: currency
+                          - Deleted required property: unit
+                        - Properties changed
+                          - New property: currency
+                          - Deleted property: unit
+                      - Modified property: maturityDate
+                        - MaxLength changed from null to 10
+                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                      - Modified property: movementDate
+                        - MaxLength changed from null to 10
+                        - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])$'
+                      - Modified property: movementType
+                        - New enum values: [LIQUIDACAO_DE_CUSTO_DE_AQUISICAO LIQUIDACAO_DE_RESTITUICAO_DE_CUSTO_DE_AQUISICAO COMPENSACAO_FINANCEIRA ESTORNO_DE_CUSTO_DE_AQUISICAO]
+                      - Modified property: paymentType
+                        - New enum values: [COMUNICABILIDADE]
+  - Modified response: 204
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 400
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 401
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 403
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 404
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 405
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 406
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 422
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 429
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: 500
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json; charset=utf-8
+        - Schema changed
+          - Properties changed
+            - Modified property: errors
+              - Items changed
+                - Properties changed
+                  - Modified property: requestDateTime
+                    - MaxLength changed from 2048 to 20
+                    - Pattern changed from '' to '^(\d{4})-(1[0-2]|0?[1-9])-(3[01]|[12][0-9]|0?[1-9])T(?:[01]\d|2[0123]):(?:[012345]\d):(?:[012345]\d)Z$'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-patrimonial/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

@@ -1,0 +1,25 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+POST /consents
+- Responses changed
+  - Modified response: default
+    - Content changed
+      - Deleted media type: application/json
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id
+DELETE /consents/{consentId}
+- Responses changed
+  - Modified response: default
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id
+GET /consents/{consentId}
+- Responses changed
+  - Modified response: default
+    - Content changed
+      - Deleted media type: application/json
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id

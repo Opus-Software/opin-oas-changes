@@ -1,0 +1,59 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+POST /consents
+- Request body changed
+  - Content changed
+    - Modified media type: application/json
+      - Schema changed
+        - Properties changed
+          - Modified property: data
+            - Properties changed
+              - New property: claimNotificationInformation
+              - New property: endorsementInformation
+- Responses changed
+  - Modified response: 201
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - New property: claimNotificationInformation
+                - New property: endorsementInformation
+  - Modified response: default
+    - Description changed from 'Consentimento criado com sucesso.' to 'Erro inesperado.'
+    - Content changed
+      - New media type: application/json; charset=utf-8
+      - Deleted media type: application/json
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id
+DELETE /consents/{consentId}
+- Responses changed
+  - Modified response: default
+    - Description changed from 'Consentimento revogado com sucesso.' to 'Erro inesperado.'
+    - Content changed
+      - New media type: application/json; charset=utf-8
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id
+GET /consents/{consentId}
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - New property: claimNotificationInformation
+                - New property: endorsementInformation
+  - Modified response: default
+    - Description changed from 'Consentimento consultado com sucesso.' to 'Erro inesperado.'
+    - Content changed
+      - New media type: application/json; charset=utf-8
+      - Deleted media type: application/json
+    - Headers changed
+      - Deleted header: x-fapi-interaction-id
