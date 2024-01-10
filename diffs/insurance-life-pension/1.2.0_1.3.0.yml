@@ -1,0 +1,142 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /insurance-life-pension/contracts
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Modified property: brand
+                    - Properties changed
+                      - Modified property: companies
+                        - Items changed
+                          - Properties changed
+                            - Modified property: contracts
+                              - Items changed
+                                - Required changed
+                                  - New required property: certificateId
+                                  - Deleted required property: pensionIdentification
+                                - Properties changed
+                                  - New property: certificateId
+                                  - Deleted property: pensionIdentification
+GET /insurance-life-pension/{pensionIdentification}/claim
+- Modified path param: pensionIdentification
+  - Description changed from 'Código único a ser definido pela sociedade' to 'Código único da sociedade'
+GET /insurance-life-pension/{pensionIdentification}/contract-info
+- New query param: page
+- New query param: page-size
+- Modified path param: pensionIdentification
+  - Description changed from 'Código único a ser definido pela sociedade' to 'Código único da sociedade'
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - New required property: certificateActive
+                - New required property: certificateId
+                - New required property: contractingType
+                - New required property: effectiveDateEnd
+                - New required property: effectiveDateStart
+                - New required property: links
+                - New required property: meta
+                - New required property: periodicity
+                - New required property: productCode
+                - New required property: suseps
+                - New required property: taxRegime
+                - Deleted required property: PMBaC
+                - Deleted required property: documents
+                - Deleted required property: pensionIdentification
+                - Deleted required property: plans
+              - Properties changed
+                - New property: certificateActive
+                - New property: certificateId
+                - New property: contractId
+                - New property: contractingType
+                - New property: effectiveDateEnd
+                - New property: effectiveDateStart
+                - New property: periodicity
+                - New property: periodicityOthers
+                - New property: productcode
+                - New property: suseps
+                - New property: taxRegime
+                - Deleted property: PMBaC
+                - Deleted property: documents
+                - Deleted property: pensionIdentification
+                - Deleted property: plans
+                - Modified property: beneficiary
+                  - Items changed
+                    - Properties changed
+                      - Modified property: participationPercentage
+                        - Description changed from 'Percentual de particiapação do beneficiário.' to 'Percentual de participação do beneficiário.'
+                - Modified property: insureds
+                  - Type changed from 'array' to 'object'
+                  - Description changed from '' to 'Informações do segurado/participante'
+                  - Items changed
+                    - Schema deleted
+                  - Required changed
+                    - New required property: address
+                    - New required property: birthDate
+                    - New required property: countryCode
+                    - New required property: countrySubDivision
+                    - New required property: documentNumber
+                    - New required property: documentType
+                    - New required property: gender
+                    - New required property: name
+                    - New required property: postCode
+                    - New required property: townName
+                  - Properties changed
+                    - New property: address
+                    - New property: birthDate
+                    - New property: countryCode
+                    - New property: countrySubDivision
+                    - New property: documentNumber
+                    - New property: documentType
+                    - New property: documentTypeOthers
+                    - New property: email
+                    - New property: gender
+                    - New property: name
+                    - New property: postCode
+                    - New property: townName
+                - Modified property: intermediary
+                  - Type changed from 'array' to 'object'
+                  - Description changed from '' to 'Informações de intermediário, obrigatório se houver.'
+                  - Items changed
+                    - Schema deleted
+                  - Required changed
+                    - New required property: type
+                  - Properties changed
+                    - New property: address
+                    - New property: countryCode
+                    - New property: countrySubDivision
+                    - New property: documentNumber
+                    - New property: documentType
+                    - New property: documentTypeOthers
+                    - New property: intermediaryId
+                    - New property: name
+                    - New property: postCode
+                    - New property: townName
+                    - New property: type
+                    - New property: typeOthers
+GET /insurance-life-pension/{pensionIdentification}/movements
+- Modified path param: pensionIdentification
+  - Description changed from 'Código único a ser definido pela sociedade' to 'Código único da sociedade'
+GET /insurance-life-pension/{pensionIdentification}/portabilities
+- Modified path param: pensionIdentification
+  - Description changed from 'Código único a ser definido pela sociedade' to 'Código único da sociedade'
+GET /insurance-life-pension/{pensionIdentification}/withdrawals
+- Modified path param: pensionIdentification
+  - Description changed from 'Código único a ser definido pela sociedade' to 'Código único da sociedade'
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-life-pension/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

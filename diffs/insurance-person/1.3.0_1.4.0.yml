@@ -1,0 +1,74 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+GET /insurance-person/{policyId}/claim
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - Deleted property: coverages
+GET /insurance-person/{policyId}/policy-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Deleted property: susepProcessNumber
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: POS
+                        - Required changed
+                          - Deleted required property: applicationType
+                        - Properties changed
+                          - New property: applicationTypeOthers
+                - Modified property: insuredObjects
+                  - Items changed
+                    - Properties changed
+                      - Modified property: coverages
+                        - Items changed
+                          - Properties changed
+                            - Modified property: dependents
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: identification
+                                    - Description changed from 'Documento de Identificação da Pessoa Associada. (Caso haja em Cláusula de Inclusão de Dependentes Segurados e caso contrato de Funeral, Acidentes Pessoais, Doenças Graves ou Doença Terminal, Eventos Aleatórios, Vida,  Desemprego/Perda de Renda e Viagem)' to 'Documento de Identificação (caso a opção "2. Facultativa" seja selecionada no campo "Cláusula de Inclusão de Dependentes Segurados")'
+                                  - Modified property: kinshipDegree
+                                    - Description changed from 'Grau de Parentesco. (Caso haja em Cláusula de Inclusão de Dependentes Segurados e caso contrato de Funeral, Acidentes Pessoais, Doenças Graves ou Doença Terminal, Eventos Aleatórios, Vida,  Desemprego/Perda de Renda e Viagem)' to 'Grau de Parentesco  (caso preenchido o campo "Cláusula de Inclusão de Dependentes" for igual a 3-Automático)'
+                            - Modified property: grace
+                              - Items changed
+                                - Properties changed
+                                  - Modified property: period
+                                    - Description changed from 'Prazo de Carência entre Resgates, Condicional a seleção da opção de RESGATE no campo Tipo de Carência' to 'Prazo de Carência entre Resgates (Caso Tipo de Carência 1. Portabilidade ou 2. Resgate for selecionada)'
+                            - Modified property: insuredDependentsInclusionClause
+                              - Description changed from 'Cláusula de Inclusão de Dependentes Segurados. (Caso contrato de Funeral, Acidentes Pessoais, Doenças Graves ou Doença Terminal, Eventos Aleatórios, Vida,  Desemprego/Perda de Renda e Viagem)' to 'Cláusula de Inclusão de Dependentes Segurados (Caso contrato de Funeral, Acidentes Pessoais, Doenças Graves ou Doença Terminal, Eventos Aleatórios, Vida, Desemprego/Perda de Renda e Viagem e Educacional)'
+                            - Modified property: pmbacIndexLag
+                              - Description changed from 'Defasagem do Indice PMBaC (em meses)
+Obrigatorio em caso de regime financeiro de Capitalizacao
+' to 'Defasagem do Índice PMBaC (quando houver'
+                            - Modified property: pmbacMonetaryUpdateIndex
+                              - Description changed from 'Indice de Precos Garantido PMBaC
+Obrigatorio em caso de regime financeiro de Capitalizacao
+' to 'Índice de Preços Garantido PMBaC (quando houver)'
+                - Modified property: insureds
+                  - Items changed
+                    - Properties changed
+                      - Deleted property: addressAdditionalInfo
+                - Modified property: principals
+                  - Items changed
+                    - Properties changed
+                      - Deleted property: addressAdditionalInfo
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-person/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

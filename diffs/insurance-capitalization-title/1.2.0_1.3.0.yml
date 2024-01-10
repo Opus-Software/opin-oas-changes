@@ -1,0 +1,44 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 1
+-------------------------
+GET /insurance-capitalization-title/{planId}/plan-info
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: series
+                  - Items changed
+                    - Properties changed
+                      - Modified property: titles
+                        - Items changed
+                          - Properties changed
+                            - Modified property: contributionAmount
+                              - Property 'AllOf' changed
+                                - 1 schemas deleted
+                              - Type changed from '' to 'number'
+                              - Example changed from null to 2000
+                              - Pattern changed from '' to '^\d{1,16}\.\d{2}$'
+                            - Modified property: rafflePremiumAmount
+                              - Property 'AllOf' changed
+                                - 1 schemas deleted
+                              - Type changed from '' to 'number'
+                              - Example changed from null to 2000
+                              - Pattern changed from '' to '^\d{1,16}\.\d{2}$'
+                            - Modified property: subscriber
+                              - Items changed
+                                - Properties changed
+                                  - Deleted property: subscriberAddressAdditionalInfo
+                                  - Modified property: holder
+                                    - Items changed
+                                      - Properties changed
+                                        - Deleted property: holderAddressAdditionalInfo
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-capitalization-title/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
