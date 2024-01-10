@@ -1,0 +1,53 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /insurance-life-pension/contracts
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-life-pension/{certificateId}/claim
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-life-pension/{certificateId}/contract-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Required changed
+                - Deleted required property: links
+                - Deleted required property: meta
+              - Properties changed
+                - Modified property: insureds
+                  - Properties changed
+                    - New property: addressAdditionalInfo
+                - Modified property: intermediary
+                  - Properties changed
+                    - New property: additionalInfo
+                - Modified property: suseps
+                  - Items changed
+                    - Properties changed
+                      - New property: pmbacGuaranteePriceOthers
+                      - Deleted property: pmbacGuaranteePriceIndexOthers
+                      - Modified property: biometricTable
+                        - New enum values: [AT_2000_MALE AT_2000_FEMALE AT_2000_MALE_FEMALE AT_2000_MALE_SUAVIZADA_10 AT_2000_FEMALE_SUAVIZADA_10 AT_2000_MALE_FEMALE_SUAVIZADA_10 AT_2000_MALE_SUAVIZADA_15 AT_2000_FEMALE_SUAVIZADA_15 AT_2000_MALE_FEMALE_SUAVIZADA_15 AT_83_MALE AT_83_FEMALE AT_83_MALE_FEMALE BR_EMSSB_MALE BR_EMSSB_FEMALE BR_EMSSB_MALE_FEMALE]
+                        - Deleted enum values: [1  - Mortalidade Geral / Beneficiário - AT49 M 2  - Mortalidade Geral / Beneficiário - AT49 F 3  - Mortalidade Geral / Beneficiário - AT50 M 4  - Mortalidade Geral / Beneficiário - AT50 F 5  - Mortalidade Geral / Beneficiário - AT55 M 6  - Mortalidade Geral / Beneficiário - AT55 F 7  - Mortalidade Geral / Beneficiário - AT71 M 8  - Mortalidade Geral / Beneficiário - AT71 F 9  - Mortalidade Geral / Beneficiário - AT83 M 10  - Mortalidade Geral / Beneficiário - AT83 F 11  - Mortalidade Geral / Beneficiário - AT2000 M 12  - Mortalidade Geral / Beneficiário - AT2000 F 13  - Mortalidade Geral / Beneficiário - CS041 14  - Mortalidade Geral / Beneficiário - CSO58 15  - Mortalidade Geral / Beneficiário - CSO80 M 16  - Mortalidade Geral / Beneficiário - CSO80 F 17  - Mortalidade Geral / Beneficiário - CSG 60 18  - Mortalidade Geral / Beneficiário - GAM71 M 19  - Mortalidade Geral / Beneficiário - GAM71 F 20  - Mortalidade Geral / Beneficiário - SGB51 21  - Mortalidade Geral / Beneficiário - SGB55 22  - Mortalidade Geral / Beneficiário - SGB71 23  - Mortalidade Geral / Beneficiário - SGB75 24  - Mortalidade Geral / Beneficiário - GKF70 25  - Mortalidade Geral / Beneficiário - GKF80 26  - Mortalidade Geral / Beneficiário - GKF95 27  - Mortalidade Geral / Beneficiário - GKM70 28  - Mortalidade Geral / Beneficiário - GKM80 29  - Mortalidade Geral / Beneficiário - GKM95 30  - Mortalidade Geral / Beneficiário - UP 84 31  - Mortalidade de Inválidos - IAPB 57 32  - Mortalidade de Inválidos - IAPB57 - Nivelada 33  - Mortalidade de Inválidos - ZIMMERMANN 34  - Mortalidade de Inválidos - WINKLEVOSS 35  - Mortalidade de Inválidos - BENTZIEN 36  - Mortalidade de Inválidos - EXP. IAPC 37  - Mortalidade de Inválidos - TASA27 38  - Mortalidade de Inválidos - MULLER 39  - Entrada em Invalidez - IAPB 57 FRACA 40  - Entrada em Invalidez - IAPB 57 FORTE 41  - Entrada em Invalidez - ZIMMERMANN 42  - Entrada em Invalidez - ÁLVARO VINDAS 43  - Entrada em Invalidez - TASA 27 44  - Entrada em Invalidez - MULLER 45  - Entrada em Invalidez - HUNTER 46  - Mortalidade Geral / Beneficiário - EB7 47  - Mortalidade Geral / Beneficiário - UP94 M 48  - Mortalidade Geral / Beneficiário - AT49 49  - Mortalidade Geral / Beneficiário - AT2000 female suavizada 10% 49  - Entrada em Invalidez - AT2000 female suavizada 10% 50  - Mortalidade Geral / Beneficiário - TGA 50  - Entrada em Invalidez - TGA 51  - Mortalidade Geral / Beneficiário - AT2000 male suavizada 10% 52  - Mortalidade Geral / Beneficiário - BR-EMSsb-V.2010-m 53  - Mortalidade Geral / Beneficiário - BR-EMSsb-V.2010-f 54  - Entrada em Invalidez - SUSEP_IBGE 55  - Mortalidade Geral / Beneficiário - Percentual Fixo 55  - Mortalidade de Inválidos - Percentual Fixo 55  - Entrada em Invalidez - Percentual Fixo 56  - Mortalidade Geral / Beneficiário - Perpétua 56  - Mortalidade de Inválidos - Perpétua 56  - Entrada em Invalidez - Perpétua 57  - Mortalidade Geral / Beneficiário - BR-EMSmt-V.2010-m 57  - Mortalidade de Inválidos - BR-EMSmt-V.2010-m 57  - Entrada em Invalidez - BR-EMSmt-V.2010-m 58  - Mortalidade Geral / Beneficiário - BR-EMSmt-V.2010-f 58  - Mortalidade de Inválidos - BR-EMSmt-V.2010-f 58  - Entrada em Invalidez - BR-EMSmt-V.2010-f 59  - Mortalidade Geral / Beneficiário - BR-EMSsb-V.2015-m 59  - Mortalidade de Inválidos - BR-EMSsb-V.2015-m 59  - Entrada em Invalidez - BR-EMSsb-V.2015-m 60  - Mortalidade Geral / Beneficiário - BR-EMSsb-V.2015-f 60  - Mortalidade de Inválidos - BR-EMSsb-V.2015-f 60  - Entrada em Invalidez - BR-EMSsb-V.2015-f 61  - Mortalidade Geral / Beneficiário - BR-EMSmt-V.2015-m 61  - Mortalidade de Inválidos - BR-EMSmt-V.2015-m 61  - Entrada em Invalidez - BR-EMSmt-V.2015-m 62  - Mortalidade Geral / Beneficiário - BR-EMSmt-V.2015-f 62  - Mortalidade de Inválidos - BR-EMSmt-V.2015-f 62  - Entrada em Invalidez - BR-EMSmt-V.2015-f 63  - Mortalidade Geral / Beneficiário - BR-EMSsb-m 63  - Mortalidade de Inválidos - BR-EMSsb-m 63  - Entrada em Invalidez - BR-EMSsb-m 64  - Mortalidade Geral / Beneficiário - BR-EMSsb-f 64  - Mortalidade de Inválidos - BR-EMSsb-f 64  - Entrada em Invalidez - BR-EMSsb-f 65  - Mortalidade Geral / Beneficiário - BR-EMSmt-m 65  - Mortalidade de Inválidos - BR-EMSmt-m 65  - Entrada em Invalidez - BR-EMSmt-m 66  - Mortalidade Geral / Beneficiário - BR-EMSmt-f 66  - Mortalidade de Inválidos - BR-EMSmt-f 66  - Entrada em Invalidez - BR-EMSmt-f 67  - Mortalidade Geral / Beneficiário - BR-EMSsb-V.2021-m 67  - Mortalidade de Inválidos - BR-EMSsb-V.2021-m 67  - Entrada em Invalidez - BR-EMSsb-V.2021-m 68  - Mortalidade Geral / Beneficiário - BR-EMSsb-V.2021-f 68  - Mortalidade de Inválidos - BR-EMSsb-V.2021-f 68  - Entrada em Invalidez - BR-EMSsb-V.2021-f 69  - Mortalidade Geral / Beneficiário - BR-EMSmt-V.2021-m 69  - Mortalidade de Inválidos - BR-EMSmt-V.2021-m 69  - Entrada em Invalidez - BR-EMSmt-V.2021-m 70  - Mortalidade Geral / Beneficiário - BR-EMSmt-V.2021-f 70  - Mortalidade de Inválidos - BR-EMSmt-V.2021-f 70  - Entrada em Invalidez - BR-EMSmt-V.2021-f 99  - Mortalidade Geral / Beneficiário - OUTRAS 99  - Mortalidade de Inválidos - OUTRAS 99  - Entrada em Invalidez - OUTRAS]
+                        - Example changed from '1  - Mortalidade Geral / Beneficiário - AT49 M' to 'AT_2000_FEMALE_SUAVIZADA_15'
+GET /insurance-life-pension/{certificateId}/movements
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-life-pension/{certificateId}/portabilities
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-life-pension/{certificateId}/withdrawals
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-life-pension/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

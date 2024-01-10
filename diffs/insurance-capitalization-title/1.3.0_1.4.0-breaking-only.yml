@@ -1,0 +1,40 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-capitalization-title/plans
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-capitalization-title/{planId}/events
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-capitalization-title/{planId}/plan-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: series
+                  - Items changed
+                    - Properties changed
+                      - Modified property: titles
+                        - Items changed
+                          - Properties changed
+                            - Modified property: contributionAmount
+                              - Property 'AllOf' changed
+                                - 1 schemas added
+                              - Type changed from 'number' to ''
+                            - Modified property: rafflePremiumAmount
+                              - Property 'AllOf' changed
+                                - 1 schemas added
+                              - Type changed from 'number' to ''
+GET /insurance-capitalization-title/{planId}/settlements
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true

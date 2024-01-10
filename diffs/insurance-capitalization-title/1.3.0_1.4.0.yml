@@ -1,0 +1,58 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-capitalization-title/plans
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-capitalization-title/{planId}/events
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-capitalization-title/{planId}/plan-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - Modified property: series
+                  - Items changed
+                    - Properties changed
+                      - Modified property: titles
+                        - Items changed
+                          - Properties changed
+                            - Modified property: contributionAmount
+                              - Property 'AllOf' changed
+                                - 1 schemas added
+                              - Type changed from 'number' to ''
+                              - Example changed from 2000 to null
+                              - Pattern changed from '^\d{1,16}\.\d{2}$' to ''
+                            - Modified property: rafflePremiumAmount
+                              - Property 'AllOf' changed
+                                - 1 schemas added
+                              - Type changed from 'number' to ''
+                              - Example changed from 2000 to null
+                              - Pattern changed from '^\d{1,16}\.\d{2}$' to ''
+                            - Modified property: subscriber
+                              - Items changed
+                                - Properties changed
+                                  - New property: subscriberAddressAdditionalInfo
+                                  - Modified property: holder
+                                    - Items changed
+                                      - Properties changed
+                                        - New property: holderAddressAdditionalInfo
+                            - Modified property: technicalProvisions
+                              - Items changed
+                                - Description changed from '' to '(Esses valores poderão sofrer alterações no momento do resgate/pagamento,conforme regras do produto nas condições gerais)'
+GET /insurance-capitalization-title/{planId}/settlements
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-capitalization-title/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'

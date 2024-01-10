@@ -1,0 +1,18 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-person
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-person/{policyId}/claim
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-person/{policyId}/policy-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-person/{policyId}/premium
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true

@@ -1,0 +1,24 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 6
+-------------------------
+GET /insurance-pension-plan/contracts
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-pension-plan/{pensionIdentification}/claim
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-pension-plan/{pensionIdentification}/contract-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-pension-plan/{pensionIdentification}/movements
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-pension-plan/{pensionIdentification}/portabilities
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-pension-plan/{pensionIdentification}/withdrawals
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true

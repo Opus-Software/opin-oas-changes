@@ -1,0 +1,15 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 3
+-------------------------
+GET /insurance-financial-assistance/contracts
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-financial-assistance/{contractId}/contract-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-financial-assistance/{contractId}/movements
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true

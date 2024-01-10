@@ -1,0 +1,70 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 4
+-------------------------
+GET /insurance-person
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+GET /insurance-person/{policyId}/claim
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Properties changed
+                  - New property: coverages
+GET /insurance-person/{policyId}/policy-info
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Properties changed
+                - New property: susepProcessNumber
+                - Modified property: coverages
+                  - Items changed
+                    - Properties changed
+                      - Modified property: POS
+                        - Required changed
+                          - New required property: applicationType
+                        - Properties changed
+                          - Deleted property: applicationTypeOthers
+                - Modified property: insuredObjects
+                  - Items changed
+                    - Properties changed
+                      - Modified property: coverages
+                        - Items changed
+                          - Properties changed
+                            - Modified property: pmbacIndexLag
+                              - Description changed from 'Defasagem do Índice PMBaC (quando houver' to 'Defasagem do Indice PMBaC (em meses)
+Obrigatorio em caso de regime financeiro de Capitalizacao
+'
+                            - Modified property: pmbacMonetaryUpdateIndex
+                              - Description changed from 'Índice de Preços Garantido PMBaC (quando houver)' to 'Indice de Precos Garantido PMBaC
+Obrigatorio em caso de regime financeiro de Capitalizacao
+'
+                - Modified property: insureds
+                  - Items changed
+                    - Properties changed
+                      - New property: addressAdditionalInfo
+                - Modified property: principals
+                  - Items changed
+                    - Properties changed
+                      - New property: addressAdditionalInfo
+GET /insurance-person/{policyId}/premium
+- Modified header param: x-fapi-interaction-id
+  - Required changed from false to true
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/insurance-person/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
