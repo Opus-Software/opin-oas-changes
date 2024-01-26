@@ -1,0 +1,55 @@
+﻿### New Endpoints: None
+-----------------------
+### Deleted Endpoints: None
+---------------------------
+### Modified Endpoints: 2
+-------------------------
+GET /capitalization-title
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: fields
+                  - Deleted required property: branch
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - Items changed
+                - Required changed
+                  - New required property: fields
+                  - Deleted required property: branch
+GET /damage-and-person
+- Responses changed
+  - Modified response: 200
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - MaxItems changed from 3 to 6
+              - Items changed
+                - Properties changed
+                  - Modified property: api
+                    - New enum values: [ENDORSEMENT CLAIM_NOTIFICATION_DAMAGE CLAIM_NOTIFICATION_PERSON]
+  - Modified response: default
+    - Content changed
+      - Modified media type: application/json
+        - Schema changed
+          - Properties changed
+            - Modified property: data
+              - MaxItems changed from 3 to 6
+              - Items changed
+                - Properties changed
+                  - Modified property: api
+                    - New enum values: [ENDORSEMENT CLAIM_NOTIFICATION_DAMAGE CLAIM_NOTIFICATION_PERSON]
+Servers changed
+- Modified server: https://api.organizacao.com.br/open-insurance/dynamic-fields/v1
+  - Description changed from 'Servidor de Homologação' to 'Servidor de Produção'
